@@ -1,0 +1,80 @@
+$font-main: "Open Sans", sans-serif
+$font-pod: "Podkova", serif
+
+
+
+body
+	font-family: $font-main
+	font-size: 16px
+	font-weight: 400
+	color: #6d4d41
+	background: #664237 url(../img/bg_top.jpg) 50% 0 no-repeat
+	overflow-x: hidden
+	height: 3000px
+
+header
+	padding: 30px 0
+	.logo
+		display: inline-block
+		.l_dark
+			display: none
+	.r_block
+		margin-top: 10px
+		float: right
+		.phone
+			position: relative
+			text-align: right
+			display: inline-block
+			img
+				position: absolute
+				left: -37px
+				top: 13px
+		.num
+			font-family: $font-pod
+			font-size: 24px
+			font-weight: 700
+			color: #fff
+		.call
+			font-size: 18px
+			font-weight: 300
+			color: #ffcd91
+			border-bottom: 1px dashed #ffcd91
+			text-decoration: none
+		.canvas_menu
+			background-color: transparent
+			border: none
+			outline: none
+			width: 51px
+			height: auto
+			margin-left: 30px
+			padding: 3px
+			cursor: pointer
+			vertical-align: super
+			span
+				display: block
+				width: 45px
+				height: 3px
+				background-color: #fff
+				& + span
+					margin-top: 14px
+				&:first-child
+					width: 38px
+					margin-left: 7px
+				&:last-child
+					width: 31px
+					margin-left: 14px
+
+.s_main
+	padding: 150px 0 80px
+	.h_title
+		font-family: $font-pod
+		font-size: 90px
+		font-weight: 700
+		color: #fde0be
+		margin: 0 0 60px
+		line-height: 95px
+		max-width: 850px
+	.h_text
+		font-size: 30px
+		font-weight: 300
+		color: #fee9d1
