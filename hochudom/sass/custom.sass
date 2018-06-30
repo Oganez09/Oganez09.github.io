@@ -1,16 +1,14 @@
 $font-main: "Open Sans", sans-serif
 $font-pod: "Podkova", serif
-
-
+$white: #fbf1ea
 
 body
 	font-family: $font-main
 	font-size: 16px
 	font-weight: 400
 	color: #6d4d41
-	background: #664237 url(../img/bg_top.jpg) 50% 0 no-repeat
+	background-color: #FBF0EA
 	overflow-x: hidden
-	height: 3000px
 
 h1, h2, h3, h4, h5, h6,
 	font-family: $font-pod
@@ -23,12 +21,22 @@ p
 	line-height: 24px
 	margin: 0
 
+a, button
+	&:hover, &:focus
+		outline: none
+
 .h2_main
 	font-size: 60px
 	font-weight: 700
 	color: #724537
 	margin-bottom: 50px
 	text-align: center
+	@media screen and (max-width: 991px)
+		font-size: 50px
+	@media screen and (max-width: 767px)
+		font-size: 40px
+	@media screen and (max-width: 575px)
+		font-size: 35px
 	&::after
 		content: ''
 		display: block
@@ -41,48 +49,169 @@ p
 	font-size: 18px
 	font-weight: 700
 	color: #3b2821
-	width: 100%
-	max-width: 300px
 	height: 66px
 	line-height: 66px
+	padding: 0 50px
 	border-radius: 33px
 	background: #ffc17f
 	background-image: linear-gradient(90deg, #ffc17f 0%, #ffe4b5 100%)
 	text-transform: uppercase
 	text-align: center
 	display: inline-block
+	border: none
+	outline: none
+	cursor: pointer
 	&:hover
 		color: #3b2821
 		text-decoration: none
+		outline: none
+
+.input
+	font-size: 20px
+	font-weight: 300
+	color: $white
+	width: 100%
+	max-width: 400px
+	height: 60px
+	margin-bottom: 20px
+	padding: 0 25px
+	background-color: transparent
+	border: 2px solid #FFC280
+	border-radius: 30px
+	outline: none
+	display: block
+	&::-webkit-input-placeholder
+		color: $white
+	&::-moz-placeholder
+		color: $white
+	&::-ms-input-placeholder
+		color: $white
+	&::-moz-placeholder
+		color: $white
+
+.fancybox-slide--html
+	overflow-x: hidden
+.fancy_modal
+	display: none
+.fancybox-bg
+	background: #42271F
+.fancybox-content
+	border-radius: 15px
+	background-color: #FFFAF6
+	.title
+		font-family: $font-pod
+		font-size: 30px
+		font-weight: 700
+		color: #40261f
+		margin-bottom: 30px
+		line-height: 30px
+		text-align: center
+		@media screen and (max-width: 767px)
+			font-size: 26px
+#call
+	padding: 60px 45px 180px
+	background: #FFFAF6 url(../img/m_home.jpg) 0 100% no-repeat
+	background-size: 100%
+	overflow: visible
+	@media screen and (max-width: 767px)
+		padding: 40px 30px 160px
+	&::before
+		content: url(../img/leaf2.png)
+		position: absolute
+		top: 40px
+		left: -15px
+		z-index: 99999
+	&::after
+		content: url(../img/leaf3.png)
+		position: absolute
+		top: 310px
+		right: -20px
+		z-index: 99999
+	.form
+		width: 100%
+		max-width: 300px
+	.input
+		color: #442920
+		&::-webkit-input-placeholder
+			color: #442920
+		&::-moz-placeholder
+			color: #442920
+		&::-ms-input-placeholder
+			color: #442920
+		&::-moz-placeholder
+			color: #442920
+	.link_btn
+		color: #462e13
+		margin-top: 10px
+		width: 100%
+	.privacy
+		font-size: 13px
+		font-weight: 300
+		color: #442920
+		text-align: center
+		width: 205px
+		margin: 20px auto 0
+		line-height: 13px
+		opacity: .6
+		a
+			color: #442920
+			text-decoration: underline
+#map
+	width: 500px
+	@media screen and (max-width: 575px)
+		width: 100%
+#privacy
+	padding: 60px 45px
+	@media screen and (max-width: 767px)
+		padding: 40px 30px
+	.text
+		max-width: 600px
+
+
+.b_first
+	background: #674337 url(../img/bg_top.jpg) 50% 0 no-repeat
 
 header
 	padding: 30px 0
 	.logo
 		display: inline-block
+		@media screen and (max-width: 991px)
+			width: 350px
+		@media screen and (max-width: 575px)
+			width: 230px
+		img
+			width: 100%
 		.l_dark
 			display: none
 	.r_block
 		margin-top: 10px
 		float: right
+		@media screen and (max-width: 991px)
+			margin-top: 0
 		.phone
 			position: relative
 			text-align: right
 			display: inline-block
+			@media screen and (max-width: 767px)
+				display: none
 			img
 				position: absolute
 				left: -37px
 				top: 13px
 		.num
-			font-family: $font-pod
-			font-size: 24px
-			font-weight: 700
-			color: #fff
+			a
+				font-family: $font-pod
+				font-size: 24px
+				font-weight: 700
+				color: #fff
+				text-decoration: none
 		.call
 			font-size: 18px
 			font-weight: 300
 			color: #ffcd91
 			border-bottom: 1px dashed #ffcd91
 			text-decoration: none
+			outline: none
 		.canvas_menu
 			background-color: transparent
 			border: none
@@ -93,6 +222,9 @@ header
 			padding: 3px
 			cursor: pointer
 			vertical-align: super
+			@media screen and (max-width: 767px)
+				margin-left: 0
+				margin-top: 10px
 			span
 				display: block
 				width: 45px
@@ -106,9 +238,20 @@ header
 				&:last-child
 					width: 31px
 					margin-left: 14px
+				@media screen and (max-width: 575px)
+					width: 35px
+					& + span
+						margin-top: 10px
+					&:first-child
+						width: 28px
+						margin-left: 7px
+					&:last-child
+						width: 21px
 
 .s_main
 	padding: 150px 0 80px
+	@media screen and (max-width: 575px)
+		padding-top: 100px
 	.h_title
 		font-family: $font-pod
 		font-size: 90px
@@ -117,19 +260,297 @@ header
 		margin: 0 0 60px
 		line-height: 95px
 		max-width: 850px
+		@media screen and (max-width: 1199px)
+			font-size: 80px
+		@media screen and (max-width: 575px)
+			font-size: 50px
+			line-height: 50px
 	.h_text
 		font-size: 30px
 		font-weight: 300
 		color: #fee9d1
+	.link_btn
+		margin-top: 100px
+		&::before
+			content: url(../img/i_select.png)
+			display: inline-block
+			vertical-align: middle
+			margin-right: 10px
+
+.s_advantage
+	padding: 80px 0 120px
+	background: #664237 url(../img/bg_advantage.jpg) 50% 100% no-repeat
+	.h2_main
+		color: #ffead1
+	.item
+		padding: 40px
+		transition: all .2s
+		&:nth-child(-n + 4)
+			border-bottom: 1px dashed #7C5A4E
+		&:not(:nth-child(4n))
+			border-right: 1px dashed #7C5A4E
+		@media screen and (max-width: 1199px)
+			&:nth-child(-n + 6)
+				border-bottom: 1px dashed #7C5A4E
+			&:not(:nth-child(4n))
+				border-right: none
+			&:not(:nth-child(2n))
+				border-right: 1px dashed #7C5A4E
+		@media screen and (max-width: 767px)
+			&:nth-child(-n + 7)
+				border-bottom: 1px dashed #7C5A4E
+			&:not(:nth-child(2n))
+				border-right: none
+
+		&:hover
+			background-color: #fff
+			border-color: #fff
+			.text
+				color: #3b2821
+		.image
+			display: inline-block
+			width: 57px
+		.text
+			font-size: 16px
+			font-weight: 300
+			color: #fff
+			display: inline-block
+			width: calc(100% - 80px)
+			margin-left: 15px
+			vertical-align: middle
+
 
 .s_catalog
 	padding-top: 80px
-	background-color: #FBF1EA
+	background-color: $white
+	position: relative
+	&::before
+		content: url(../img/leaf.png)
+		display: inline-block
+		position: absolute
+		top: -40px
+		left: 65%
+	.plansru
+		max-height: 400px
 	.block_btn
 		text-align: center
 
 .s_services
 	padding-top: 80px
-	background-color: #FBF1EA
+	background-color: $white
+
+.s_objects
+	padding-top: 130px
+	position: relative
+	&::before
+		content: url(../img/wood.png)
+		display: inline-block
+		position: absolute
+		top: -40px
+		left: 50%
+	.h2_main::after
+		display: none
+
+.s_reviews
+	padding: 130px 0
+	background: #FBF0EA url(../img/bg_threes.jpg) 50% 100% no-repeat
+	.h2_main::after
+			display: none
+	.item
+		position: relative
+		padding: 0 50px
+		@media screen and (max-width: 575px)
+			padding: 0
+		&::before
+			content: url(../img/i_quotes.png)
+			position: absolute
+			top: 0
+			left: 50%
+			margin-left: -37px
+			width: 96px
+			height: 75px
+			z-index: 9
+		.name
+			font-size: 20px
+			font-weight: 700
+			color: #563225
+			margin-bottom: 30px
+			padding: 30px 0 20px
+			text-align: center
+			text-transform: uppercase
+			position: relative
+			z-index: 10
+		.text
+			font-size: 20px
+			font-weight: 300
+			color: #5d4c46
+			text-align: center
+			margin-bottom: 40px
+	.owl-nav
+		@media screen and (max-width: 575px)
+			display: none
+		button
+			position: absolute
+			top: 50%
+			margin-top: -20px
+		.owl-prev
+			left: 0
+		.owl-next
+			right: 0
+	.dots
+		list-style-type: none
+		margin: 0
+		padding: 0
+		text-align: center
+		li
+			display: inline-block
+			margin: 0 5px
+			vertical-align: middle
+			cursor: pointer
+			opacity: .5
+			&.active
+				opacity: 1
+				img
+					width: 90px
+					height: 90px
+			img
+				width: 60px
+				height: 60px
 
 
+footer
+	padding: 130px 0 90px
+	background: #fff url(../img/bg_bottom.jpg) 50% 0 no-repeat
+.s_question
+	.title
+		font-family: $font-pod
+		font-size: 90px
+		font-weight: 700
+		color: #fde0be
+		line-height: 90px
+		margin-bottom: 50px
+		@media screen and (max-width: 1199px)
+			font-size: 70px
+			line-height: 70px
+		@media screen and (max-width: 767px)
+			font-size: 70px
+			line-height: 70px
+		@media screen and (max-width: 575px)
+			font-size: 60px
+			line-height: 60px
+	.desc
+		font-size: 24px
+		font-weight: 300
+		color: #ffcd96
+		max-width: 600px
+		@media screen and (max-width: 767px)
+			font-size: 22px
+	.form
+		margin-top: 20px
+		@media screen and (max-width: 991px)
+			margin-top: 50px
+	.input
+		margin-bottom: 30px
+	.link_btn
+		margin-top: 10px
+		padding: 0 60px
+		height: 60px
+		line-height: 60px
+.copyright
+	padding-top: 120px
+	overflow-x: hidden
+	.h_title
+		font-family: $font-pod
+		font-size: 60px
+		font-weight: 700
+		color: $white
+		line-height: 60px
+		margin-bottom: 80px
+		display: inline-block
+		position: relative
+		z-index: 10
+		@media screen and (max-width: 767px)
+			font-size: 45px
+			margin-bottom: 50px
+		&::before
+			content: ''
+			width: 200%
+			height: 2px
+			background-color: #9A6B42
+			position: absolute
+			top: 30px
+			left: -207%
+			z-index: 9
+		&::after
+			content: ''
+			width: 500%
+			height: 2px
+			background-color: #9A6B42
+			position: absolute
+			top: 30px
+			right: -507%
+			z-index: 9
+	.title
+		font-family: $font-pod
+		font-size: 24px
+		font-weight: 700
+		color: $white
+		margin-bottom: 10px
+	.phone
+		margin-bottom: 10px
+		a
+			font-size: 33px
+			font-weight: 300
+			color: #fff3ea
+			text-decoration: none
+	.email
+		font-size: 18px
+		font-weight: 300
+		color: #fff3ea
+		text-decoration: underline
+		margin-bottom: 30px
+	.call, .map, .privacy
+		font-size: 18px
+		font-weight: 300
+		color: #ffc281
+		text-decoration: none
+		outline: none
+		margin-bottom: 40px
+		display: inline-block
+		img
+			margin-right: 10px
+	.address
+		font-size: 18px
+		font-weight: 300
+		color: #fff3ea
+		margin-top: 18px
+		margin-bottom: 16px
+		line-height: 18px
+	.time
+		font-size: 18px
+		font-weight: 300
+		color: #fff3ea
+		margin-bottom: 30px
+	.copy
+		font-size: 24px
+		font-weight: 300
+		color: $white
+		margin-bottom: 25px
+		@media screen and (min-width: 992px)
+			text-align: right
+	.home
+		margin-bottom: 30px
+		@media screen and (min-width: 992px)
+			text-align: right
+		span
+			font-size: 20px
+			font-weight: 300
+			color: $white
+			text-align: left
+			display: inline-block
+			vertical-align: bottom
+			margin-right: 10px
+			line-height: 24px
+	.privacy
+		@media screen and (min-width: 992px)
+			float: right

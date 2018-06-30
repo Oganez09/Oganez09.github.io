@@ -12,49 +12,97 @@
 
 	<link rel="stylesheet" href="css/bootstrap-reboot.min.css">
 	<link rel="stylesheet" href="css/bootstrap-grid.min.css">
+	<link rel="stylesheet" href="css/fancybox.min.css">
+	<link rel="stylesheet" href="css/owl.carousel.css">
+	<link rel="stylesheet" href="css/owl.theme.default.css">
 	<link rel="stylesheet" href="css/custom.css">
 
 </head>
 <body>
 
-	<header>
-		<div class="container">
-			<div class="logo">
-				<a href="#">
-					<img src="img/logo.png" alt="" class="l_white">
-					<img src="img/logo_dark.png" alt="" class="l_dark">
-				</a>
-			</div>
-			<div class="r_block">
-				<div class="phone">
-					<img src="img/phone.png" alt="">
-					<div class="num">8 800 123-45-67</div>
-					<a href="tel:8 800 123-45-67" class="call">Обратный звонок</a>
+	<div class="b_first">
+		<header>
+			<div class="container">
+				<div class="logo">
+					<a href="#">
+						<img src="img/logo.png" alt="" class="l_white">
+						<img src="img/logo_dark.png" alt="" class="l_dark">
+					</a>
 				</div>
-				<button class="canvas_menu">
-					<span></span>
-					<span></span>
-					<span></span>
-				</button>
+				<div class="r_block">
+					<div class="phone">
+						<img src="img/i_phone.png" alt="">
+						<div class="num"><a href="tel:88001234567">8 800 123-45-67</a></div>
+						<a class="call" data-fancybox data-src="#call" href="javascript:;">Обратный звонок</a>
+					</div>
+					<button class="canvas_menu">
+						<span></span>
+						<span></span>
+						<span></span>
+					</button>
+				</div>
 			</div>
-		</div>
-	</header>
-
-	<section class="s_main">
-		<div class="container">
-			<h1 class="h_title">Построй свой дом в 2 раза дешевле квартиры</h1>
-			<h5 class="h_text">Почувствуй разницу в качестве жизни!</h5>
-			<a href="#" class="link_btn">Выбрать проект</a>
-
-		</div>
-	</section>
+		</header>
+		
+		<section class="s_main">
+			<div class="container">
+				<h1 class="h_title">Построй свой дом в 2 раза дешевле квартиры</h1>
+				<h5 class="h_text">Почувствуй разницу в качестве жизни!</h5>
+				<a href="#" class="link_btn">Выбрать проект</a>
+		
+			</div>
+		</section>
+		
+		<section class="s_advantage">
+			<div class="container">
+				<h2 class="h2_main">Преимущества</h2>
+				<div class="row no-gutters">
+					<div class="col-md-6 col-xl-3 item">
+						<img src="img/i_advantage1.png" alt="" class="image">
+						<div class="text">Быстрый расчет сметы</div>
+					</div>
+					<div class="col-md-6 col-xl-3 item">
+						<img src="img/i_advantage2.png" alt="" class="image">
+						<div class="text">Демонстрация построенных объектов</div>
+					</div>
+					<div class="col-md-6 col-xl-3 item">
+						<img src="img/i_advantage3.png" alt="" class="image">
+						<div class="text">Бригады с многолетним опытом</div>
+					</div>
+					<div class="col-md-6 col-xl-3 item">
+						<img src="img/i_advantage4.png" alt="" class="image">
+						<div class="text">Полный комплекс работ</div>
+					</div>
+					<div class="col-md-6 col-xl-3 item">
+						<img src="img/i_advantage5.png" alt="" class="image">
+						<div class="text">Бесплатный выезд и консультация</div>
+					</div>
+					<div class="col-md-6 col-xl-3 item">
+						<img src="img/i_advantage6.png" alt="" class="image">
+						<div class="text">Доступность и быстрота возведения</div>
+					</div>
+					<div class="col-md-6 col-xl-3 item">
+						<img src="img/i_advantage7.png" alt="" class="image">
+						<div class="text">Бесплатный аудит сметы конкурентов</div>
+					</div>
+					<div class="col-md-6 col-xl-3 item">
+						<img src="img/i_advantage8.png" alt="" class="image">
+						<div class="text">Фиксированная цена по договору</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
 
 	<section class="s_catalog">
 		<div class="container">
 			<div class="row">
 				<div class="col">
 					<h2 class="h2_main">Каталог проектов</h2>
-					<a href="#" class="link_btn">Показать ещё</a>
+					<div class="plansru"></div>
+					<div class="block_btn">
+						<a href="#" class="link_btn">Показать ещё</a>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -66,6 +114,115 @@
 		</div>
 	</section>
 
+	<section class="s_objects">
+		<div class="container">
+			<h2 class="h2_main">Фото построенных объектов</h2>
+		</div>
+	</section>
+
+	<section class="s_reviews">
+		<div class="container">
+			<h2 class="h2_main">Отзывы наших клиентов</h2>
+			<div class="row">
+				<div class="col-lg-10 offset-lg-1">
+					<div class="owl-carousel">
+						<div class="item">
+							<div class="name">Медведев Сергей</div>
+							<div class="text">Мы строили дом из профилированного бруса в июне 2018. До подписания договора мы вели переговоры в течение 2-х месяцев, сотрудники компании произвели позитивное впечатление своим профессионализмом и открытостью. На протяжении всего времени монтажа дома мы на участок приезжали 3 раза, и каждый раз все было в порядке. Работы велись без остановок и с опережением графика. По окончании всех работ мы рассчитались согласно договора и никаких доплат с нас не попросили. Мы остались очень довольны. Спасибо!</div>
+						</div>
+						<div class="item">
+							<div class="name">Медведев Сергей</div>
+							<div class="text">Мы строили дом из профилированного бруса в июне 2018. Спасибо!</div>
+						</div>
+						<div class="item">
+							<div class="name">Медведев Сергей</div>
+							<div class="text">Мы строили дом из профилированного бруса в июне 2018. Спасибо!</div>
+						</div>
+						<div class="item">
+							<div class="name">Медведев Сергей</div>
+							<div class="text">Мы строили дом из профилированного бруса в июне 2018. Спасибо!</div>
+						</div>
+						<div class="item">
+							<div class="name">Медведев Сергей</div>
+							<div class="text">Мы строили дом из профилированного бруса в июне 2018. Спасибо!</div>
+						</div>
+					</div>
+					<ul class="dots">
+						<li class="active"><img src="img/owl_item1.png" alt=""></li>
+						<li><img src="img/owl_item1.png" alt=""></li>
+						<li><img src="img/owl_item1.png" alt=""></li>
+						<li><img src="img/owl_item1.png" alt=""></li>
+						<li><img src="img/owl_item1.png" alt=""></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<footer>
+		<section class="s_question">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-8">
+						<div class="title">У вас остались вопросы?</div>
+						<div class="desc">Наш специалист свяжется с вами в ближайшее время и ответит на ваши вопросы</div>
+					</div>
+					<div class="col-lg-4">
+						<div class="form">
+							<input type="text" class="input" placeholder="Ваше имя">
+							<input type="text" class="input" placeholder="Ваш номер телефона">
+							<button type="button" class="link_btn">Задать вопрос</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="copyright">
+			<div class="container">
+				<div class="h_title">Контакты</div>
+				<div class="row">
+					<div class="col-lg-4">
+						<div class="title">Связаться с нами</div>
+						<div class="phone"><a href="tel:88001234567">8 800 123-45-67</a></div>
+						<div class="email">info@hochudom.ru</div>
+						<a class="call" data-fancybox data-src="#call" href="javascript:;"><img src="img/i_phone2.png" alt="">Заказать звонок</a>
+					</div>
+					<div class="col-lg-4">
+						<div class="title">Адрес производства</div>
+						<div class="address">174510 г. Пестово, Новгородская область, пер. Горьковчан</div>
+						<div class="time">Пн-Сб: с 09:00 до 18:00</div>
+						<a class="map" data-fancybox data-src="#map" href="javascript:;"><img src="img/i_map.png" alt="">Посмотреть на карте</a>
+					</div>
+					<div class="col-lg-4">
+						<div class="copy">© 2018 «Хочу Дом»</div>
+						<div class="home">
+							<span>Сайт <br>построили</span><img src="img/beavers.png" alt="">
+						</div>
+						<a class="privacy" data-fancybox data-src="#privacy" href="javascript:;">Политика конфиденциальности</a>
+					</div>
+				</div>
+			</div>
+		</section>
+	</footer>
+
+	<div id="call" class="fancy_modal">
+		<div class="title">Получить <br>консультацию</div>
+		<div class="form">
+			<input type="text" class="input" placeholder="Ваше имя">
+			<input type="text" class="input" placeholder="Ваш номер телефона">
+			<button type="button" class="link_btn">Отправить</button>
+			<div class="privacy">Отправляя форму, вы соглашаетесь c <a data-fancybox data-src="#privacy" href="javascript:;">политикой конфиденциальности</a></div>
+		</div>
+	</div>
+	<div id="map" class="fancy_modal"><script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A953f00c76964bf47009de06282dab3a4e17b04758fd551559ddae4f5cc29dc38&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;scroll=true"></script></div>
+	<div id="privacy" class="fancy_modal">
+		<div class="title">Политика конфиденциальности</div>
+		<div class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos, sequi ab aut earum odit voluptates culpa quod necessitatibus ipsum! Laborum culpa soluta, a qui esse quisquam! Quia vero, dolorum ad.</div>
+	</div>
+
+	<script src="js/jquery.min.js"></script>
+	<script src="js/fancybox.min.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
 	<script src="js/custom.js"></script>
 	
 </body>
