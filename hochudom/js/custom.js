@@ -24,7 +24,30 @@ $(document).ready(function(){
 		$(".owl-carousel").trigger("to.owl.carousel", [index, 500, true]);
 	});
 
+	$(document).on("click", "[data-toggle = us-tab]", function(e) {
+		e.preventDefault();
+		
+		var target = $(this).attr("href");
+		
+		$("[data-toggle = us-tab]").parent().removeClass("active");
+		$(this).parent().addClass("active");
 
+		$(".us_tab_pane").removeClass("active");
+		$(target).addClass("active");
+	})
 
+	$("a.page_scroll").mPageScroll2id();
+
+	$(document).on("click", "#btn_menu", function() {
+		// alert("op")
+		$("#canvas_menu").toggleClass("open");
+	})
+	.on("click", "#canvas_menu, #btn_menu", function(e) {
+		e.stopPropagation();
+	})
+	.on("click", "body, #btn_close_menu", function() {
+		// alert("cl")
+		$("#canvas_menu").removeClass("open");
+	});
 
 });

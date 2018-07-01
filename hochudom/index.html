@@ -35,25 +35,108 @@
 						<div class="num"><a href="tel:88001234567">8 800 123-45-67</a></div>
 						<a class="call" data-fancybox data-src="#call" href="javascript:;">Обратный звонок</a>
 					</div>
-					<button class="canvas_menu">
+					<button class="canvas_menu" id="btn_menu">
 						<span></span>
 						<span></span>
 						<span></span>
 					</button>
 				</div>
 			</div>
+			<nav class="main_menu" id="canvas_menu">
+				<button class="btn_close_menu" id="btn_close_menu">
+					<span></span><span></span>
+				</button>
+				<ul>
+					<li><a href="#home" class="page_scroll">Главная</a></li>
+					<li><a href="#advantage" class="page_scroll">Преимущуства</a></li>
+					<li><a href="#catalog" class="page_scroll">Каталог проектов</a></li>
+					<li><a href="#" class="page_scroll">Комплектации и допуслуги</a></li>
+					<li><a href="#" class="page_scroll">Фото построенных объектов</a></li>
+					<li><a href="#" class="page_scroll">Отзывы</a></li>
+					<li><a href="#" class="page_scroll">Контакты</a></li>
+				</ul>
+			</nav>
 		</header>
 		
 		<section class="s_main">
 			<div class="container">
-				<h1 class="h_title">Построй свой дом в 2 раза дешевле квартиры</h1>
-				<h5 class="h_text">Почувствуй разницу в качестве жизни!</h5>
-				<a href="#" class="link_btn">Выбрать проект</a>
-		
+				<div class="row">
+					<div class="col">
+						<h1 class="h_title">Построй свой дом в 2 раза дешевле квартиры</h1>
+						<h5 class="h_text">Почувствуй разницу в качестве жизни!</h5>
+						<a href="#catalog" class="link_btn page_scroll">Выбрать проект</a>
+						<div class="r_block">Всего <br>за 6 месяцев <br>под ключ!</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="s_blocks">
+			<div class="container">
+				<div class="row justify-content-center">
+					<div class="col-xl-6 order-xl-2">
+						<div class="row">
+							<div class="col-md-6">
+								<div class="i_wood i_wood1">
+									<img src="img/woodleaf1.png" alt="">
+									<div class="i_title">Клееный <br> брус</div>
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="i_wood i_wood2">
+									<img src="img/woodleaf2.png" alt="">
+									<div class="i_title">Профилированный <br>брус массив</div>
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="i_wood i_wood3">
+									<img src="img/woodleaf3.png" alt="">
+									<div class="i_title">Оцилиндрованное <br>бревно</div>
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="i_wood i_wood4">
+									<img src="img/woodleaf4.png" alt="">
+									<div class="i_title">Каркас</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-xl-6 order-xl-1">
+						<div class="i_item">
+							<img src="img/one.png" alt="" class="num">
+							<img src="img/b_home.jpg" alt="" class="img_home">
+							<div class="o_title">Строительство <br>домов и бань</div>
+						</div>
+					</div>
+				</div>
+				<div class="row justify-content-center">
+					<div class="col-md-6 col-lg-4">
+						<div class="item">
+							<img src="img/two.png" alt="" class="num">
+							<img src="img/b_two.jpg" alt="">
+							<div class="title">Фундаменты всех видов</div>
+						</div>
+					</div>
+					<div class="col-md-6 col-lg-4">
+						<div class="item">
+							<img src="img/three.png" alt="" class="num">
+							<img src="img/b_three.jpg" alt="">
+							<div class="title">Отделка</div>
+						</div>
+					</div>
+					<div class="col-md-6 col-lg-4">
+						<div class="item">
+							<img src="img/four.png" alt="" class="num">
+							<img src="img/b_four.jpg" alt="">
+							<div class="title">Инженерные сети</div>
+						</div>
+					</div>
+				</div>
 			</div>
 		</section>
 		
-		<section class="s_advantage">
+		<section class="s_advantage" id="advantage">
 			<div class="container">
 				<h2 class="h2_main">Преимущества</h2>
 				<div class="row no-gutters">
@@ -94,7 +177,7 @@
 		</section>
 	</div>
 
-	<section class="s_catalog">
+	<section class="s_catalog" id="catalog">
 		<div class="container">
 			<div class="row">
 				<div class="col">
@@ -111,6 +194,70 @@
 	<section class="s_services">
 		<div class="container">
 			<h2 class="h2_main">Комплектации и допуслуги</h2>
+			<div class="row">
+				<div class="col">
+					<ul class="us_tab_nav">
+						<li class="active"><a href="#tab-1" data-toggle="us-tab">Комплектация</a></li>
+						<li><a href="#tab-2" data-toggle="us-tab">Дополнительные услуги</a></li>
+					</ul>
+					<div class="us_tab_content">
+						<div class="us_tab_pane active" id="tab-1">
+							<div class="t_title">Комплектация силовой части </div>
+							<dl>
+								<dt>Подкладочный венец</dt>
+								<dd>100×200</dd>
+							</dl>
+							<dl>
+								<dt>Наружние и внутренние стены</dt>
+								<dd>одинакового сечения</dd>
+							</dl>
+							<dl>
+								<dt>Балки перекрытия</dt>
+								<dd>100х200, 50х200</dd>
+							</dl>
+							<dl>
+								<dt>Черновой пол</dt>
+								<dd>25х100 (150)</dd>
+							</dl>
+							<dl>
+								<dt>Стропильная система</dt>
+								<dd>50х200</dd>
+							</dl>
+							<dl>
+								<dt>Обрешетка</dt>
+								<dd>25х100</dd>
+							</dl>
+							<dl>
+								<dt>Контрбрусок</dt>
+								<dd>50х50</dd>
+							</dl>
+							<dl>
+								<dt>Кровля</dt>
+								<dd>на выбор заказчика (работы по монтажу включены)</dd>
+							</dl>
+							<dl>
+								<dt>Фундамент</dt>
+								<dd>на выбор заказчика (любая конструкция)</dd>
+							</dl>
+						</div>
+						<div class="us_tab_pane" id="tab-2">
+							<div class="t_title">Дополнительные услуги</div>
+							<dl>
+								<dt>Подкладочный венец</dt>
+								<dd>100×200</dd>
+							</dl>
+							<dl>
+								<dt>Наружние и внутренние стены</dt>
+								<dd>одинакового сечения</dd>
+							</dl>
+							<dl>
+								<dt>Балки перекрытия</dt>
+								<dd>100х200, 50х200</dd>
+							</dl>
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
 	</section>
 
@@ -221,6 +368,7 @@
 	</div>
 
 	<script src="js/jquery.min.js"></script>
+	<script src="js/pageScroll2id.min.js"></script>
 	<script src="js/fancybox.min.js"></script>
 	<script src="js/owl.carousel.min.js"></script>
 	<script src="js/custom.js"></script>
