@@ -50,4 +50,8 @@ $(document).ready(function(){
 		$("#canvas_menu").removeClass("open");
 	});
 
+	$(document).on("click", "#show_all", function(e) {
+		e.preventDefault();
+		$(this).parent().prev().addClass("show");
+	})
 });

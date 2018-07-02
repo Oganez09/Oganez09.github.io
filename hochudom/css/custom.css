@@ -67,6 +67,14 @@ a:hover, a:focus, button:hover, button:focus {
     text-decoration: none;
     outline: none; }
 
+.btn_grad {
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+  background-size: 200% auto; }
+  .btn_grad:hover {
+    background-position: right center; }
+
 .input {
   font-size: 20px;
   font-weight: 300;
@@ -568,7 +576,51 @@ header {
     top: -40px;
     left: 65%; }
   .s_catalog .plansru {
-    max-height: 400px; }
+    width: 952px;
+    height: 626px;
+    margin: 0 auto 50px;
+    overflow: hidden;
+    position: relative; }
+    @media screen and (max-width: 1199px) {
+      .s_catalog .plansru {
+        width: 712px; } }
+    @media screen and (max-width: 767px) {
+      .s_catalog .plansru {
+        width: 472px; } }
+    @media screen and (max-width: 575px) {
+      .s_catalog .plansru {
+        width: 232px;
+        height: 1259px; } }
+    .s_catalog .plansru.show {
+      height: 1577px; }
+      @media screen and (max-width: 1199px) {
+        .s_catalog .plansru.show {
+          height: 2211px; } }
+      @media screen and (max-width: 767px) {
+        .s_catalog .plansru.show {
+          height: 3162px; } }
+      @media screen and (max-width: 575px) {
+        .s_catalog .plansru.show {
+          height: 6332px; } }
+      .s_catalog .plansru.show #plansruIframe {
+        height: 10000px; }
+    .s_catalog .plansru #plansruIframe {
+      position: absolute;
+      top: -240px;
+      left: -313px;
+      width: 1300px;
+      height: 1450px; }
+      @media screen and (max-width: 1199px) {
+        .s_catalog .plansru #plansruIframe {
+          width: 1040px; } }
+      @media screen and (max-width: 767px) {
+        .s_catalog .plansru #plansruIframe {
+          width: 900px; } }
+      @media screen and (max-width: 575px) {
+        .s_catalog .plansru #plansruIframe {
+          width: 590px;
+          height: 2050px;
+          top: -288px; } }
   .s_catalog .block_btn {
     text-align: center; }
 

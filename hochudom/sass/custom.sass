@@ -65,7 +65,11 @@ a, button
 		color: #3b2821
 		text-decoration: none
 		outline: none
-
+.btn_grad
+	transition: 0.5s
+	background-size: 200% auto
+	&:hover
+		background-position: right center
 .input
 	font-size: 20px
 	font-weight: 300
@@ -516,7 +520,42 @@ header
 		top: -40px
 		left: 65%
 	.plansru
-		max-height: 400px
+		width: 952px
+		height: 626px
+		margin: 0 auto 50px
+		overflow: hidden
+		position: relative
+		@media screen and (max-width: 1199px)
+			width: 712px
+		@media screen and (max-width: 767px)
+			width: 472px
+		@media screen and (max-width: 575px)
+			width: 232px
+			height: 1259px
+		&.show
+			height: 1577px
+			@media screen and (max-width: 1199px)
+				height: 2211px
+			@media screen and (max-width: 767px)
+				height: 3162px
+			@media screen and (max-width: 575px)
+				height: 6332px
+			#plansruIframe
+				height: 10000px
+		#plansruIframe
+			position: absolute
+			top: -240px
+			left: -313px
+			width: 1300px
+			height: 1450px
+			@media screen and (max-width: 1199px)
+				width: 1040px
+			@media screen and (max-width: 767px)
+				width: 900px
+			@media screen and (max-width: 575px)
+				width: 590px
+				height: 2050px
+				top: -288px
 	.block_btn
 		text-align: center
 
