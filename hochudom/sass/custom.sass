@@ -213,6 +213,9 @@ header
 				font-weight: 700
 				color: #fff
 				text-decoration: none
+				transition: all .3s
+				&:hover
+					color: rgba(#fff,.7)
 		.call
 			font-size: 18px
 			font-weight: 300
@@ -220,6 +223,9 @@ header
 			border-bottom: 1px dashed #ffcd91
 			text-decoration: none
 			outline: none
+			transition: all .3s
+			&:hover
+				border-bottom: none
 		.canvas_menu
 			background-color: transparent
 			border: none
@@ -233,11 +239,15 @@ header
 			@media screen and (max-width: 767px)
 				margin-left: 0
 				margin-top: 10px
+			&:hover
+				span
+					background-color: rgba(#fff,.7)
 			span
 				display: block
 				width: 45px
 				height: 3px
 				background-color: #fff
+				transition: all .3s
 				& + span
 					margin-top: 14px
 				&:first-child
@@ -370,6 +380,9 @@ header
 		text-align: center
 		background: url(../img/b_wood1.jpg) 0 0 no-repeat
 		background-size: cover
+		&:hover
+			img
+				transform: translateY(-10px)
 		@media screen and (max-width: 575px)
 			width: 290px
 			margin-left: auto
@@ -377,6 +390,7 @@ header
 		img
 			display: inline-block
 			margin-bottom: 15px
+			transition: all .3s
 		.i_title
 			font-family: $font-pod
 			font-size: 20px
@@ -839,12 +853,19 @@ footer
 			font-weight: 300
 			color: #fff3ea
 			text-decoration: none
+			transition: all .3s
+			&:hover
+				color: rgba(#fff,.7)
 	.email
-		font-size: 18px
-		font-weight: 300
-		color: #fff3ea
-		text-decoration: underline
 		margin-bottom: 30px
+		a
+			font-size: 18px
+			font-weight: 300
+			color: #fff3ea
+			text-decoration: underline
+			transition: all .3s
+			&:hover
+				color: rgba(#fff,.7)
 	.call, .map, .privacy
 		font-size: 18px
 		font-weight: 300
@@ -853,6 +874,9 @@ footer
 		outline: none
 		margin-bottom: 40px
 		display: inline-block
+		transition: all .3s
+		&:hover
+			opacity: .8
 		img
 			margin-right: 10px
 	.address
@@ -878,6 +902,11 @@ footer
 		margin-bottom: 30px
 		@media screen and (min-width: 992px)
 			text-align: right
+		a
+			text-decoration: none
+			transition: all .3s
+			&:hover
+				opacity: .7
 		span
 			font-size: 20px
 			font-weight: 300

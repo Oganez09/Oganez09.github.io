@@ -229,14 +229,24 @@ header {
       font-size: 24px;
       font-weight: 700;
       color: #fff;
-      text-decoration: none; }
+      text-decoration: none;
+      -webkit-transition: all .3s;
+      -o-transition: all .3s;
+      transition: all .3s; }
+      header .r_block .num a:hover {
+        color: rgba(255, 255, 255, 0.7); }
     header .r_block .call {
       font-size: 18px;
       font-weight: 300;
       color: #ffcd91;
       border-bottom: 1px dashed #ffcd91;
       text-decoration: none;
-      outline: none; }
+      outline: none;
+      -webkit-transition: all .3s;
+      -o-transition: all .3s;
+      transition: all .3s; }
+      header .r_block .call:hover {
+        border-bottom: none; }
     header .r_block .canvas_menu {
       background-color: transparent;
       border: none;
@@ -251,11 +261,16 @@ header {
         header .r_block .canvas_menu {
           margin-left: 0;
           margin-top: 10px; } }
+      header .r_block .canvas_menu:hover span {
+        background-color: rgba(255, 255, 255, 0.7); }
       header .r_block .canvas_menu span {
         display: block;
         width: 45px;
         height: 3px;
-        background-color: #fff; }
+        background-color: #fff;
+        -webkit-transition: all .3s;
+        -o-transition: all .3s;
+        transition: all .3s; }
         header .r_block .canvas_menu span + span {
           margin-top: 14px; }
         header .r_block .canvas_menu span:first-child {
@@ -405,6 +420,10 @@ header {
   text-align: center;
   background: url(../img/b_wood1.jpg) 0 0 no-repeat;
   background-size: cover; }
+  .s_blocks .i_wood:hover img {
+    -webkit-transform: translateY(-10px);
+    -ms-transform: translateY(-10px);
+    transform: translateY(-10px); }
   @media screen and (max-width: 575px) {
     .s_blocks .i_wood {
       width: 290px;
@@ -412,7 +431,10 @@ header {
       margin-right: auto; } }
   .s_blocks .i_wood img {
     display: inline-block;
-    margin-bottom: 15px; }
+    margin-bottom: 15px;
+    -webkit-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s; }
   .s_blocks .i_wood .i_title {
     font-family: "Podkova", serif;
     font-size: 20px;
@@ -922,13 +944,24 @@ footer {
       font-size: 33px;
       font-weight: 300;
       color: #fff3ea;
-      text-decoration: none; }
+      text-decoration: none;
+      -webkit-transition: all .3s;
+      -o-transition: all .3s;
+      transition: all .3s; }
+      .copyright .phone a:hover {
+        color: rgba(255, 255, 255, 0.7); }
   .copyright .email {
-    font-size: 18px;
-    font-weight: 300;
-    color: #fff3ea;
-    text-decoration: underline;
     margin-bottom: 30px; }
+    .copyright .email a {
+      font-size: 18px;
+      font-weight: 300;
+      color: #fff3ea;
+      text-decoration: underline;
+      -webkit-transition: all .3s;
+      -o-transition: all .3s;
+      transition: all .3s; }
+      .copyright .email a:hover {
+        color: rgba(255, 255, 255, 0.7); }
   .copyright .call, .copyright .map, .copyright .privacy {
     font-size: 18px;
     font-weight: 300;
@@ -936,7 +969,12 @@ footer {
     text-decoration: none;
     outline: none;
     margin-bottom: 40px;
-    display: inline-block; }
+    display: inline-block;
+    -webkit-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s; }
+    .copyright .call:hover, .copyright .map:hover, .copyright .privacy:hover {
+      opacity: .8; }
     .copyright .call img, .copyright .map img, .copyright .privacy img {
       margin-right: 10px; }
   .copyright .address {
@@ -964,6 +1002,13 @@ footer {
     @media screen and (min-width: 992px) {
       .copyright .home {
         text-align: right; } }
+    .copyright .home a {
+      text-decoration: none;
+      -webkit-transition: all .3s;
+      -o-transition: all .3s;
+      transition: all .3s; }
+      .copyright .home a:hover {
+        opacity: .7; }
     .copyright .home span {
       font-size: 20px;
       font-weight: 300;
