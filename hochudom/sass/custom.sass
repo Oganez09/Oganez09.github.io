@@ -448,6 +448,9 @@ header
 	.item
 		position: relative
 		margin-bottom: 30px
+		&:hover
+			.num
+				top: -20px
 		@media screen and (max-width: 767px)
 			width: 290px
 			margin-left: auto
@@ -478,6 +481,7 @@ header
 			bottom: -10px
 			width: auto
 			height: 195px
+			transition: all .3s
 			@media screen and (max-width: 1199px)
 				height: 165px
 			@media screen and (max-width: 991px)

@@ -504,6 +504,8 @@ header {
 .s_blocks .item {
   position: relative;
   margin-bottom: 30px; }
+  .s_blocks .item:hover .num {
+    top: -20px; }
   @media screen and (max-width: 767px) {
     .s_blocks .item {
       width: 290px;
@@ -537,7 +539,10 @@ header {
     left: -10px;
     bottom: -10px;
     width: auto;
-    height: 195px; }
+    height: 195px;
+    -webkit-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s; }
     @media screen and (max-width: 1199px) {
       .s_blocks .item .num {
         height: 165px; } }
