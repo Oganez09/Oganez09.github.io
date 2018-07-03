@@ -246,7 +246,7 @@ header {
       -o-transition: all .3s;
       transition: all .3s; }
       header .r_block .call:hover {
-        border-bottom: none; }
+        opacity: .8; }
     header .r_block .canvas_menu {
       background-color: transparent;
       border: none;
