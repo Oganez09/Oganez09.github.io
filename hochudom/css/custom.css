@@ -179,9 +179,7 @@ a:hover, a:focus, button:hover, button:focus {
       width: 100%; } }
 
 #privacy {
-  padding: 60px 45px 30px;
-  overflow-y: auto;
-  height: calc(100% - 30px); }
+  padding: 60px 45px 30px; }
   @media screen and (max-width: 767px) {
     #privacy {
       padding: 40px 30px; } }
