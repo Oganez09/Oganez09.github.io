@@ -176,6 +176,22 @@ a, button
 		margin-bottom: 10px
 
 
+.us_tab_nav
+	list-style-type: none
+	margin: 0 0 50px
+	padding: 0
+	text-align: center
+	li
+		display: inline-block
+		position: relative
+.us_tab_content
+	.us_tab_pane
+		opacity: 0
+		display: none
+		&.active
+			opacity: 1
+			display: block
+
 .b_first
 	background: #674337 url(../img/bg_top.jpg) 50% 0 no-repeat
 
@@ -586,14 +602,8 @@ header
 	background: $white url(../img/bg_bark.jpg) 50% 0 no-repeat
 	overflow-x: hidden
 	.us_tab_nav
-		list-style-type: none
-		margin: 0 0 50px
-		padding: 0
-		text-align: center
 		li
-			display: inline-block
 			height: 50px
-			position: relative
 			z-index: 10
 			@media screen and (max-width: 575px)
 				display: block
@@ -647,15 +657,12 @@ header
 			right: -150px
 			z-index: 9
 		.us_tab_pane
-			display: none
 			padding: 70px 80px
 			background-color: #FFFAF7
 			position: relative
 			z-index: 10
 			@media screen and (max-width: 767px)
 				padding: 30px 20px
-			&.active
-				display: block
 		.t_title
 			font-family: $font-pod
 			font-size: 36px
@@ -705,6 +712,64 @@ header
 		z-index: 11
 	.h2_main::after
 		display: none
+	.us_tab_nav
+		li
+			height: 35px
+			line-height: 35px
+			padding: 0 15px
+			border-radius: 18px;
+			transition: all 0.5s
+			background-size: 200% auto
+			&:hover
+				background-position: right center
+			&:not(:last-child)
+				margin-right: 30px
+				@media screen and (max-width: 1199px)
+					margin-right: 20px
+				@media screen and (max-width: 767px)
+					margin-right: 10px
+			a
+				font-size: 18px
+				font-weight: 300
+				color: #724537
+				border-bottom: 1px dashed #724537
+				display: inline-block
+				line-height: normal
+				text-decoration: none
+			&.active
+				background-image: linear-gradient(90deg, #ffc17f 0%, #ffdba9 100%);
+				a
+					border-bottom: none
+
+	.owl-slide-big
+		margin-bottom: 30px
+	.owl-nav
+		button
+			position: absolute
+			top: 50%
+			transform: translateY(-50%)
+			@media screen and (max-width: 1199px)
+				width: 50px
+				height: 50px
+			@media screen and (max-width: 991px)
+				width: 35px
+				height: 35px
+			img
+				width: 100%
+		.owl-prev
+			right: 68%
+			@media screen and (max-width: 649px)
+				right: 78%
+			@media screen and (max-width: 449px)
+				right: auto
+				left: 15px
+		.owl-next
+			left: 68%
+			@media screen and (max-width: 649px)
+				left: 78%
+			@media screen and (max-width: 449px)
+				right: 15px
+				left: auto
 
 .s_reviews
 	padding: 130px 0
