@@ -826,6 +826,23 @@ header {
       background-image: linear-gradient(90deg, #ffc17f 0%, #ffdba9 100%); }
       .s_objects .us_tab_nav li.active a {
         border-bottom: none; }
+  .s_objects .us_tab_pane.show {
+    position: relative; }
+    .s_objects .us_tab_pane.show::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      background-color: #FBF0EA;
+      z-index: 10; }
+    .s_objects .us_tab_pane.show::after {
+      content: url(../img/ajax-loader.gif);
+      position: absolute;
+      top: 40%;
+      left: 50%;
+      z-index: 11; }
   .s_objects .owl-slide-big {
     margin-bottom: 30px; }
   .s_objects .owl-nav button {

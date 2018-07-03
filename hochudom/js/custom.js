@@ -70,7 +70,10 @@ $(document).ready(function(){
 		$(this).parent().addClass("active");
 
 		$(target).parent().children(".us_tab_pane").removeClass("active");
-		$(target).addClass("active");
+		$(target).addClass("active show");
+		setTimeout (function() {
+			$(target).removeClass("show");
+		}, 1500);
 	})
 
 	$("a.page_scroll").mPageScroll2id();
