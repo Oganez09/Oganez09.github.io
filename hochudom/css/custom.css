@@ -101,6 +101,9 @@ a:hover, a:focus, button:hover, button:focus {
 .fancybox-slide--html {
   overflow-x: hidden; }
 
+.fancybox-infobar {
+  display: none; }
+
 .fancy_modal {
   display: none; }
 
