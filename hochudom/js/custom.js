@@ -5,6 +5,7 @@ $(document).ready(function(){
 		dots: false,
 		nav: true,
 		center: true,
+		loop: true,
 		navText: ["<img src='img/i_ar_left.png' class='owl_img'>", "<img src='img/i_ar_right.png' class='owl_img'>"],
 		responsive: {
 			0: {
@@ -23,6 +24,7 @@ $(document).ready(function(){
 		margin: 10,
 		dots: false,
 		center: true,
+		loop: true,
 		responsive: {
 			0: {
 				items: 3
