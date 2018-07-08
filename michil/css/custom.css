@@ -64,6 +64,9 @@ ul, li {
     @media screen and (min-width: 1299px) and (max-height: 770px) {
       .s_header .welcome {
         margin-bottom: 100px; } }
+    @media screen and (min-width: 1299px) and (max-height: 670px) {
+      .s_header .welcome {
+        margin-bottom: 50px; } }
     .s_header .welcome span {
       font-weight: 700; }
   .s_header .hashtag {
