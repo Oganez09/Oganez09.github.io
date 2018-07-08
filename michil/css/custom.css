@@ -14,6 +14,12 @@ h1, h2, h3, h4, h5,
 
 h1, .h1 {
   font-size: 72px; }
+  @media screen and (max-width: 999px) {
+    h1, .h1 {
+      font-size: 64px; } }
+  @media screen and (max-width: 767px) {
+    h1, .h1 {
+      font-size: 50px; } }
 
 h2, .h2 {
   font-size: 64px; }
@@ -37,6 +43,12 @@ p {
   font-size: 48px;
   font-weight: 700;
   color: #4a4a4a; }
+  @media screen and (max-width: 999px) {
+    p {
+      font-size: 40px; } }
+  @media screen and (max-width: 767px) {
+    p {
+      font-size: 30px; } }
 
 ul, li {
   list-style-type: none;
@@ -75,6 +87,9 @@ ul, li {
   @media screen and (max-width: 1299px) {
     .s_header {
       padding-top: 50px; } }
+  @media screen and (max-width: 499px) {
+    .s_header {
+      text-align: center; } }
   .s_header .welcome {
     color: #fff;
     text-transform: uppercase;
@@ -92,6 +107,9 @@ ul, li {
       font-weight: 700; }
   .s_header .hashtag {
     float: right; }
+    @media screen and (max-width: 499px) {
+      .s_header .hashtag {
+        float: none; } }
     .s_header .hashtag .h2 {
       font-weight: 700;
       color: #fff; }
@@ -109,25 +127,53 @@ ul, li {
   transform: rotate(20deg);
   -webkit-box-shadow: 0px -5px 13px 0px rgba(0, 0, 0, 0.8);
   box-shadow: 0px -5px 13px 0px rgba(0, 0, 0, 0.8); }
+  @media screen and (max-width: 1299px) {
+    .line {
+      top: 650px; } }
+  @media screen and (max-width: 767px) {
+    .line {
+      top: 500px; } }
+  @media screen and (max-width: 499px) {
+    .line {
+      top: 550px;
+      left: -80%; } }
 
 .wrapper {
   margin-top: 900px;
   position: relative;
   z-index: 10; }
+  @media screen and (max-width: 1299px) {
+    .wrapper {
+      margin-top: 800px; } }
+  @media screen and (max-width: 767px) {
+    .wrapper {
+      margin-top: 600px; } }
+  @media screen and (max-width: 499px) {
+    .wrapper {
+      margin-top: 750px; } }
 
 .s_iam {
   margin-top: -100px;
   background-color: transparent; }
+  @media screen and (max-width: 499px) {
+    .s_iam {
+      text-align: center; } }
   .s_iam .h2 {
     margin-bottom: 100px;
     padding: 0 5px 20px;
     border-bottom: 3px solid rgba(151, 151, 151, 0.4);
     display: inline-block; }
+    @media screen and (max-width: 767px) {
+      .s_iam .h2 {
+        margin-bottom: 80px; } }
 
 .s_about {
   padding-top: 130px;
   background-color: #fff;
   height: 2000px; }
+  @media screen and (max-width: 767px) {
+    .s_about {
+      padding-top: 80px; } }
   .s_about .h1 {
     font-weight: 700;
     color: #7ED321;
