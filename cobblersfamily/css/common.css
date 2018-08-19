@@ -1,0 +1,121 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+html, body {
+	margin: 0;
+}
+body {
+	font-family: 'Roboto', sans-serif;
+	font-size: 18px;
+	line-height: 1.5em;
+}
+i.fas, i.fab {
+	color: #1F5B42;
+	position: absolute;
+	top: 3px;
+	left: 0;
+	width: 18px;
+	height: 18px;
+	text-align: center;
+}
+a {
+	font-weight: 600;
+	color: #1F5B42;
+	text-decoration: none;
+}
+a:hover, a:focus {
+	color: #1F5B42;
+	text-decoration: underline;
+}
+span {
+	display: block;
+}
+.s_content_wrap {
+	background: #fff url(../img/bg1.jpg) 50% 50% no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+	height: 100%;
+	position: relative;
+	padding: 25px;
+}
+.s_content_wrap::after {
+	content: '';
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background-color: rgba(0,0,0,.35);
+	z-index: 1;
+}
+.s_content {
+	background-color: #fff;
+	padding: 10px 25px 25px;
+	width: 100%;
+	max-width: 900px;
+	position: relative;
+	z-index: 2;
+}
+.s_content_logo {
+	width: 100%;
+	max-width: 390px;
+	margin: 0 auto;
+	display: block;
+}
+.s_content_info {
+	margin: 0 -25px;
+}
+.s_content_info::after {
+	content: ' ';
+	display: table;
+	clear: both;
+}
+.s_content_info_row {
+	float: left;
+	width: 100%;
+	margin-top: 20px;
+	padding: 0 25px;
+}
+.s_content_info_title {
+	font-size: 24px;
+	font-weight: 600;
+}
+.s_content_info_list {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+.s_content_info_list_item {
+	padding-left: 25px;
+	position: relative;
+}
+.s_content_info_list_item:not(:last-child) {
+	margin-bottom: 10px;
+}
+@media screen and (min-width: 400px) {
+	span {
+		display: inline;
+		margin-left: 10px;
+	}
+}
+@media screen and (min-width: 768px) {
+	html, body {
+		height: 100%;
+	}
+	.s_content {
+		padding: 30px 50px 50px;
+		width: calc(100% - 50px);
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		-webkit-transform: translate(-50%, -50%);
+		-ms-transform: translate(-50%, -50%);
+		-o-transform: translate(-50%, -50%);
+		transform: translate(-50%, -50%);
+	}
+	.s_content_info_row {
+		width: 50%;
+	}
+}
