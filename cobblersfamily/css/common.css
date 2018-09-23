@@ -47,7 +47,7 @@ span {
 	right: 0;
 	bottom: 0;
 	left: 0;
-	background-color: rgba(0,0,0,.35);
+	background-color: rgba(0,0,0,.4);
 	z-index: 1;
 }
 .s_content {
@@ -55,6 +55,7 @@ span {
 	padding: 10px 25px 25px;
 	width: 100%;
 	max-width: 900px;
+	border-radius: 3px;
 	position: relative;
 	z-index: 2;
 }
