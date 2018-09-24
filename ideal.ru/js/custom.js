@@ -67,6 +67,15 @@ $(function() {
 		$("#offcanvas_overlay").remove();
 	});
 
+	$(document).on("click", "[data-toggle = us-tab]", function(e) {
+		e.preventDefault();
+		
+		var target = $(this).attr("href");
+		
+		$(".us_tab_pane").removeClass("active");
+		$(target).addClass("active");
+	})
+
 	$(window).on("load resize", windowSize);
 
 	function windowSize() {
