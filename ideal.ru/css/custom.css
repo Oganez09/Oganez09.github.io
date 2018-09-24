@@ -136,13 +136,19 @@ b, strong {
 }
 
 .breadcrambs li a {
+<<<<<<< HEAD
   font-size: 16px;
   font-weight: 300;
+=======
+>>>>>>> cbae22e0c1c140fd5eaab247ce787b91a0f3e0cd
   color: #000;
   line-height: 15px;
   display: inline-block;
   vertical-align: bottom;
+<<<<<<< HEAD
   text-transform: capitalize;
+=======
+>>>>>>> cbae22e0c1c140fd5eaab247ce787b91a0f3e0cd
 }
 
 .breadcrambs li:last-child {
@@ -164,6 +170,7 @@ b, strong {
   }
 }
 
+<<<<<<< HEAD
 .us_tab_nav {
   list-style-type: none;
   margin: 0;
@@ -209,6 +216,8 @@ b, strong {
   padding-right: 10px;
 }
 
+=======
+>>>>>>> cbae22e0c1c140fd5eaab247ce787b91a0f3e0cd
 .product_cat_wrap {
   display: -webkit-box;
   display: -webkit-flex;
