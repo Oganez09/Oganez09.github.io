@@ -1072,6 +1072,7 @@ b, strong {
 
 .header_category {
   background-color: #fab404;
+  border-top: 2px solid #000;
 }
 
 @media screen and (max-width: 1199px) {
@@ -1357,7 +1358,9 @@ b, strong {
 }
 
 .footer_list {
-  margin-bottom: 30px;
+  list-style-type: none;
+  margin: 0 0 30px;
+  padding: 0;
 }
 
 .footer_list li {
@@ -1372,6 +1375,12 @@ b, strong {
 
 .footer_list_icon {
   padding-left: 25px;
+}
+
+.footer .soc {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 @media screen and (min-width: 1200px) {
