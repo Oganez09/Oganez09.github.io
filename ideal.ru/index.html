@@ -8,7 +8,7 @@
 
 	<title>Главная страница</title>
 
-	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,600,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,600" rel="stylesheet">
 
 	<link rel="stylesheet" href="css/libs.min.css">
 	<link rel="stylesheet" href="css/custom.css">
@@ -40,8 +40,58 @@
 				</nav>
 			</div>
 		</div>
-		<div class="header_category"></div>
-		<div class="header_search"></div>
+		<div class="header_category">
+			<div class="container">
+				<button class="open_cat_product" id="open_cat_menu">Категории <i class="fas fa-bars"></i></button>
+				<ul class="cat_list" id="cat_menu">
+					<li class="cat_list_item">
+						<a href="#"><img src="img/i_cat_product1.png" alt="">Электротовары</a>
+						<ul class="cat_list_two">
+							<li class="cat_list_two_item">
+								<a href="#">Освещение</a>
+								<ul class="cat_list_three">
+									<li class="cat_list_three_item"><a href="#">Светильники</a></li>
+									<li class="cat_list_three_item"><a href="#">Люстры</a></li>
+									<li class="cat_list_three_item"><a href="#">Бра</a></li>
+									<li class="cat_list_three_item"><a href="#">Настольные Лампы</a></li>
+								</ul>
+							</li>
+							<li class="cat_list_two_item"><a href="#">Розетки И Вкл\Выкл</a></li>
+							<li class="cat_list_two_item"><a href="#">Кабель И Аксессуары</a></li>
+						</ul>
+					</li>
+					<li class="cat_list_item">
+						<a href="#"><img src="img/i_cat_product2.png" alt="">Отделочные товары</a>
+						<ul class="cat_list_two">
+							<li class="cat_list_two_item">
+								<a href="#">Освещение</a>
+								<ul class="cat_list_three">
+									<li class="cat_list_three_item"><a href="#">Светильники</a></li>
+									<li class="cat_list_three_item"><a href="#">Люстры</a></li>
+									<li class="cat_list_three_item"><a href="#">Бра</a></li>
+									<li class="cat_list_three_item"><a href="#">Настольные Лампы</a></li>
+								</ul>
+							</li>
+							<li class="cat_list_two_item"><a href="#">Розетки И Вкл\Выкл</a></li>
+							<li class="cat_list_two_item"><a href="#">Кабель И Аксессуары</a></li>
+						</ul>
+					</li>
+					<li class="cat_list_item"><a href="#"><img src="img/i_cat_product3.png" alt="">Лакокрасочные материалы</a></li>
+					<li class="cat_list_item"><a href="#"><img src="img/i_cat_product4.png" alt="">Шпатлевки</a></li>
+					<li class="cat_list_item"><a href="#"><img src="img/i_cat_product5.png" alt="">Окна, Двери, Аксессуары</a></li>
+					<li class="cat_list_item long_cat"><a href="#"><img src="img/i_cat_product6.png" alt="">Расходные материалы и Комплектующие</a></li>
+					<li class="cat_list_item"><a href="#"><img src="img/i_cat_product7.png" alt="">Инструменты</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="header_search">
+			<div class="container">
+				<div class="group">
+					<input type="text" placeholder="Введите название товара">
+					<button class="us_btn"><i class="fas fa-search"></i><span>Поиск</span></button>
+				</div>
+			</div>
+		</div>
 	</header>
 
 	<div class="s_main_banners">
@@ -238,16 +288,16 @@
 	<div class="s_product_best">
 		<div class="container">
 			<div class="row">
-				<div class="col-lg-3">
+				<div class="col-xl-3">
 					<div class="main_pay">
 						<div class="main_pay_text">Оплата любым удобным вам способом</div>
 						<div class="main_pay_icon"><img src="img/i_pay.png" alt=""></div>
 					</div>
 				</div>
-				<div class="col-lg-9">
+				<div class="col-xl-9">
 					<div class="main_title">Выбор клиентов</div>
 					<div class="row">
-						<div class="col-lg-6 col-xl-4">
+						<div class="col-md-6 col-lg-4">
 							<div class="product_item">
 								<div class="info_top">
 									<span class="articul">Код:123012</span>
@@ -273,7 +323,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="col-lg-6 col-xl-4">
+						<div class="col-md-6 col-lg-4">
 							<div class="product_item">
 								<div class="info_top">
 									<span class="articul">Код:123012</span>
@@ -299,7 +349,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="col-lg-6 col-xl-4">
+						<div class="col-md-6 col-lg-4">
 							<div class="product_item">
 								<div class="info_top">
 									<span class="articul">Код:123012</span>

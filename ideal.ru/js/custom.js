@@ -86,4 +86,7 @@ $(function() {
 		}
 	}
 
+	$(document).on("click", "#open_cat_menu", function(){
+		$("#cat_menu").slideToggle(300);
+	})
 });
