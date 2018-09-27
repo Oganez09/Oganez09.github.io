@@ -1,22 +1,5 @@
 $(function() {
 
-	// $('.owl-carousel').owlCarousel({
-	// 	margin:0,
-	// 	dots:false,
-	// 	nav:true,
-	// 	responsive:{
-	// 		0:{
-	// 			items:1
-	// 		},
-	// 		600:{
-	// 			items:3
-	// 		},
-	// 		1000:{
-	// 			items:4
-	// 		}
-	// 	}
-	// });
-
 	$('.slick_product').slick({
 		infinite: false,
 		slidesToShow: 4,
@@ -71,7 +54,10 @@ $(function() {
 		e.preventDefault();
 		
 		var target = $(this).attr("href");
-		
+
+		$(".us_tab_nav li").removeClass("active");
+		$(this).parent().addClass("active");
+
 		$(".us_tab_pane").removeClass("active");
 		$(target).addClass("active");
 	})
