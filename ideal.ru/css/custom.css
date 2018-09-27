@@ -1776,3 +1776,84 @@ b, strong {
 .desc_category {
   margin: 40px 0 60px;
 }
+
+.flex_product_container {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.flex_product_container .product_item_wrap {
+  -webkit-flex-basis: 33.33%;
+      -ms-flex-preferred-size: 33.33%;
+          flex-basis: 33.33%;
+  padding: 0 15px;
+}
+
+@media screen and (max-width: 1199px) {
+  .flex_product_container .product_item_wrap {
+    -webkit-flex-basis: 50%;
+        -ms-flex-preferred-size: 50%;
+            flex-basis: 50%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .flex_product_container .product_item_wrap {
+    -webkit-flex-basis: 100%;
+        -ms-flex-preferred-size: 100%;
+            flex-basis: 100%;
+  }
+}
+
+.flex_product_container .product_item_wrap .product_item {
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width: 576px) {
+  .flex_product_container.item_row .product_item_wrap {
+    -webkit-flex-basis: 100%;
+        -ms-flex-preferred-size: 100%;
+            flex-basis: 100%;
+  }
+}
+
+@media screen and (min-width: 576px) and (max-width: 1199px) {
+  .flex_product_container.item_row .product_item_wrap {
+    -webkit-flex-basis: 100%;
+        -ms-flex-preferred-size: 100%;
+            flex-basis: 100%;
+  }
+}
+
+@media screen and (min-width: 576px) {
+  .flex_product_container.item_row .product_item {
+    position: relative;
+    padding: 15px;
+  }
+  .flex_product_container.item_row .product_item .info_top {
+    position: absolute;
+    top: 10px;
+    left: 210px;
+    right: 15px;
+  }
+  .flex_product_container.item_row .product_item .img_wrap {
+    width: 180px;
+    float: left;
+  }
+  .flex_product_container.item_row .product_item .info {
+    margin-top: 30px;
+    margin-left: 195px;
+    width: -webkit-calc(100% - 195px);
+    width: calc(100% - 195px);
+  }
+  .flex_product_container.item_row .product_item .name {
+    height: 35px;
+  }
+}

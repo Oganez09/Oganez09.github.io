@@ -92,6 +92,18 @@ $(function() {
 	$(document).on("click", ".filter_title", function(){
 		$(this).next().slideToggle(300);
 	});
+	$(document).on("click", ".sort_view_row", function(e){
+		e.preventDefault();
+		$(".sort_view li").removeClass("active");
+		$(this).addClass("active");
+		$(".flex_product_container").addClass("item_row");
+	});
+	$(document).on("click", ".sort_view_col", function(e){
+		e.preventDefault();
+		$(".sort_view li").removeClass("active");
+		$(this).addClass("active");
+		$(".flex_product_container").removeClass("item_row");
+	});
 
 	
 	$('.minus').click(function () {
@@ -108,4 +120,5 @@ $(function() {
 		$input.change();
 		return false;
 	});
+
 });
