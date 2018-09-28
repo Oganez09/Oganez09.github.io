@@ -34,6 +34,52 @@ $(function() {
 			}
 		]
 	});
+	$('.slider_main').slick({
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		arrows: false,
+		fade: true,
+		asNavFor: '.slider_nav',
+		infinite: false,
+		swipe: false,		
+		responsive: [
+			{
+				breakpoint: 576,
+				settings: {
+					dots: true,
+					swipe: true
+				}
+			}
+		]
+	});
+	$('.slider_nav').slick({
+		slidesToShow: 3,
+		slidesToScroll: 1,
+		asNavFor: '.slider_main',
+		dots: false,
+		nav: true,
+		focusOnSelect: true,
+		vertical: true,
+		verticalSwiping: true,
+		centerPadding: '0',
+		infinite: false,
+		swipeToSlide: true,
+		centerMode: true,
+		prevArrow: '<button class="slick_prev"><i class="fas fa-angle-up"></i></button>',
+		nextArrow: '<button class="slick_next"><i class="fas fa-angle-down"></i></button>',
+	});
+	
+	$('[data-fancybox="gallery"]').fancybox({
+		buttons: [
+			//"zoom",
+			//"share",
+			//"slideShow",
+			//"fullScreen",
+			//"download",
+			"thumbs",
+			"close"
+		]
+	});
 
 	$(document)
 	.on("click", "#open_menu", function() {
