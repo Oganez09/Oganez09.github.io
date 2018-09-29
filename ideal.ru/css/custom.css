@@ -1141,7 +1141,7 @@ b, strong {
   display: none;
 }
 
-.s_main_subscribe .check input:checked ~ .check_input span::before {
+.s_main_subscribe .check input:checked ~ label .check_input::before {
   content: '\2714';
   font-size: 16px;
   position: absolute;
@@ -1149,13 +1149,13 @@ b, strong {
   left: 2px;
 }
 
-.s_main_subscribe .check_input {
+.s_main_subscribe .check label {
   position: absolute;
   top: 0;
   left: 0;
 }
 
-.s_main_subscribe .check_input span {
+.s_main_subscribe .check_input {
   width: 18px;
   height: 18px;
   background-color: #fff;
