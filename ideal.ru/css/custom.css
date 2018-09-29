@@ -1481,7 +1481,7 @@ b, strong {
 }
 
 .slick-dots li button::before {
-  font-size: 30px;
+  font-size: 11px;
   color: #ccc;
   opacity: 1;
 }
