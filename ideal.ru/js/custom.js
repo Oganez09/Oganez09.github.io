@@ -1,5 +1,12 @@
 $(function() {
 
+	$(window).on('load', preloader);
+
+	function preloader() {
+	  $('.preloader').delay(150).fadeOut('slow');
+	  $('body').css('overflow', 'auto');
+	}
+
 	$('.slick_product').slick({
 		infinite: false,
 		slidesToShow: 4,
