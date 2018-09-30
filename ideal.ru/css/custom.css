@@ -57,77 +57,50 @@ body {
 
 .preloader {
   position: fixed;
-  left: 0;
   top: 0;
-  bottom: 0;
-  right: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   background-color: #fff;
   z-index: 1000;
 }
 
-.preloader .circular {
-  -webkit-animation: loader-rotate 2s linear infinite;
-          animation: loader-rotate 2s linear infinite;
+.preloader .spinner {
+  width: 80px;
+  height: 80px;
+  border: 2px solid #f3f3f3;
+  border-top: 3px solid #fab404;
+  -webkit-border-radius: 100%;
+          border-radius: 100%;
   position: absolute;
-  left: -webkit-calc(50% - 24px);
-  left: calc(50% - 24px);
-  top: -webkit-calc(50% - 24px);
-  top: calc(50% - 24px);
-  display: block;
-  -webkit-transform: rotate(0deg);
-      -ms-transform: rotate(0deg);
-          transform: rotate(0deg);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  -webkit-animation: spin 1s infinite linear;
+          animation: spin 1s infinite linear;
 }
 
-.preloader .path {
-  stroke-dasharray: 1, 200;
-  stroke-dashoffset: 0;
-  -webkit-animation: loader-dash 1.5s ease-in-out infinite;
-  animation: loader-dash 1.5s ease-in-out infinite;
-  stroke-linecap: round;
-}
-
-@-webkit-keyframes loader-rotate {
-  100% {
+@-webkit-keyframes spin {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
     -webkit-transform: rotate(360deg);
-    transform: rotate(360deg);
+            transform: rotate(360deg);
   }
 }
 
-@keyframes loader-rotate {
-  100% {
+@keyframes spin {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
     -webkit-transform: rotate(360deg);
-    transform: rotate(360deg);
-  }
-}
-
-@-webkit-keyframes loader-dash {
-  0% {
-    stroke-dasharray: 1, 200;
-    stroke-dashoffset: 0;
-  }
-  50% {
-    stroke-dasharray: 89, 200;
-    stroke-dashoffset: -35px;
-  }
-  100% {
-    stroke-dasharray: 89, 200;
-    stroke-dashoffset: -136px;
-  }
-}
-
-@keyframes loader-dash {
-  0% {
-    stroke-dasharray: 1, 200;
-    stroke-dashoffset: 0;
-  }
-  50% {
-    stroke-dasharray: 89, 200;
-    stroke-dashoffset: -35px;
-  }
-  100% {
-    stroke-dasharray: 89, 200;
-    stroke-dashoffset: -136px;
+            transform: rotate(360deg);
   }
 }
 
