@@ -52,7 +52,7 @@ body {
   overflow-x: hidden;
   min-width: 320px;
   position: relative;
-  overflow: hidden;
+  visibility: hidden;
 }
 
 .preloader {

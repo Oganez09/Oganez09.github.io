@@ -1,8 +1,10 @@
 $(function() {
 
 	$(window).load(function() {
-	  $('.preloader').delay(150).fadeOut('slow');
-	  $('body').css('overflow', 'auto');
+		setTimeout(function() {
+			$('.preloader').fadeOut('slow');
+			$('body').css('visibility', 'visible');
+		}, 2000);
 	});
 
 	$('.slick_product').slick({
