@@ -1,10 +1,25 @@
 $(function() {
 
-	$(window).load(function() {
-		setTimeout(function() {
-			$('.preloader').fadeOut('slow');
-			$('body').css('overflowY', 'auto');
-		}, 2000);
+	// $(window).on('load', preloader);
+
+	function preloader() {
+	  $('.preloader').delay(150).fadeOut('slow');
+	  $('body').css('overflowY', 'auto');
+	}
+
+	$(document).on("click", "[data-toggle = us_modal]", function(e) {
+		
+		e.preventDefault();
+
+		var target = $(this).attr("href");
+		$(target).addClass("open");
+		
+	})
+	.on("click", "[data-dismiss = us_modal], .us_modal", function() {
+		$(".us_modal").removeClass("open");
+	})
+	.on("click", ".us_modal_box", function(e) {
+		e.stopPropagation();
 	});
 
 	$('.slick_product').slick({
@@ -96,7 +111,7 @@ $(function() {
 			$(target).removeClass("open");
 		} else {
 			$(target).addClass("open");
-			$("body").append("<div id='offcanvas_overlay'></div>");
+			$("body").append("<div id='offcanvas_overlay' onclick=''></div>");
 		}
 	})
 	.on("click", "#offcanvas_overlay", function() {

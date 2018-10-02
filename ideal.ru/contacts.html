@@ -16,6 +16,88 @@
 </head>
 <body>
 
+	<div id="preloader" class="preloader">
+		<div class="spinner"></div>
+	</div>
+
+	<header class="header">
+		<div class="header_main">
+			<div class="container">
+				<a href="#" class="logo"><img src="img/logo.png" alt=""></a>
+				<button class="btn_mobile_menu" id="open_menu" data-target="#offcanvas">
+					<span></span>
+					<span></span>
+					<span></span>
+				</button>
+				<div class="header_cart">
+					<a href="cart.html"><i class="fas fa-shopping-cart"></i><span class="text">Корзина</span></a>
+				</div>
+				<a href="tel:+7 (995) 456 48-54" class="phone_main">+7 (995) 456 48-54</a>
+				<nav class="main_menu" id="offcanvas">
+					<div class="sign"><a href="#">Вход</a> / <a href="#">Регистрация</a></div>
+					<ul>
+						<li><a href="#">Главная</a></li>
+						<li><a href="#">О нас</a></li>
+						<li><a href="#">Доставка</a></li>
+						<li><a href="#">Контакты</a></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+		<div class="header_category">
+			<div class="container">
+				<button class="open_cat_product" id="open_cat_menu">Категории <i class="fas fa-angle-down"></i></button>
+				<ul class="cat_list" id="cat_menu">
+					<li class="cat_list_item">
+						<a href="#"><img src="img/i_cat_product1.png" alt="">Электротовары</a>
+						<ul class="cat_list_two">
+							<li class="cat_list_two_item">
+								<a href="#">Освещение</a>
+								<ul class="cat_list_three">
+									<li class="cat_list_three_item"><a href="#">Светильники</a></li>
+									<li class="cat_list_three_item"><a href="#">Люстры</a></li>
+									<li class="cat_list_three_item"><a href="#">Бра</a></li>
+									<li class="cat_list_three_item"><a href="#">Настольные Лампы</a></li>
+								</ul>
+							</li>
+							<li class="cat_list_two_item"><a href="#">Розетки И Вкл\Выкл</a></li>
+							<li class="cat_list_two_item"><a href="#">Кабель И Аксессуары</a></li>
+						</ul>
+					</li>
+					<li class="cat_list_item">
+						<a href="#"><img src="img/i_cat_product2.png" alt="">Отделочные товары</a>
+						<ul class="cat_list_two">
+							<li class="cat_list_two_item">
+								<a href="#">Освещение</a>
+								<ul class="cat_list_three">
+									<li class="cat_list_three_item"><a href="#">Светильники</a></li>
+									<li class="cat_list_three_item"><a href="#">Люстры</a></li>
+									<li class="cat_list_three_item"><a href="#">Бра</a></li>
+									<li class="cat_list_three_item"><a href="#">Настольные Лампы</a></li>
+								</ul>
+							</li>
+							<li class="cat_list_two_item"><a href="#">Розетки И Вкл\Выкл</a></li>
+							<li class="cat_list_two_item"><a href="#">Кабель И Аксессуары</a></li>
+						</ul>
+					</li>
+					<li class="cat_list_item"><a href="#"><img src="img/i_cat_product3.png" alt="">Лакокрасочные материалы</a></li>
+					<li class="cat_list_item"><a href="#"><img src="img/i_cat_product4.png" alt="">Шпатлевки</a></li>
+					<li class="cat_list_item"><a href="#"><img src="img/i_cat_product5.png" alt="">Окна, Двери, Аксессуары</a></li>
+					<li class="cat_list_item long_cat"><a href="#"><img src="img/i_cat_product6.png" alt="">Расходные материалы и Комплектующие</a></li>
+					<li class="cat_list_item"><a href="#"><img src="img/i_cat_product7.png" alt="">Инструменты</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="header_search">
+			<div class="container">
+				<div class="group">
+					<input type="text" placeholder="Введите название товара">
+					<button class="us_btn"><i class="fas fa-search"></i><span>Поиск</span></button>
+				</div>
+			</div>
+		</div>
+	</header>
+
 	<div class="s_breadcrambs">
 		<div class="container">
 			<ul class="breadcrambs">
@@ -44,7 +126,7 @@
 						</ul>
 					</div>
 					<div class="us_btn_wrap">
-						<a href="#" class="us_btn">Обратная связь</a>
+						<a href="#us_modal_content" class="us_btn" data-toggle="us_modal">Обратная связь</a>
 					</div>
 				</div>
 				<div class="col-lg-8">
@@ -59,6 +141,20 @@
 		</div>
 	</div>
 	
+	<div class="us_modal" id="us_modal_content">
+		<div class="us_modal_box">
+			<button class="us_modal_close" data-dismiss="us_modal"></button>
+			<div class="h4">Связаться с нами</div>
+			<form action="" class="form">
+				<input type="text" name="" id="name" placeholder="Ваше имя">
+				<input type="text" name="phone" id="phone" placeholder="Ваш телефон">
+				<input type="text" name="email" id="email" placeholder="Ваш email">
+				<textarea name="message" id="message" placeholder="Ваше сообщение"></textarea>
+				<button class="us_btn" type="submit">Отправить</button>
+			</form>
+		</div>
+	</div>
+
 	<script src="js/libs.min.js"></script>
 	<script src="js/custom.js"></script>
 
