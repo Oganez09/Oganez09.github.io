@@ -3,7 +3,7 @@ $(function() {
 	$(window).load(function() {
 		setTimeout(function() {
 			$('.preloader').fadeOut('slow');
-			$('body').css('visibility', 'visible');
+			$('body').css('overflowY', 'auto');
 		}, 2000);
 	});
 
