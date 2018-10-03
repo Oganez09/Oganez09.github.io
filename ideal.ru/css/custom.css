@@ -50,6 +50,7 @@ body {
   background: #F2F1F1 url(../img/bg_main.png) 0 0 repeat;
   letter-spacing: 0.4px;
   overflow-x: hidden;
+  overflow-Y: hidden;
   min-width: 320px;
   position: relative;
 }

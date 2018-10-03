@@ -1,11 +1,12 @@
 $(function() {
 
-	$(window).on('load', preloader);
+	$(window).on('load', function() {
+		setTimeout(function() {
+			$('.preloader').fadeOut('slow');
+			$('body').css('overflowY', 'auto');
+		}, 150);
 
-	function preloader() {
-	  $('.preloader').delay(150).fadeOut('slow');
-	  $('body').css('overflowY', 'auto');
-	}
+	});
 
 	$(document).on("click", "[data-toggle = us_modal]", function(e) {
 		
