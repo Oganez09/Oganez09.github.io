@@ -243,25 +243,25 @@ b, strong {
 
 .us_modal.open .us_modal_box {
   opacity: 1;
-  -webkit-transform: translateY(50px);
-      -ms-transform: translateY(50px);
-          transform: translateY(50px);
 }
 
 .us_modal .us_modal_box {
-  position: relative;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  margin: 0 auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: 0;
   padding: 20px;
   width: 600px;
-  max-width: -webkit-calc(100% - 0.01px);
-  max-width: calc(100% - 0.01px);
+  max-width: -webkit-calc(100% - 40px);
+  max-width: calc(100% - 40px);
+  max-height: -webkit-calc(100% - 40px);
+  max-height: calc(100% - 40px);
+  overflow: auto;
   background: #fff;
   opacity: 0;
-  -webkit-transform: translateY(0px);
-      -ms-transform: translateY(0px);
-          transform: translateY(0px);
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   -webkit-transition: .3s linear;
   -o-transition: .3s linear;
   transition: .3s linear;
