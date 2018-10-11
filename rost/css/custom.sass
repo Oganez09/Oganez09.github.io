@@ -1,0 +1,369 @@
+$ff_main: 'Montserrat', sans-serif
+$ff_title: 'Bitter', serif
+$c_accent: #feac0c
+$c_bg: #e3f5ff
+$c_text: #000
+
+::placeholder
+	color: rgba(#000,.65)
+
+html, body
+	height: 100%
+
+body
+	font-family: $ff_main
+	font-size: 16px
+	font-weight: 400
+	line-height: 1.2
+	color: $c_text
+	background-color: #fff
+	overflow-x: hidden
+	min-width: 320px
+	-webkit-font-smoothing: antialiased
+	-moz-osx-font-smoothing: grayscale
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6
+	font-family: $ff_title
+	font-weight: 600
+	color: $c_text
+	margin: 0
+	text-transform: uppercase
+h1, .h1
+	font-size: 36px
+	letter-spacing: .9px
+h2, .h2
+	font-size: 30px
+	letter-spacing: .75px
+	@media screen and (max-width: 575px)
+		font-size: 23px
+h3, .h3
+	font-size: 26px
+h4, .h4
+	font-size: 22px
+h5, .h5
+	font-size: 18px
+	letter-spacing: .45px
+
+p
+	margin: 0
+
+a
+	outline: none
+	&:hover, &:focus
+		text-decoration: none
+
+.img_responsive
+	display: block
+	max-width: 100%
+	height: auto
+	&.img_width
+		width: 100%
+	&.img_center
+		margin-left: auto
+		margin-right: auto
+
+.us_clear
+	&::after
+		content: ''
+		display: table
+		clear: both
+
+.us_list
+	list-style-type: none
+	margin: 0
+	padding: 0
+
+.us_btn
+	font-size: 16px
+	font-weight: 600
+	color: #fff
+	height: 50px
+	line-height: 50px
+	background-color: $c_accent
+	border: none
+	outline: none
+	text-align: center
+	display: inline-block
+	border-radius: 25px
+	padding: 0 35px
+	position: relative
+	letter-spacing: .4px
+	overflow: hidden
+	z-index: 1
+	cursor: pointer
+	box-shadow: 0 4px 31px 1px rgba(255, 169, 0, 0.15)
+	&:hover
+		color: #fff
+	&::before,
+	&::after
+		content: ''
+		position: absolute
+		left: -50%
+		right: -50%
+		height: 0
+		padding-bottom: 200%
+		background: darken($c_accent, 1%)
+		mix-blend-mode: color-burn
+		top: 0
+		z-index: -1
+		border-radius: 230px
+		transition: transform 2.5s, background 6s
+	&::before
+		transform: translate3d(5%,6em,0) rotate(0deg)
+	&::after
+		transform: translate3d(-5%,6em,0) rotate(-45deg)
+	&:hover,
+	&:focus
+		outline: none
+		&::before,
+		&::after
+			transform: translate3d(0,-5em,0) rotate(180deg)
+			background: darken($c_accent, 20%)
+
+.us_input
+	width: 100%
+	height: 50px
+	border-radius: 25px
+	border: none
+	outline: none
+	margin-bottom: 15px
+	padding: 0 15px
+
+.us_tab
+	&_nav
+		display: inline-block
+		li
+			float: left
+			margin-bottom: 10px
+			&:not(:last-child)
+				&::after
+					content: '/'
+					margin-left: 8px
+					margin-right: 8px
+		a
+			font-style: italic
+			color: #000
+			
+		.active a
+			color: $c_accent
+	&_pane
+		display: none
+		&.active
+			display: block
+		
+.s_about_us
+	padding: 80px 0
+	.mb_20
+		margin-bottom: 20px
+		@media screen and (max-width: 575px)
+			margin-bottom: 40px
+	.h2
+		margin-bottom: 40px
+	.item_us
+		margin-bottom: 50px
+		.num
+			position: relative
+			display: inline-block
+			span
+				font-size: 72px
+				font-weight: 700
+				color: $c_accent
+				line-height: 50px
+			.text
+				line-height: 24px
+				background-color: #fff
+				width: 280px
+				padding: 5px 10px
+				position: absolute
+				top: 60%
+				left: calc(100% - 20px)
+				@media screen and (max-width: 575px)
+					width: 190px
+		&_1
+			.num .text
+				width: 190px
+		@media screen and (min-width: 992px)
+			&_3
+				padding-left: 30px
+	.video_wrap
+		width: 560px
+		max-width: 100%
+		height: 100%
+		margin: 0 auto
+		padding-bottom: 30px
+		@media screen and (max-width: 991px)
+			height: 400px
+		@media screen and (max-width: 767px)
+			height: 300px
+		iframe
+			width: 100%
+			height: 100%
+			border: none
+	.text_wrap
+		padding-bottom: 30px
+		p
+			line-height: 24px
+			&:not(:last-child)
+				margin-bottom: 20px
+
+.s_sale
+	padding: 80px 0
+	.form
+		display: block
+		background-color: $c_bg
+		padding: 30px
+		@media screen and (max-width: 767px)
+			padding-right: 10px
+			padding-left: 10px
+	.h2
+		text-align: center
+		margin-top: 20px
+		margin-bottom: 30px
+	.info_text
+		font-size: 11px
+		text-align: center
+		margin-bottom: 10px
+	.btn_wrap
+		text-align: center
+
+.s_form_call
+	background-color: $c_bg
+	padding: 80px 0
+	.h2
+		text-align: center
+		margin-bottom: 30px
+	.info_text
+		font-size: 11px
+		text-align: center
+		margin-bottom: 30px
+	.btn_wrap
+		text-align: center
+
+.s_products
+	padding: 80px 0
+	background-color: $c_bg
+	.h2
+		text-align: center
+		margin-bottom: 30px
+	.tab_nav_wrap
+		margin-bottom: 40px
+	.product_link
+		color: #000
+		float: right
+		opacity: .5
+		border-bottom: 1px solid #000
+		display: inline-block
+		padding-bottom: 2px
+
+.s_review
+	padding: 80px 0
+	.h2
+		text-align: center
+		margin-bottom: 30px
+
+.s_contacts
+	padding: 80px 0
+	position: relative
+	@media screen and (max-width: 991px)
+		padding-top: 40px
+		padding-bottom: 0
+	.contact_wrap
+		padding: 60px 0 30px 60px
+		@media screen and (max-width: 1199px)
+			padding-left: 30px
+		@media screen and (max-width: 991px)
+			padding: 0 0 20px
+	.h2
+		margin-bottom: 30px
+
+	.us_list
+		li
+			margin-bottom: 30px
+	.icon
+		font-size: 14px
+		color: $c_accent
+		margin-right: 5px
+		&-whatsapp
+			font-size: 16px
+			color: #25D366
+			margin-right: 3px
+	.map
+		width: 50%
+		position: absolute
+		top: 80px
+		bottom: 0
+		left: 0
+		@media screen and (max-width: 991px)
+			position: static
+			width: 100%
+
+.footer
+	padding: 40px 0
+	background-color: $c_bg
+	.container
+		position: relative
+		@media screen and (max-width: 767px)
+			text-align: center
+	.logo
+		float: left
+		@media screen and (max-width: 767px)
+			float: none
+			position: absolute
+			top: 0
+			left: 15px
+		@media screen and (max-width: 575px)
+			top: -10px
+	.us_btn
+		float: right
+		margin-top: 8px
+		@media screen and (max-width: 767px)
+			float: none
+			margin-bottom: 10px
+			margin-top: 100px
+	&_menu
+		display: block
+		text-align: center
+		padding-top: 23px
+		@media screen and (max-width: 991px)
+			text-align: left
+			position: absolute
+			top: -40px
+			left: 165px
+		@media screen and (max-width: 767px)
+			text-align: center
+			left: 15px
+			right: 15px
+		@media screen and (max-width: 575px)
+			text-align: right
+		li
+			display: inline-block
+			&:not(:last-child)
+				margin-right: 40px
+			@media screen and (max-width: 991px)
+				display: block
+				&:not(:last-child)
+					margin-right: 0
+					margin-bottom: 20px
+			a
+				color: $c_text
+				display: block
+				transition: color .3s
+				&:hover
+					color: $c_accent
+	.design
+		font-size: 11px
+		position: absolute
+		bottom: -30px
+		right: 15px
+		@media screen and (max-width: 991px)
+			width: 250px
+			text-align: right
+		@media screen and (max-width: 767px)
+			left: 15px
+			text-align: center
+			width: 100%
+		@media screen and (max-width: 575px)
+			text-align: right
+			left: auto
+			right: 15px
+			width: 250px
