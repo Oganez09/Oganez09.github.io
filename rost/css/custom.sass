@@ -31,6 +31,8 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6
 h1, .h1
 	font-size: 36px
 	letter-spacing: .9px
+	@media screen and (max-width: 575px)
+		font-size: 26px
 h2, .h2
 	font-size: 30px
 	letter-spacing: .75px
@@ -128,6 +130,8 @@ a
 	outline: none
 	margin-bottom: 15px
 	padding: 0 15px
+	@media screen and (max-width: 767px)
+		margin-bottom: 30px
 
 .us_tab
 	&_nav
@@ -151,8 +155,177 @@ a
 		&.active
 			display: block
 		
+.us_modal
+	position: fixed
+	top: 0
+	right: 0
+	bottom: 0
+	left: 0
+	z-index: 1050
+	background: rgba(#3e8eba,.45)
+	opacity: 0
+	visibility: hidden
+	transition: all .15s linear
+	&.us_visible
+		opacity: 1
+		visibility: visible
+		.us_modal_box
+			opacity: 1
+			transform: translateY(50px)
+			@media screen and (max-width: 767px)
+				transform: translateY(20px)
+	&_box
+		position: relative
+		box-sizing: border-box
+		margin: 0 auto
+		padding: 0
+		width: 600px
+		max-width: calc(100% - 40px)
+		max-height: calc(100% - 40px)
+		background-color: $c_bg
+		box-shadow: 0px 6px 43px rgba(0,0,0,0.09)
+		opacity: 0
+		overflow-y: auto
+		transform: translateY(0px)
+		transition: .3s linear
+		transition-property: opacity,transform
+	&_close
+		position: absolute
+		top: 19px
+		right: 19px
+		width: 11px
+		height: 11px
+		padding: 0
+		background-color: transparent
+		border: none
+		outline: none
+		cursor: pointer
+		z-index: 952
+		&:hover
+			outline: none
+		&::before, &::after
+			content: ''
+			display: block
+			width: 100%
+			height: 1px
+			background-color: $c_text
+			position: absolute
+			top: 50%
+			margin-top: -1px
+			transition: all .2s
+		&::before
+			transform: rotate(45deg)
+		&::after
+			transform: rotate(-45deg)
+	.form
+		display: block
+		padding: 30px
+		position: relative
+		z-index: 2
+		@media screen and (max-width: 767px)
+			padding-right: 10px
+			padding-left: 10px
+	.h2
+		text-align: center
+		margin-top: 20px
+		margin-bottom: 30px
+	.us_input
+		margin-bottom: 30px
+		background-color: rgba(#fff,.45)
+	.info_text
+		font-size: 11px
+		text-align: center
+		margin-bottom: 10px
+	.btn_wrap
+		text-align: center
+
+.header
+	background-color: $c_bg
+	.container
+		position: relative
+	.logo
+		padding-top: 5px
+		float: left
+		@media screen and (max-width: 575px)
+			padding-top: 30px
+	.phone
+		font-size: 20px
+		font-weight: 600
+		color: $c_text
+		float: right
+		padding: 26px 0
+		transition: color .3s
+		&:hover
+			color: $c_accent
+		@media screen and (max-width: 767px)
+			position: absolute
+			top: 50px
+			left: 15px
+			right: 15px
+			padding: 0
+			text-align: center
+		@media screen and (max-width: 575px)
+			text-align: right
+			top: 80px
+			width: 180px
+			left: auto
+	.address
+		font-size: 20px
+		font-weight: 600
+		text-align: center
+		padding: 26px 0
+		@media screen and (max-width: 767px)
+			position: absolute
+			top: 20px
+			left: 15px
+			right: 15px
+			padding: 0
+			text-align: center
+		@media screen and (max-width: 575px)
+			text-align: right
+			width: 180px
+			left: auto
+
+.s_main_block
+	background-color: $c_bg
+	padding-top: 20px
+	.container
+		position: relative
+	.main_block_wrap
+		padding-top: 150px
+		padding-bottom: 170px
+		@media screen and (max-width: 1199px)
+			padding-top: 100px
+			padding-bottom: 120px
+		@media screen and (max-width: 767px)
+			padding-top: 40px
+			padding-bottom: 40px
+			text-align: center
+	.h1
+		margin-bottom: 20px
+	.text
+		font-size: 24px
+		letter-spacing: .6px
+		line-height: 36px
+		margin-bottom: 25px
+		@media screen and (max-width: 575px)
+			font-size: 18px
+			line-height: 24px
+	img
+		position: absolute
+		top: 0
+		left: 60%
+		@media screen and (max-width: 1199px)
+			left: 50%
+		@media screen and (max-width: 991px)
+			left: 60%
+		@media screen and (max-width: 767px)
+			position: static
+			max-width: 100%
+			margin-bottom: 60px
+
 .s_about_us
-	padding: 80px 0
+	padding: 80px 0 40px
 	.mb_20
 		margin-bottom: 20px
 		@media screen and (max-width: 575px)
@@ -207,11 +380,16 @@ a
 				margin-bottom: 20px
 
 .s_sale
-	padding: 80px 0
+	padding: 80px 0 120px
+	.container
+		position: relative
 	.form
 		display: block
 		background-color: $c_bg
 		padding: 30px
+		box-shadow: 0px 6px 43px rgba(0,0,0,0.09)
+		position: relative
+		z-index: 2
 		@media screen and (max-width: 767px)
 			padding-right: 10px
 			padding-left: 10px
@@ -225,19 +403,17 @@ a
 		margin-bottom: 10px
 	.btn_wrap
 		text-align: center
-
-.s_form_call
-	background-color: $c_bg
-	padding: 80px 0
-	.h2
-		text-align: center
-		margin-bottom: 30px
-	.info_text
-		font-size: 11px
-		text-align: center
-		margin-bottom: 30px
-	.btn_wrap
-		text-align: center
+	img
+		position: absolute
+		top: -40px
+		left: 28%
+		z-index: 1
+		@media screen and (max-width: 1199px)
+			left: 33%
+		@media screen and (max-width: 991px)
+			left: 42%
+		@media screen and (max-width: 767px)
+			display: none
 
 .s_products
 	padding: 80px 0
@@ -254,12 +430,105 @@ a
 		border-bottom: 1px solid #000
 		display: inline-block
 		padding-bottom: 2px
+	.products_wrap
+		height: 720px
+		overflow-Y: hidden
+		@media screen and (max-width: 767px)
+			height: 1470px
+		&.show_all
+			height: auto
+			overflow-Y: auto
+	.item_product
+		background-color: #fff
+		margin-bottom: 40px
+		&_info
+			padding: 5px 20px 20px
+			text-align: center
+		&_name
+			font-size: 18px
+		&_price
+			span
+				color: #f00
+	.btn_wrap
+		text-align: center
 
 .s_review
 	padding: 80px 0
 	.h2
 		text-align: center
 		margin-bottom: 30px
+	.flex_cont
+		display: flex
+		flex-wrap: wrap
+		align-items: center
+		justify-content: center
+		@media screen and (max-width: 1199px)
+			margin-bottom: 30px
+		.item_brand
+			flex-basis: 33.33%
+			padding: 5px 10px
+			&:nth-last-child(n + 4)
+				margin-bottom: 70px
+			@media screen and (max-width: 575px)
+				flex-basis: 50%
+				&:nth-last-child(n + 2)
+					margin-bottom: 30px
+	.item_rev
+		padding: 50px 40px 50px
+		&_name
+			font-size: 18px
+			font-weight: 600
+			margin-bottom: 20px
+		&_text
+			font-size: 16px
+			font-weight: 400
+			line-height: 24px
+	.owl-carousel
+		background-color: $c_bg
+		box-shadow: 0 6px 43px rgba(0, 0, 0, 0.09)
+		height: 100%
+		margin-bottom: 30px
+		position: relative
+		.owl-nav button
+			outline: none
+			&.owl-prev
+				display: none
+	.owl-theme
+		.owl-nav
+			position: absolute
+			bottom: 40px
+			right: 50px
+			[class*=owl-]:hover
+				background-color: transparent
+		.owl-dots
+			position: absolute
+			bottom: 40px
+			right: 105px
+			.owl-dot
+				outline: none
+				span
+					width: 8px
+					height: 8px
+					margin: 5px
+					border: 1px solid $c_accent
+					background-color: transparent
+					transition: background-color .3s, border-color .3s
+				&.active span,
+				&:hover span
+					background-color: $c_accent
+
+.s_form_call
+	background-color: $c_bg
+	padding: 80px 0
+	.h2
+		text-align: center
+		margin-bottom: 30px
+	.info_text
+		font-size: 11px
+		text-align: center
+		margin-bottom: 30px
+	.btn_wrap
+		text-align: center
 
 .s_contacts
 	padding: 80px 0
