@@ -48,4 +48,6 @@ $(function() {
 
 	$(".footer_menu a, .logo a").mPageScroll2id();
 
+	new WOW().init();
+
 });
