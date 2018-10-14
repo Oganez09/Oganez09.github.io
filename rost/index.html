@@ -93,14 +93,14 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-9 col-lg-7 col-xl-6">
-					<form action="" class="form wow fadeInLeftBig">
+					<div class="form wow fadeInLeftBig" id="form_static">
 						<div class="h2">Получи персональную скидку</div>
-						<input type="text" name="" id="" class="us_input" placeholder="Ваше имя">
-						<input type="text" name="" id="" class="us_input" placeholder="Телефон">
-						<input type="text" name="" id="" class="us_input" placeholder="E-mail (не обязательно)">
+						<input type="text" id="name_static" class="us_input" placeholder="Ваше имя">
+						<input type="text" id="phone_static" class="us_input" placeholder="Телефон">
+						<input type="text" id="email_static" class="us_input" placeholder="E-mail (не обязательно)">
 						<div class="info_text">Отправляя нам заявку, Вы соглашаетесь с политикой конфиденциальности и даете согласие не обработку персональных данных</div>
-						<div class="btn_wrap"><button class="us_btn" type="submit">Получить скидку</button></div>
-					</form>
+						<div class="btn_wrap"><button class="us_btn form_static_btn" type="button" data-toggle="us_modal" data-target="#us_modal_check">Получить скидку</button></div>
+					</div>
 				</div>
 				<img src="img/sale_bg.jpg" alt="" class="wow fadeInDown">
 			</div>
@@ -785,19 +785,19 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-10 offset-md-1">
-					<form action="" class="form wow fadeInDown">
+					<div class="form wow fadeInDown" id="form_call">
 						<div class="h2">Остались вопросы? мы Вам перезвоним</div>
 						<div class="row">
 							<div class="col-lg-6">
-								<input type="text" name="" id="" class="us_input" placeholder="Ваше имя">
+								<input type="text" id="name_call" class="us_input" placeholder="Ваше имя">
 							</div>
 							<div class="col-lg-6">
-								<input type="text" name="" id="" class="us_input" placeholder="Телефон">
+								<input type="text" id="phone_call" class="us_input" placeholder="Телефон">
 							</div>
 						</div>
 						<div class="info_text">Отправляя нам заявку, Вы соглашаетесь с политикой конфиденциальности и даете согласие не обработку персональных данных</div>
-						<div class="btn_wrap"><button class="us_btn" type="submit">Получить скидку</button></div>
-					</form>
+						<div class="btn_wrap"><button class="us_btn form_call_btn" type="button" data-toggle="us_modal" data-target="#us_modal_check">Получить скидку</button></div>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -839,21 +839,23 @@
 	<div class="us_modal" id="us_modal_content">
 		<div class="us_modal_box">
 			<button class="us_modal_close" data-dismiss="us_modal"></button>
-			<form action="" class="form">
+			<div class="form" id="form_modal">
 				<div class="h2">Получи персональную скидку</div>
-				<input type="text" name="" id="" class="us_input" placeholder="Ваше имя">
-				<input type="text" name="" id="" class="us_input" placeholder="Телефон">
-				<input type="text" name="" id="" class="us_input" placeholder="E-mail (не обязательно)">
+				<input type="text" id="name_modal" class="us_input" placeholder="Ваше имя">
+				<input type="text" id="phone_modal" class="us_input" placeholder="Телефон">
+				<input type="text" id="email_modal" class="us_input" placeholder="E-mail (не обязательно)">
 				<div class="info_text">Отправляя нам заявку, Вы соглашаетесь с политикой конфиденциальности и даете согласие не обработку персональных данных</div>
-				<div class="btn_wrap"><button class="us_btn" type="submit">Получить скидку</button></div>
-			</form>
+				<div class="btn_wrap"><button class="us_btn form_modal_btn" type="button">Получить скидку</button></div>
+			</div>
 		</div>
 	</div>
 
 	<div class="us_modal" id="us_modal_check">
 		<div class="us_modal_box">
 			<button class="us_modal_close" data-dismiss="us_modal"></button>
-			<div class="h2">Получи персональную скидку</div>
+			<div class="form">
+				<div class="h2">Спасибо за заказ!</div>
+			</div>
 		</div>
 	</div>
 

@@ -48,4 +48,57 @@ $(function() {
 
 	$(".footer_menu a, .logo a").mPageScroll2id();
 
+	$(".form_modal_btn").click(function() {	
+		var name = $('#name_modal').val();
+		var phone = $('#phone_modal').val();
+		var email = $('#email_modal').val();
+
+		$.post(
+			"../ajax.php",
+			{
+				name: name,
+				phone: phone,
+				email: email
+			},
+			function() {
+				$("#form_modal").html("<div class='h2'>Спасибо за заказ!</div>")
+			}
+		)
+	});
+
+	$(".form_static_btn").click(function() {
+		var name = $('#name_static').val();
+		var phone = $('#phone_static').val();
+		var email = $('#email_static').val();
+
+		$.post(
+			"../ajax.php",
+			{
+				name: name,
+				phone: phone,
+				email: email
+			},
+			function() {
+				$("#us_modal_check").addClass("us_visible");
+			}
+		)
+	});
+	
+	$(".form_call_btn").click(function() {
+		var name = $('#name_call').val();
+		var phone = $('#phone_call').val();
+
+		$.post(
+			"../ajax.php",
+			{
+				name: name,
+				phone: phone,
+				email: "-"
+			},
+			function() {
+				$("#us_modal_check").addClass("us_visible");
+			}
+		)
+	});
+	
 });
