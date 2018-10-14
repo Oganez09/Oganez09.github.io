@@ -36,7 +36,7 @@
 					<div class="main_block_wrap wow fadeInDown">
 						<div class="h1">Подарки для сотрудников</div>
 						<p class="text">Корпоративные подарки на самый главный праздник года для ваших коллег</p>
-						<button class="us_btn">Заказать подарки</button>
+						<button class="us_btn" data-toggle="us_modal" data-target="#us_modal_content">Заказать подарки</button>
 					</div>
 				</div>
 			</div>
@@ -46,10 +46,10 @@
 
 	<div class="s_about_us" id="about_us">
 		<div class="container">
-			<div class="h2">Немного о нас</div>
+			<div class="h2 wow fadeInDown">Немного о нас</div>
 			<div class="row justify-content-center mb_20">
 				<div class="col-md-6 col-lg-3">
-					<div class="item_us item_us_1 wow fadeInDownBig">
+					<div class="item_us item_us_1 wow fadeInDown">
 						<div class="num">
 							<span>3</span>
 							<div class="text">Система контроля качеста</div>
@@ -57,7 +57,7 @@
 					</div>
 				</div>
 				<div class="col-md-6 col-lg-4">
-					<div class="item_us item_us_2 wow fadeInDownBig">
+					<div class="item_us item_us_2 wow fadeInDown">
 						<div class="num">
 							<span>20</span>
 							<div class="text">Высококвалифицированных сотрудников</div>
@@ -65,7 +65,7 @@
 					</div>
 				</div>
 				<div class="col-md-6 col-lg-5">
-					<div class="item_us item_us_3 wow fadeInDownBig">
+					<div class="item_us item_us_3 wow fadeInDown">
 						<div class="num">
 							<span>600</span>
 							<div class="text">Кв метров производственных площадей</div>
@@ -109,7 +109,7 @@
 
 	<div class="s_products" id="products_list">
 		<div class="container">
-			<div class="h2">наши работы</div>
+			<div class="h2 wow fadeInDown">наши работы</div>
 			<div class="tab_nav_wrap us_clear wow fadeInDown">
 				<ul class="us_tab_nav us_list us_clear">
 					<li class="active"><a href="#tab-1" data-toggle="us_tab">Корпоративные подарки</a></li>
@@ -738,7 +738,7 @@
 
 	<div class="s_review" id="reviews_list">
 		<div class="container">
-			<div class="h2">отзывы наших клиентов</div>
+			<div class="h2 wow fadeInDown">отзывы наших клиентов</div>
 			<div class="row">
 				<div class="col-md-10 col-lg-8 col-xl-6 offset-md-1 offset-lg-2 offset-xl-0">
 					<div class="flex_cont wow fadeInDown">
@@ -850,11 +850,21 @@
 		</div>
 	</div>
 
+	<div class="us_modal" id="us_modal_check">
+		<div class="us_modal_box">
+			<button class="us_modal_close" data-dismiss="us_modal"></button>
+			<div class="h2">Получи персональную скидку</div>
+		</div>
+	</div>
+
 	<script src="js/jquery.min.js"></script>
 	<script src="js/pageScroll2id.min.js"></script>
 	<script src="js/owl.carousel.min.js"></script>
 	<script src="js/wow.min.js"></script>
 	<script src="js/custom.js"></script>
+	<script>
+		new WOW().init();
+	</script>
 	
 </body>
 </html>
