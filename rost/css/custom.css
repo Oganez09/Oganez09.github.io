@@ -529,7 +529,7 @@ a:hover, a:focus {
   line-height: 24px;
 }
 .s_about_us .text_wrap p:not(:last-child) {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .s_sale {
