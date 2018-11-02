@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title></title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/jasny-bootstrap.min.css" rel="stylesheet">
+    <link href="css/owl.carousel.min.css" rel="stylesheet">
+    <link href="css/owl.theme.default.min.css" rel="stylesheet">
+    <link href="css/magnific-popup.css" rel="stylesheet">
+    <link href="css/socicon.css" rel="stylesheet">
+    <link href="css/slick.css" rel="stylesheet">
+    <link href="css/slick-theme.css" rel="stylesheet">
+    <link href="css/hand.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Condensed:400,700|Oswald:300,400,500,600,700&amp;subset=cyrillic" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+    <script src="https://yastatic.net/es5-shims/0.0.2/es5-shims.min.js"></script>
+    <script src="https://yastatic.net/share2/share.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jasny-bootstrap.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/jquery.malihu.PageScroll2id.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/hand.js"></script>
+    
+  </head>
+  <body>
+    <div id="home"></div>
+    
+    <div class="loder-wrap" style="">
+      <span class="loader" style="">
+        <span class="loader-inner"></span>
+      </span>
+    </div>
+
+    <div class="block-offcanvas" onclick=""></div>
+
+    <a class="mover-me top-me"><i class="fa fa-arrow-up"></i></a>
+    
+    <a class="mover-me call-me navi__modal-call" href="#call-me" data-toggle="modal"><i class="fa fa-phone"></i></a>
+    <a class="mover-me mail-me navi__modal-mail" href="#mail-me" data-toggle="modal"><i class="fa fa-envelope"></i></a>
+
+    <div id="call-me" class="modal fade navi__modal-call" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <button type="button" class="fa fa-times close-modal" data-dismiss="modal"></button>
+          <div class="box-form">
+            <h4 class="title">Заказать обратный звонок</h4>
+            <form class="navi__form-call" action="">
+              <div class="group">
+                <input class="input-form" type="text" name="name" id="name" required="required" placeholder="Ваше имя">
+              </div>
+              <div class="group">
+                <input class="input-form" type="text" id="phone" name="phone" required="required" placeholder="Ваш телефон">
+              </div>              
+              <button class="link-btn link-btn-form">Отправить</button>
+            </form>
+          </div>
+        </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+    <div id="mail-me" class="modal fade navi__modal-mail" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <button type="button" class="fa fa-times close-modal" data-dismiss="modal"></button>
+          <div class="box-form">
+            <h4 class="title">Связаться с нами</h4>
+            <form class="navi__form-message" action="">
+              <div class="group">
+                <input class="input-form" type="text" name="name" id="name" required="required" placeholder="Ваше имя">
+              </div>
+              <div class="group">
+                <input class="input-form" type="email" name="email" id="email" required="required" placeholder="Ваш email">
+              </div>
+              <div class="group">
+                <textarea class="input-form textarea-form" name="message" id="message" required="required" placeholder="Ваше сообщение"></textarea>
+              </div>
+              <button class="link-btn link-btn-form">Отправить</button>
+            </form>
+          </div>
+        </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
+    <header id="sticky-header">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 clearfix">
+            <div class="brand navi__logo"><a href="index.html"><img src="img/logo.png" alt=""></a></div>
+            <ul class="main-nav">
+              <li class="navi__menu-main"><a href="#home">Главная</a></li>
+              <li class="navi__menu-catalog"><a href="#catalog">Услуги</a></li>
+              <li class="navi__menu-gallery"><a href="#gallery">Галерея</a></li>
+              <li class="navi__menu-actions"><a href="#actions">Акции</a></li>
+              <li class="navi__menu-contacts"><a href="#contacts">Контакты</a></li>
+            </ul>
+            <button class="offcanvas-menu fa fa-bars" data-toggle="offcanvas" data-target="#offcanvas-menu" data-canvas=""></button>
+          </div>
+        </div>
+      </div>
+      <nav id="offcanvas-menu" class="navmenu navmenu-default navmenu-fixed-left offcanvas">
+        <ul class="offcanvas-nav">
+          <li class="navi__menu-main"><a href="#home">Главная</a></li>
+          <li class="navi__menu-catalog"><a href="#catalog">Услуги</a></li>
+          <li class="navi__menu-gallery"><a href="#gallery">Галерея</a></li>
+          <li class="navi__menu-actions"><a href="#actions">Акции</a></li>
+          <li class="navi__menu-contacts"><a href="#contacts">Контакты</a></li>
+        </ul>
+      </nav>
+    </header>
+<!-- 
+    <div class="navi__main-slide">
+      <div class="slideshow-all slideshow-first">
+        <div class="navi__item">
+          <a class="box-link navi__item-link" href="#">
+            <div class="item navi__item-bg" style="background-color: #e74c3c;">
+              <h4 class="navi__item-name" style="color: #ecf0f1;">Где один там и два</h4>
+              <p class="navi__item-desc" style="color: #bdc3c7;">-30% на вторую упаковку кругов Hammerflex</p>
+              <div class="type-link navi__item-more" style="color: #2c3e50; border-color: #2c3e50;">Подробнее</div>
+            </div>
+          </a>
+        </div>
+        <div class="navi__item">
+          <a class="box-link navi__item-link" href="#">
+            <div class="item navi__item-bg" style="background-color: #34495e;">
+              <h4 class="navi__item-name" style="color: #ecf0f1;">Пора на дачу</h4>
+              <p class="navi__item-desc" style="color: #bdc3c7;">Успейте на лучшие скидки!</p>
+              <div class="type-link" style="color: #f39c12; border-color: #f39c12;">Подробнее</div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+ -->
+    <section class="about-us ptb-180 navi__section-about" id="about">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-md-offset-2">
+            <h4 class="title-index">О нас</h4>
+            <div class="box navi__about-text">
+              <p class="text">Компания производит работы с применением современных строительных материалов и технологий, позволяющих не останавливать основные технологические процессы производства. Компания выполняет работы в сжатые сроки в соответствии с пожеланиями заказчика. При строительстве нами применяются сертифицированные современные экологически чистые материалы.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="our-services ptb-180 pb-140 navi__section-services" id="catalog">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <h4 class="title-index">Наши услуги</h4>
+          </div>
+        </div>
+        <div class="row">
+          <div class="item item-3 navi__item">
+            <div class="box">
+              <h4 class="name navi__item-name">Земельные работы</h4>
+              <p class="desc navi__item-desc">Земляные работы являются первоначальным этапом любого строительства. Очень важно их грамотное и своевременное проведение, ведь от этого непосредственно зависит устойчивость будущей постройки.</p>
+            </div>
+          </div>
+          <div class="item item-3">
+            <div class="box">
+              <h4 class="name">Строительные работы</h4>
+              <p class="desc">Мы выполняем широкий перечень строительных работ по возведению и реконструкции зданий, отделке помещений, включая все инженерные сети, системы отопления и сантехники, электротехнические работы, фасадные и кровельные работы и др.</p>
+            </div>
+          </div>
+          <div class="item item-3">
+            <div class="box">
+              <h4 class="name">Монтажные работы</h4>
+              <p class="desc">Мы выполняем весь спектр строительно-монтажных работ. Все работы производятся с применением современных строительных материалов и технологий строительства, что  позволяет делать все качественно и точно в установленные сроки.</p>
+            </div>
+          </div>
+          <div class="item item-3">
+            <div class="box">
+              <h4 class="name">Отделочные работы</h4>
+              <p class="desc">Отделочные работы - штукатурные, облицовочные, малярные, обойные, паркетные, стекольные и другие строительные работы, связанные с наружной и внутренней заключительной отделкой зданий и сооружений.</p>
+            </div>
+          </div>
+          <div class="item item-3">
+            <div class="box">
+              <h4 class="name">Прокладка инженерных систем</h4>
+              <p class="desc">Более чем 10-летний успешный опыт работы в строительной области и прокладке инженерных сетей позволяет нам с легкостью выполнять даже самые сложные проекты по монтажу всевозможных инженерных сетей и коммуникаций. </p>
+            </div>
+          </div>
+          <div class="item item-3">
+            <div class="box">
+              <h4 class="name">Благоустройство территории</h4>
+              <p class="desc">Мы предлагаем комплексный и всесторонний подход к благоустройству территории, которое заключается в улучшении экологического, санитарного и эстетического состояния прилегающей к зданию территории.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="our-products ptb-180 pb-140 navi__section-products" id="catalog">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <h4 class="title-index">Наши продукты</h4>
+          </div>
+        </div>
+        <div class="row">
+          <div class="item item-3 navi__item">
+            <div class="box">
+              <div class="img">
+                <img src="img/lp_img1.jpg" alt="">
+              </div>
+              <div class="info">
+                <h4 class="name navi__item-name">Дрель-шуруповерт аккумул Вихрь ДА-14,4-2к 72/14/4</h4>
+                <p class="desc navi__item-desc">Аккумуляторная дрель-шуруповерт Вихрь ДА-14,4-2к используется для сверления отверстий в деревянных и металлических изделиях, или для работы в качестве шуруповерта.</p>
+                <div class="price navi__item-price">3 900 руб.</div>
+              </div>
+            </div>
+          </div>
+          <div class="item item-3 navi__item">
+            <div class="box">
+              <div class="img">
+                <img src="img/lp_img2.jpg" alt="">
+              </div>
+              <div class="info">
+                <h4 class="name navi__item-name">Углошлифмашина Вихрь УШМ-230/2300 72/12/6</h4>
+                <p class="desc navi__item-desc">Аккумуляторная дрель-шуруповерт Вихрь ДА-14,4-2к используется для сверления отверстий в деревянных и металлических изделиях, или для работы в качестве шуруповерта.</p>
+                <div class="price navi__item-price">4 400 руб.</div>
+              </div>
+            </div>
+          </div>
+          <div class="item item-3 navi__item">
+            <div class="box">
+              <div class="img">
+                <img src="img/lp_img3.jpg" alt="">
+              </div>
+              <div class="info">
+                <h4 class="name navi__item-name">Дрель-шуруповерт ДШ-10/260 Э</h4>
+                <p class="desc navi__item-desc">Сетевая дрель шуруповерт Интерскол  ДШ-10/260 Э легкий и удобный аппарат, предназначенный для большинства встречающихся домашнему мастеру целей: собрать мебель или повесить полку теперь не проблема.</p>
+                <div class="price navi__item-price">2 910 руб.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="subscribe-us parallax ptb-180"  data-speed="5" data-bg-image="img/bg-subs.jpg" id="subscribe">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h4 class="title-index inverse navi__dispatch-title-one">Подписаться на новости</h4>
+          </div>
+          <div class="col-md-8 col-md-offset-2">
+            <form action="" class="navi__dispatch-form">
+              <div class="group">
+                <input class="input-form place-white-form" type="email" name="email" id="email" required="required" placeholder="Ваш email">
+                <button class="link-btn link-btn-form">Подписаться</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="photo-gallery ptb-180 navi__section-gallery" id="gallery">
+      <div class="container">
+        <div class="row zoom-gallery">
+          <div class="col-md-12">
+            <h4 class="title-index">Галерея</h4>
+          </div>
+          <div class="item col-xs-12 col-sm-6 col-md-4 navi__item">
+            <div class="img">
+              <a class="navi__item-image" href="img/gallery1.jpg" data-source="">
+                <img class="navi__item-image-box" src="img/gallery1.jpg" alt="">
+              </a>
+            </div>
+          </div>
+          <div class="item col-xs-12 col-sm-6 col-md-4">
+            <div class="img">
+              <a href="img/gallery2.jpg" data-source="">
+                <img src="img/gallery2.jpg" alt="">
+              </a>
+            </div>
+          </div>
+          <div class="item col-xs-12 col-sm-6 col-md-4">
+            <div class="img">
+              <a href="img/gallery3.jpg" data-source="">
+                <img src="img/gallery3.jpg" alt="">
+              </a>
+            </div>
+          </div>
+          <div class="item col-xs-12 col-sm-6 col-md-4">
+            <div class="img">
+              <a href="img/gallery4.jpg" data-source="">
+                <img src="img/gallery4.jpg" alt="">
+              </a>
+            </div>
+          </div>
+          <div class="item col-xs-12 col-sm-6 col-md-4">
+            <div class="img">
+              <a href="img/gallery5.jpg" data-source="">
+                <img src="img/gallery5.jpg" alt="">
+              </a>
+            </div>
+          </div>
+          <div class="item col-xs-12 col-sm-6 col-md-4">
+            <div class="img">
+              <a href="img/gallery6.jpg" data-source="">
+                <img src="img/gallery6.jpg" alt="">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="latest-review ptb-180 navi__section-reviews">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h4 class="title-index">Отзывы</h4>
+          </div>
+          <div class="col-md-8 col-md-offset-2">
+            <div class="owl-carousel owl-one">
+              <div class="item navi__item">
+                <p class="desc navi__item-desc">Лак ужасный! После нанесения на красивый дубовый паркет стал темножелтый.</p>
+                <h4 class="name navi__item-name">Николай</h4>
+                <div class="date navi__item-date">Январь 10, 2017</div>
+              </div>
+              <div class="item">
+                <p class="desc">Лак очень хороший. Качество замечательное.</p>
+                <h4 class="name">Андрей</h4>
+                <div class="date">Декабрь 22, 2016</div>
+              </div>
+              <div class="item">
+                <p class="desc">Лак действительно Супер-лучше придумать невозможно, после первых проб доверяю только финским производителям!</p>
+                <h4 class="name">Лариса</h4>
+                <div class="date">Сентябрь 18, 2016</div>
+              </div>
+            </div><!--owl-carousel-->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="our-team ptb-180 navi__section-team">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <h4 class="title-index">Наш персонал</h4>
+            <div class="owl-carousel owl-four">
+              <div class="item navi__item">
+                <div class="name htitle navi__item-name">Иван Иванов</div>
+                <div class="position navi__item-position">Заместитель ген. директора по снабжению</div>
+              </div>
+              <div class="item">
+                <div class="name htitle">Виталий Петров</div>
+                <div class="position">Заместитель ген. директора по сбыту</div>
+              </div>
+              <div class="item">
+                <div class="name htitle">Андрей Краснов</div>
+                <div class="position">Генеральный директор</div>
+              </div>
+              <div class="item">
+                <div class="name htitle">Николай Васильев</div>
+                <div class="position">Заместитель ген. директора</div>
+              </div>
+            </div><!--owl-carousel-->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="latest-actions ptb-180 pb-140 navi__section-actions" id="actions">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <h4 class="title-index">Акции</h4>
+          </div>
+        </div>
+        <div class="row">
+          <div class="item item-3 navi__item">
+            <div class="box">
+              <div class="img navi__item-img">
+                <img src="img/action1.jpg" alt="">
+              </div>
+              <div class="info">
+                <div class="date"><i class="fa fa-clock-o"></i><span class="navi__item-date-end">01.09.2017</span></div>
+                <h4 class="name navi__item-name">Акция гипсокартон KNAUF 7листов + Кнауф Фуген в подарок!</h4>
+                <p class="desc navi__item-desc">При покупке 7 листов одного вида гипсокартона KNAUF, вы получаете гипсовую шпатлевку "Кнауф-Фуген" 5кг в подарок!</p>
+                <a href="#subscribe" class="link-btn link-btn-other go-to-subs">Подписаться</a>
+              </div>
+            </div>
+          </div>
+          <div class="item item-3">
+            <div class="box">
+              <div class="img">
+                <img src="img/action2.jpg" alt="">
+              </div>
+              <div class="info">
+                <div class="date"><i class="fa fa-clock-o"></i><span class="navi__item-date-end">01.09.2017</span></div>
+                <h4 class="name">Специальные предложения на люстры и светильники</h4>
+                <p class="desc">В акции участвуют 80 светильников. Акция ограничена количеством светильников на складе. Подробности уточняйте у вашего менеджера.</p>
+                <a href="#subscribe" class="link-btn link-btn-other go-to-subs">Подписаться</a>
+              </div>
+            </div>
+          </div>
+          <div class="item item-3">
+            <div class="box">
+              <div class="img">
+                <img src="img/action3.jpg" alt="">
+              </div>
+              <div class="info">
+                <div class="date"><i class="fa fa-clock-o"></i><span class="navi__item-date-end">01.09.2017</span></div>
+                <h4 class="name">Специальная цена на автомойку высокого давления bosch aqt 33-11</h4>
+                <p class="desc">Успейте купить с выгодой! Один товар в одни руки.</p>
+                <a href="#subscribe" class="link-btn link-btn-other go-to-subs">Подписаться</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="share-in-social parallax ptb-180"  data-speed="3" data-bg-image="img/bg-soc.jpg">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <h4 class="title-index inverse">Рассказать о нас</h4>
+            <div class="ya-share2" data-services="vkontakte,facebook,odnoklassniki,gplus,twitter,whatsapp,telegram" data-bare="true" data-lang="ru"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="appointment ptb-180 navi__section-about" id="contacts">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="box">
+              <h5 class="title-h5">Отправить сообщение</h5>
+              <form class="box-form navi__feedback-form" action="">
+                <div class="group">
+                  <label for="name">Имя</label>
+                  <input class="input-form" type="text" name="name" id="name" required="required" placeholder="Ваше имя">
+                </div>
+                <div class="group">
+                  <label for="phone">Телефон</label>
+                  <input class="input-form" type="text" name="phone" id="phone" required="required" placeholder="Ваш телефон">
+                </div>
+                <div class="group">
+                  <label for="email">Email</label>
+                  <input class="input-form" type="text" name="email" id="email" required="required" placeholder="Ваш email">
+                </div>
+                <div class="group">
+                  <label for="message">Сообщение</label>
+                  <textarea class="input-form textarea-form" name="message" id="message" required="required" placeholder="Ваше сообщение"></textarea>
+                </div>
+                <button class="link-btn link-btn-form">Отправить</button>
+              </form>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="box">
+              <h5 class="title-h5">О нас</h5>
+              <div class="desc navi__about-text">Компания производит работы с применением современных строительных материалов и технологий, позволяющих не останавливать основные технологические процессы производства. Компания выполняет работы в сжатые сроки в соответствии с пожеланиями заказчика. При строительстве нами применяются сертифицированные современные экологически чистые материалы.</div>
+              <ul class="address">
+                <li><b>Время работы: </b><span class="navi__time">в Пн-Пт с 8:00 - 17:00</span></li>
+                <li><b>Телефон: </b><span class="navi__phone">+7 (938) 025 26 46</span></li>
+                <li><b>Email: </b><span class="navi__email">admin@navibit.ru</span></li>
+                <li><b>Адрес: </b><span class="navi__address">369000, Респ. Карачаево-Черкесская, г. Черкесск, ул. Горького 8</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="map" id="map"></section>
+
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="copy">Copyright 2017 &copy; <span class="navi__name-market">Стройресурс</span></div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+  </body>
+  </html>
