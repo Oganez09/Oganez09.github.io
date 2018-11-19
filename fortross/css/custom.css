@@ -49,19 +49,6 @@ h5 {
   margin-bottom: 100px;
 }
 
-.img_responsive {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
-.img_responsive.img_width {
-  width: 100%;
-}
-.img_responsive.img_center {
-  margin-left: auto;
-  margin-right: auto;
-}
-
 .us_btn {
   font-weight: 700;
   color: #fff;
@@ -95,12 +82,6 @@ h5 {
 }
 .us_input:focus {
   border-color: gray;
-}
-
-.us_list {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
 }
 
 .us_breadcrambs_list {
@@ -185,11 +166,8 @@ h5 {
 }
 .us_tab_list_item {
   display: inline-block;
-  margin-bottom: 20px;
+  margin: 0 20px 20px;
   padding: 5px 8px;
-}
-.us_tab_list_item:not(:last-child) {
-  margin-right: 40px;
 }
 .us_tab_list_item_link {
   color: #9d9d9c;
@@ -203,14 +181,20 @@ h5 {
 .us_tab_list_item.active .us_tab_list_item_link {
   color: #000;
 }
-.us_tab_content {
-  padding: 20px;
-}
 .us_tab_content_pane {
   display: none;
 }
 .us_tab_content_pane.active {
   display: block;
+}
+@media screen and (max-width: 575px) {
+  .us_tab_list {
+    margin-bottom: 10px;
+  }
+  .us_tab_list_item {
+    margin: 0 0 10px;
+    padding: 5px 10px;
+  }
 }
 
 .main_title {
