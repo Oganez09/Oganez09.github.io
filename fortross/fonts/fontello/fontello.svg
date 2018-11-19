@@ -1,0 +1,22 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg">
+<metadata>Copyright (C) 2018 by original authors @ fontello.com</metadata>
+<defs>
+<font id="fontello" horiz-adv-x="1000" >
+<font-face font-family="fontello" font-weight="400" font-stretch="normal" units-per-em="1000" ascent="850" descent="-150" />
+<missing-glyph horiz-adv-x="1000" />
+<glyph glyph-name="up-big" unicode="&#xe800;" d="M804 130l-372 358-370-358q-26-22-50 0-24 24 0 50l396 390q26 26 48 0l396-390q24-26 0-50-26-22-48 0z" horiz-adv-x="864" />
+
+<glyph glyph-name="down-big" unicode="&#xe801;" d="M63 570l370-356 372 356q22 26 48 0 26-22 0-48l-396-392q-22-22-48 0l-396 392q-26 26 0 48 24 24 50 0z" horiz-adv-x="866" />
+
+<glyph glyph-name="left" unicode="&#xf104;" d="M350 546q0-7-6-12l-219-220 219-219q6-6 6-13t-6-13l-28-28q-5-5-12-5t-13 5l-260 261q-6 5-6 12t6 13l260 260q5 6 13 6t12-6l28-28q6-5 6-13z" horiz-adv-x="357.1" />
+
+<glyph glyph-name="right" unicode="&#xf105;" d="M332 314q0-7-5-12l-261-261q-5-5-12-5t-13 5l-28 28q-6 6-6 13t6 13l219 219-219 220q-6 5-6 12t6 13l28 28q5 6 13 6t12-6l261-260q5-5 5-13z" horiz-adv-x="357.1" />
+
+<glyph glyph-name="instagram" unicode="&#xf16d;" d="M571 350q0 59-41 101t-101 42-101-42-42-101 42-101 101-42 101 42 41 101z m77 0q0-91-64-156t-155-64-156 64-64 156 64 156 156 64 155-64 64-156z m61 229q0-21-15-36t-37-15-36 15-15 36 15 36 36 15 37-15 15-36z m-280 123q-4 0-43 0t-59 0-54-2-57-5-40-11q-28-11-49-32t-33-49q-6-16-10-40t-6-58-1-53 0-59 0-43 0-43 0-59 1-53 6-58 10-40q12-28 33-49t49-32q16-6 40-11t57-5 54-2 59 0 43 0 42 0 59 0 54 2 58 5 39 11q28 11 50 32t32 49q6 16 10 40t6 58 1 53 0 59 0 43 0 43 0 59-1 53-6 58-10 40q-11 28-32 49t-50 32q-16 6-39 11t-58 5-54 2-59 0-42 0z m428-352q0-128-3-177-5-116-69-180t-179-69q-50-3-177-3t-177 3q-116 6-180 69t-69 180q-3 49-3 177t3 177q5 116 69 180t180 69q49 3 177 3t177-3q116-6 179-69t69-180q3-49 3-177z" horiz-adv-x="857.1" />
+
+<glyph glyph-name="facebook" unicode="&#xf30e;" d="M752 770q44 0 76-31t32-75l0-646q0-44-32-76t-76-32l-162 0 0 310 114 0 0 134-114 0 0 70q0 30 28 30l86 0 0 152-96 0q-74 0-124-54t-50-132l0-66-104 0 0-134 104 0 0-310-326 0q-44 0-76 32t-32 76l0 646q0 44 32 75t76 31l644 0z" horiz-adv-x="860" />
+</font>
+</defs>
+</svg>
