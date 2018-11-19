@@ -230,12 +230,6 @@ h5 {
       -ms-transform: scale(1.1);
           transform: scale(1.1);
 }
-.us_card__three {
-  max-width: 350px;
-}
-.us_card__four {
-  max-width: 255px;
-}
 .us_card_item {
   position: relative;
   overflow: hidden;
@@ -251,7 +245,7 @@ h5 {
   z-index: 1;
 }
 .us_card_item_img {
-  max-width: 100%;
+  width: 100%;
   transition: -webkit-transform 0.5s;
   transition: transform 0.5s;
   transition: transform 0.5s, -webkit-transform 0.5s;
@@ -271,6 +265,15 @@ h5 {
   color: #999;
   text-align: center;
   margin-top: 15px;
+}
+@media screen and (max-width: 575px) {
+  .us_card__three, .us_card__four {
+    max-width: 350px;
+  }
+  .us_card_item_img {
+    height: 350px;
+    object-fit: cover;
+  }
 }
 
 .header__box {
