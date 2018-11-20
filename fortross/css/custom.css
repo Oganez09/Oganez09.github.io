@@ -435,6 +435,34 @@ h5 {
 .slideshow .owl-dots .owl-dot:focus {
   outline: none;
 }
+@media screen and (max-width: 991px) {
+  .slideshow_item {
+    height: 580px;
+  }
+  .slideshow_item::before {
+    width: 42%;
+  }
+  .slideshow_item__box {
+    width: 35%;
+  }
+}
+@media screen and (max-width: 575px) {
+  .slideshow_item {
+    height: 400px;
+  }
+  .slideshow_item::before {
+    width: 100%;
+  }
+  .slideshow_item__box {
+    width: 100%;
+  }
+  .slideshow_item_title {
+    margin-bottom: 15px;
+  }
+  .slideshow_item_desc {
+    margin-bottom: 20px;
+  }
+}
 
 .main_catalog {
   padding-bottom: 50px;
