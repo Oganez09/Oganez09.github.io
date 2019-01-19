@@ -66,6 +66,16 @@ body {
   min-height: 300px;
 }
 
+#offcanvas_overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  z-index: 950;
+}
+
 .us_btn {
   font-size: 14px;
   font-weight: 700;
@@ -82,7 +92,7 @@ body {
   text-align: center;
   cursor: pointer;
   display: inline-block;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 .us_btn:hover, .us_btn:focus {
   color: #fff;
@@ -99,23 +109,23 @@ body {
 .us_btn_white {
   color: #3b3b3b;
   background-color: #fff;
+  border: 2px solid #fff;
+  line-height: 36px;
   box-shadow: -10px 26px 57px rgba(0, 0, 0, 0.3);
 }
 .us_btn_white:hover, .us_btn_white:focus {
-  color: #3b3b3b;
-  background-color: #e6e6e6;
+  color: #fff;
+  background-color: transparent;
 }
 .us_btn_border {
   background-color: transparent;
   border: 2px solid #fff;
   line-height: 36px;
   box-shadow: none;
-  transition: color 0.3s ease, border-color 0.3s ease;
 }
 .us_btn_border:hover, .us_btn_border:focus {
-  color: #e6e6e6;
-  background-color: transparent;
-  border-color: #e6e6e6;
+  color: #3b3b3b;
+  background-color: #fff;
 }
 
 .us_group {
@@ -385,6 +395,14 @@ body {
 .header .sign_out {
   border: 2px solid #fff;
   border-radius: 30px;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+.header .sign_out:hover {
+  color: #3b3b3b;
+  background-color: #fff;
+}
+.header .sign_out:hover .header_i_out {
+  background-position: 0 0;
 }
 .header_i_out {
   width: 25px;
@@ -479,10 +497,12 @@ body {
     top: 0;
     left: -100%;
     bottom: 0;
-    width: 100%;
+    width: 80%;
+    max-width: 320px;
     text-align: left;
     background-color: #52ac62;
     padding: 10px 10px 10px 60px;
+    border-right: 1px solid #ccc;
     z-index: 999;
     transition: left 0.5s ease;
   }
