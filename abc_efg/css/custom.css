@@ -125,6 +125,10 @@ body {
   color: #3b3b3b;
   background-color: #fff;
 }
+.us_btn_long {
+  width: auto;
+  padding: 0 30px;
+}
 
 .us_input {
   font-size: 14px;
@@ -314,6 +318,77 @@ body {
   .us_flex_line {
     margin: 15px 0;
   }
+}
+
+.us_check {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  font-weight: 400;
+  line-height: 20px;
+}
+.us_check input {
+  display: none;
+}
+.us_check input:checked ~ .us_check_box::before {
+  display: block;
+}
+.us_check_box {
+  width: 18px;
+  height: 18px;
+  display: inline-block;
+  border: 2px solid #52ac62;
+  margin-right: 8px;
+  position: relative;
+}
+.us_check_box::before {
+  content: "✔";
+  font-size: 16px;
+  color: #3b3b3b;
+  position: absolute;
+  top: -3px;
+  left: 2px;
+  display: none;
+}
+
+.us_pagination_list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  vertical-align: middle;
+}
+.us_pagination_item {
+  font-size: 14px;
+  width: 30px;
+  height: 30px;
+  margin: 0 3px;
+  text-align: center;
+}
+.us_pagination_link {
+  color: #3b3b3b;
+  display: block;
+  line-height: 30px;
+  transition: color 0.3s;
+}
+.us_pagination_link:hover {
+  color: #52ac62;
+  text-decoration: none;
+}
+.us_pagination_active {
+  background-color: #52ac62;
+}
+.us_pagination_active .us_pagination_link {
+  color: #fff;
 }
 
 .header {
@@ -795,48 +870,16 @@ body {
   text-align: center;
 }
 .s_login .us_check {
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
-  cursor: pointer;
   margin-bottom: 10px;
-  font-weight: 400;
-  line-height: 20px;
 }
-.s_login .us_check input {
-  display: none;
-}
-.s_login .us_check input:checked ~ .us_check_box::before {
-  display: block;
-}
-.s_login .us_check_box {
-  width: 18px;
-  height: 18px;
-  display: inline-block;
-  border: 2px solid #52ac62;
-  margin-right: 8px;
-  position: relative;
-}
-.s_login .us_check_box::before {
-  content: "✔";
-  font-size: 16px;
-  color: #3b3b3b;
-  position: absolute;
-  top: -3px;
-  left: 2px;
-  display: none;
+.s_login .lost_box {
+  margin-bottom: 15px;
 }
 .s_login .lost_pass {
   color: #52ac62;
-}
-.s_login .us_btn {
-  margin: 15px 0;
 }
 .s_login .reg_box {
   display: -webkit-flex;
@@ -845,6 +888,7 @@ body {
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin-top: 15px;
 }
 .s_login .reg_link {
   color: #52ac62;
@@ -857,6 +901,97 @@ body {
     -webkit-flex-direction: column;
         -ms-flex-direction: column;
             flex-direction: column;
-    text-align: center;
+  }
+}
+.s_login .login_acc {
+  font-size: 14px;
+  text-align: center;
+  margin-bottom: 15px;
+}
+.s_login .login_link {
+  color: #52ac62;
+  color-text-align: center;
+}
+.s_login .profile_pass {
+  text-align: center;
+  margin-bottom: 10px;
+}
+.s_login .us_card_big {
+  max-width: 900px;
+}
+.s_login .reg_info {
+  text-align: center;
+  margin-bottom: 70px;
+}
+.s_login .reg_info_one {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+.s_login .reg_info_one span {
+  font-weight: 700;
+}
+.s_login .reg_info .us_input {
+  max-width: 400px;
+}
+.s_login .us_card_h5 {
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 15px;
+}
+.s_login .us_form_group {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.s_login .us_form_group .us_input {
+  width: 48%;
+}
+.s_login .reg_terms {
+  font-size: 14px;
+  text-align: center;
+  margin-top: 10px;
+}
+@media screen and (max-width: 767px) {
+  .s_login .us_form_group {
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .s_login .us_form_group .us_input {
+    width: 100%;
+  }
+}
+
+.news_item {
+  margin-bottom: 40px;
+  padding-right: 150px;
+  position: relative;
+}
+.news_item_title {
+  font-weight: 700;
+}
+.news_item_desc {
+  font-size: 14px;
+}
+.news_item_date {
+  font-size: 14px;
+  color: #aaa;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+@media screen and (max-width: 575px) {
+  .news_item {
+    padding-right: 0;
+  }
+  .news_item_date {
+    position: static;
+    margin-top: 10px;
   }
 }
