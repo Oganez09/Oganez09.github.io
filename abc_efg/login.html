@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0">
+
+	<title>ABC EFG</title>
+
+	<link rel="stylesheet" href="css/fonts.css">
+
+	<link rel="stylesheet" href="css/bootstrap-reboot.min.css">
+	<link rel="stylesheet" href="css/bootstrap-grid.min.css">
+	<link rel="stylesheet" href="css/custom.css">
+
+</head>
+<body>
+
+	<header class="header">
+		<div class="container">
+			<div class="header__box">
+				<a href="index.html" class="header_logo">ABC<span>EFG</span></a>
+				<button class="header_btn" id="open_menu" data-target="#offcanvas">
+					<svg width="20" height="20" viewBox="0 0 20 20" fill="#fff" xmlns="http://www.w3.org/2000/svg"><rect x="2" y="4" width="20" height="2"></rect><rect x="2" y="9" width="20" height="2"></rect><rect x="2" y="14" width="20" height="2"></rect></svg>
+				</button>
+				<nav class="header_menu" id="offcanvas">
+					<button class="btn_close_menu" id="offcanvas_close"></button>
+					<div class="offcanvas_logo">ADVENTURE<span>SKILLS</span></div>
+					<ul class="offcanvas_menu">
+						<li class="offcanvas_menu_item"><a class="offcanvas_menu_link" href="#">Баланс</a></li>
+						<li class="offcanvas_menu_item"><a class="offcanvas_menu_link" href="#">Ссылки</a></li>
+						<li class="offcanvas_menu_item"><a class="offcanvas_menu_link" href="#">Структура</a></li>
+					</ul>
+					<ul class="header_menu_list">
+						<li class="header_menu_item"><a href="#" class="header_menu_link"><span class="header_i_user"></span>Георгий Горбуненко</a></li>
+						<li class="header_menu_item"><a href="#" class="header_menu_link sign_out">Выйти<span class="header_i_out"></span></a></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</header>
+
+	<div class="s_login">
+		<div class="container">
+			<div class="flex_cont">
+
+				<div class="us_card">
+					<div class="us_card_h4">Войти в личный кабинет</div>
+					<form action="" class="us_form">
+						<input type="text" class="us_input" placeholder="Номер телефона">
+						<input type="text" class="us_input" placeholder="Пароль">
+						<label class="us_check">
+							<input type="checkbox">
+							<span class="us_check_box"></span>
+							<span class="us_check_text">Запомнить меня</span>
+						</label>
+						<div><a href="pass.html" class="lost_pass">Забыли пароль?</a></div>
+						<button class="us_btn" type="submit">Войти</button>
+					</form>
+					<div class="reg_box">Нет аккаунта? <a href="reg.html" class="reg_link">Зарегистрироваться</a></div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+	<script src="js/jquery.min.js"></script>
+	<script src="js/custom.js"></script>
+	
+</body>
+</html>
