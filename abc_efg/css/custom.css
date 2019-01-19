@@ -794,23 +794,6 @@ body {
 .s_login .us_form {
   text-align: center;
 }
-.s_login .lost_pass {
-  color: #52ac62;
-}
-.s_login .us_btn {
-  margin: 15px 0;
-}
-.s_login .reg_box {
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-justify-content: space-between;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-.s_login .reg_link {
-  color: #52ac62;
-}
 .s_login .us_check {
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -848,4 +831,32 @@ body {
   top: -3px;
   left: 2px;
   display: none;
+}
+.s_login .lost_pass {
+  color: #52ac62;
+}
+.s_login .us_btn {
+  margin: 15px 0;
+}
+.s_login .reg_box {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.s_login .reg_link {
+  color: #52ac62;
+}
+@media screen and (max-width: 575px) {
+  .s_login .reg_box {
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+  }
 }
