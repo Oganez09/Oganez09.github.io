@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0">
+
+	<title>Quran Audio</title>
+
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600" rel="stylesheet">
+	<link rel="stylesheet" href="css/fontawesome.min.css">
+
+	<link rel="stylesheet" href="css/bootstrap-reboot.min.css">
+	<link rel="stylesheet" href="css/bootstrap-grid.min.css">
+	<link rel="stylesheet" href="css/mediaelement.min.css">
+	<link rel="stylesheet" href="css/clean-html-player.css">
+	<link rel="stylesheet" href="css/custom.css">
+
+</head>
+<body>
+
+	<div class="download_select" id="download-select">
+		<div class="download_select_icon"><i class="fas fa-download"></i></div>
+		<div class="download_select_text">
+			<div>Download select</div>
+			<div>
+				<a href="#">zip</a>
+				<a href="#">rar</a>
+				<a href="#">torrent</a>
+			</div>
+		</div>
+	</div>
+
+	<header class="header">
+		<div class="container">
+			<div class="header_wrap">
+				<div class="header_logo"><a href="/">Quran Audio</a></div>
+				<div class="header_lang">
+					<div class="header_lang_select" id="lang-select">
+						<img src="img/eng.png" alt="" class="flag">
+						<span>Eng</span>
+						<i class="fas fa-angle-down"></i>
+					</div>
+					<ul class="header_lang_list us_list">
+						<li class="header_lang_item active"><a href="#"><img src="img/eng.png" alt="" class="flag">Eng</a></li>
+						<li class="header_lang_item"><a href="#"><img src="img/ara.png" alt="" class="flag">Ara</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<div class="author">
+		<div class="container">
+			<h1 class="author_name">Mahmoud Khalil Al-Hussary</h1>
+			<dl class="author_info author_surah">
+				<dt class="author_info_title">Quantity:</dt>
+				<dd class="author_info_list">114 Surah</dd>
+			</dl>
+			<dl class="author_info author_download">
+				<dt class="author_info_title">Download:</dt>
+				<dd class="author_info_list">
+					<a href="#">zip</a>
+					<a href="#">rar</a>
+					<a href="#">torrent</a>
+				</dd>
+			</dl>
+			<div class="author_list">
+				<div class="author_list_item">
+					<label class="author_list_item_check">
+						<input type="checkbox" class="checkbox_input" id="check-audio-1">
+						<span class="checkbox_view"></span>
+					</label>
+					<div class="author_list_item_box">
+						<label for="check-audio-1" class="author_list_item_name">1 Surah Al-Fatihah</label>
+						<audio class="author_list_item_audio mejs__player" controls preload="none">
+							<source src="audio/001_Al_Fatihah_Mahmoud_Al_Hussary.mp3">
+						</audio>
+						<a href="#" class="author_list_item_download">Download<i class="fas fa-download"></i></a>
+					</div>
+				</div>
+				<div class="author_list_item">
+					<label class="author_list_item_check">
+						<input type="checkbox" class="checkbox_input" id="check-audio-2">
+						<span class="checkbox_view"></span>
+					</label>
+					<div class="author_list_item_box">
+						<label for="check-audio-2" class="author_list_item_name">112 Surah Al-Ikhlas</label>
+						<audio class="author_list_item_audio mejs__player" controls preload="none">
+							<source src="audio/112_Al_Ikhlas_Mahmoud_Al_Hussary.mp3" type="audio/mpeg">
+						</audio>
+						<a href="#" class="author_list_item_download">Download<i class="fas fa-download"></i></a>
+					</div>
+				</div>
+				<div class="author_list_item">
+					<label class="author_list_item_check">
+						<input type="checkbox" class="checkbox_input" id="check-audio-3">
+						<span class="checkbox_view"></span>
+					</label>
+					<div class="author_list_item_box">
+						<label for="check-audio-3" class="author_list_item_name">113 Surah Al-Falaq</label>
+						<audio class="author_list_item_audio mejs__player" controls preload="none">
+							<source src="audio/113_Al_Falaq_Mahmoud_Al_Hussary.mp3" type="audio/mpeg">
+						</audio>
+						<a href="#" class="author_list_item_download">Download<i class="fas fa-download"></i></a>
+					</div>
+				</div>
+				<div class="author_list_item">
+					<label class="author_list_item_check">
+						<input type="checkbox" class="checkbox_input" id="check-audio-4">
+						<span class="checkbox_view"></span>
+					</label>
+					<div class="author_list_item_box">
+						<label for="check-audio-4" class="author_list_item_name">114 Surah An-Nash</label>
+						<audio class="author_list_item_audio mejs__player" controls preload="none">
+							<source src="audio/114_An_Nas_Mahmoud_Al_Hussary.mp3" type="audio/mpeg">
+						</audio>
+						<a href="#" class="author_list_item_download">Download<i class="fas fa-download"></i></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="cleanPlayer" theme="light" tooltips="false" inverttime="false">
+		<audio title="1 Al-Fatihah" descr="Mahmoud Al-Hussary" download>
+			<source type="audio/mp3" src="audio/001_Al_Fatihah_Mahmoud_Al_Hussary.mp3" />
+		</audio>
+		<audio title="112 Al-Ikhlas" descr="Mahmoud Al-Hussary" download>
+			<source type="audio/mp3" src="audio/112_Al_Ikhlas_Mahmoud_Al_Hussary.mp3" />
+		</audio>
+		<audio title="113 Al-Falaq" descr="Mahmoud Al-Hussary" download>
+			<source type="audio/mp3" src="audio/113_Al_Falaq_Mahmoud_Al_Hussary.mp3" />
+		</audio>
+		<audio title="114 An-Nas" descr="Mahmoud Al-Hussary" download>
+			<source type="audio/mp3" src="audio/114_An_Nas_Mahmoud_Al_Hussary.mp3" />
+		</audio>
+		<audio title="1 Al-Fatihah" descr="Mahmoud Al-Hussary" download>
+			<source type="audio/mp3" src="audio/001_Al_Fatihah_Mahmoud_Al_Hussary.mp3" />
+		</audio>
+		<audio title="112 Al-Ikhlas" descr="Mahmoud Al-Hussary" download>
+			<source type="audio/mp3" src="audio/112_Al_Ikhlas_Mahmoud_Al_Hussary.mp3" />
+		</audio>
+		<audio title="113 Al-Falaq" descr="Mahmoud Al-Hussary" download>
+			<source type="audio/mp3" src="audio/113_Al_Falaq_Mahmoud_Al_Hussary.mp3" />
+		</audio>
+		<audio title="114 An-Nas" descr="Mahmoud Al-Hussary" download>
+			<source type="audio/mp3" src="audio/114_An_Nas_Mahmoud_Al_Hussary.mp3" />
+		</audio>
+		<audio title="1 Al-Fatihah" descr="Mahmoud Al-Hussary" download>
+			<source type="audio/mp3" src="audio/001_Al_Fatihah_Mahmoud_Al_Hussary.mp3" />
+		</audio>
+		<audio title="112 Al-Ikhlas" descr="Mahmoud Al-Hussary" download>
+			<source type="audio/mp3" src="audio/112_Al_Ikhlas_Mahmoud_Al_Hussary.mp3" />
+		</audio>
+		<audio title="113 Al-Falaq" descr="Mahmoud Al-Hussary" download>
+			<source type="audio/mp3" src="audio/113_Al_Falaq_Mahmoud_Al_Hussary.mp3" />
+		</audio>
+		<audio title="114 An-Nas" descr="Mahmoud Al-Hussary" download>
+			<source type="audio/mp3" src="audio/114_An_Nas_Mahmoud_Al_Hussary.mp3" />
+		</audio>
+		<audio title="1 Al-Fatihah" descr="Mahmoud Al-Hussary" download>
+			<source type="audio/mp3" src="audio/001_Al_Fatihah_Mahmoud_Al_Hussary.mp3" />
+		</audio>
+		<audio title="112 Al-Ikhlas" descr="Mahmoud Al-Hussary" download>
+			<source type="audio/mp3" src="audio/112_Al_Ikhlas_Mahmoud_Al_Hussary.mp3" />
+		</audio>
+		<audio title="113 Al-Falaq" descr="Mahmoud Al-Hussary" download>
+			<source type="audio/mp3" src="audio/113_Al_Falaq_Mahmoud_Al_Hussary.mp3" />
+		</audio>
+		<audio title="114 An-Nas" descr="Mahmoud Al-Hussary" download>
+			<source type="audio/mp3" src="audio/114_An_Nas_Mahmoud_Al_Hussary.mp3" />
+		</audio>
+		<audio title="1 Al-Fatihah" descr="Mahmoud Al-Hussary" download>
+			<source type="audio/mp3" src="audio/001_Al_Fatihah_Mahmoud_Al_Hussary.mp3" />
+		</audio>
+		<audio title="112 Al-Ikhlas" descr="Mahmoud Al-Hussary" download>
+			<source type="audio/mp3" src="audio/112_Al_Ikhlas_Mahmoud_Al_Hussary.mp3" />
+		</audio>
+		<audio title="113 Al-Falaq" descr="Mahmoud Al-Hussary" download>
+			<source type="audio/mp3" src="audio/113_Al_Falaq_Mahmoud_Al_Hussary.mp3" />
+		</audio>
+		<audio title="114 An-Nas" descr="Mahmoud Al-Hussary" download>
+			<source type="audio/mp3" src="audio/114_An_Nas_Mahmoud_Al_Hussary.mp3" />
+		</audio>
+		<audio title="1 Al-Fatihah" descr="Mahmoud Al-Hussary" download>
+			<source type="audio/mp3" src="audio/001_Al_Fatihah_Mahmoud_Al_Hussary.mp3" />
+		</audio>
+		<audio title="112 Al-Ikhlas" descr="Mahmoud Al-Hussary" download>
+			<source type="audio/mp3" src="audio/112_Al_Ikhlas_Mahmoud_Al_Hussary.mp3" />
+		</audio>
+		<audio title="113 Al-Falaq" descr="Mahmoud Al-Hussary" download>
+			<source type="audio/mp3" src="audio/113_Al_Falaq_Mahmoud_Al_Hussary.mp3" />
+		</audio>
+		<audio title="114 An-Nas" descr="Mahmoud Al-Hussary" download>
+			<source type="audio/mp3" src="audio/114_An_Nas_Mahmoud_Al_Hussary.mp3" />
+		</audio>
+		<audio title="1 Al-Fatihah" descr="Mahmoud Al-Hussary" download>
+			<source type="audio/mp3" src="audio/001_Al_Fatihah_Mahmoud_Al_Hussary.mp3" />
+		</audio>
+		<audio title="112 Al-Ikhlas" descr="Mahmoud Al-Hussary" download>
+			<source type="audio/mp3" src="audio/112_Al_Ikhlas_Mahmoud_Al_Hussary.mp3" />
+		</audio>
+		<audio title="113 Al-Falaq" descr="Mahmoud Al-Hussary" download>
+			<source type="audio/mp3" src="audio/113_Al_Falaq_Mahmoud_Al_Hussary.mp3" />
+		</audio>
+		<audio title="114 An-Nas" descr="Mahmoud Al-Hussary" download>
+			<source type="audio/mp3" src="audio/114_An_Nas_Mahmoud_Al_Hussary.mp3" />
+		</audio>
+		<audio title="1 Al-Fatihah" descr="Mahmoud Al-Hussary" download>
+			<source type="audio/mp3" src="audio/001_Al_Fatihah_Mahmoud_Al_Hussary.mp3" />
+		</audio>
+		<audio title="112 Al-Ikhlas" descr="Mahmoud Al-Hussary" download>
+			<source type="audio/mp3" src="audio/112_Al_Ikhlas_Mahmoud_Al_Hussary.mp3" />
+		</audio>
+		<audio title="113 Al-Falaq" descr="Mahmoud Al-Hussary" download>
+			<source type="audio/mp3" src="audio/113_Al_Falaq_Mahmoud_Al_Hussary.mp3" />
+		</audio>
+		<audio title="114 An-Nas" descr="Mahmoud Al-Hussary" download>
+			<source type="audio/mp3" src="audio/114_An_Nas_Mahmoud_Al_Hussary.mp3" />
+		</audio>
+		<audio title="1 Al-Fatihah" descr="Mahmoud Al-Hussary" download>
+			<source type="audio/mp3" src="audio/001_Al_Fatihah_Mahmoud_Al_Hussary.mp3" />
+		</audio>
+		<audio title="112 Al-Ikhlas" descr="Mahmoud Al-Hussary" download>
+			<source type="audio/mp3" src="audio/112_Al_Ikhlas_Mahmoud_Al_Hussary.mp3" />
+		</audio>
+		<audio title="113 Al-Falaq" descr="Mahmoud Al-Hussary" download>
+			<source type="audio/mp3" src="audio/113_Al_Falaq_Mahmoud_Al_Hussary.mp3" />
+		</audio>
+		<audio title="114 An-Nas" descr="Mahmoud Al-Hussary" download>
+			<source type="audio/mp3" src="audio/114_An_Nas_Mahmoud_Al_Hussary.mp3" />
+		</audio>
+		<audio title="1 Al-Fatihah" descr="Mahmoud Al-Hussary" download>
+			<source type="audio/mp3" src="audio/001_Al_Fatihah_Mahmoud_Al_Hussary.mp3" />
+		</audio>
+		<audio title="112 Al-Ikhlas" descr="Mahmoud Al-Hussary" download>
+			<source type="audio/mp3" src="audio/112_Al_Ikhlas_Mahmoud_Al_Hussary.mp3" />
+		</audio>
+		<audio title="113 Al-Falaq" descr="Mahmoud Al-Hussary" download>
+			<source type="audio/mp3" src="audio/113_Al_Falaq_Mahmoud_Al_Hussary.mp3" />
+		</audio>
+		<audio title="114 An-Nas" descr="Mahmoud Al-Hussary" download>
+			<source type="audio/mp3" src="audio/114_An_Nas_Mahmoud_Al_Hussary.mp3" />
+		</audio>
+		<audio title="1 Al-Fatihah" descr="Mahmoud Al-Hussary" download>
+			<source type="audio/mp3" src="audio/001_Al_Fatihah_Mahmoud_Al_Hussary.mp3" />
+		</audio>
+		<audio title="112 Al-Ikhlas" descr="Mahmoud Al-Hussary" download>
+			<source type="audio/mp3" src="audio/112_Al_Ikhlas_Mahmoud_Al_Hussary.mp3" />
+		</audio>
+		<audio title="113 Al-Falaq" descr="Mahmoud Al-Hussary" download>
+			<source type="audio/mp3" src="audio/113_Al_Falaq_Mahmoud_Al_Hussary.mp3" />
+		</audio>
+		<audio title="114 An-Nas" descr="Mahmoud Al-Hussary" download>
+			<source type="audio/mp3" src="audio/114_An_Nas_Mahmoud_Al_Hussary.mp3" />
+		</audio>
+		<audio title="1 Al-Fatihah" descr="Mahmoud Al-Hussary" download>
+			<source type="audio/mp3" src="audio/001_Al_Fatihah_Mahmoud_Al_Hussary.mp3" />
+		</audio>
+		<audio title="112 Al-Ikhlas" descr="Mahmoud Al-Hussary" download>
+			<source type="audio/mp3" src="audio/112_Al_Ikhlas_Mahmoud_Al_Hussary.mp3" />
+		</audio>
+		<audio title="113 Al-Falaq" descr="Mahmoud Al-Hussary" download>
+			<source type="audio/mp3" src="audio/113_Al_Falaq_Mahmoud_Al_Hussary.mp3" />
+		</audio>
+		<audio title="114 An-Nas" descr="Mahmoud Al-Hussary" download>
+			<source type="audio/mp3" src="audio/114_An_Nas_Mahmoud_Al_Hussary.mp3" />
+		</audio>
+		<audio title="1 Al-Fatihah" descr="Mahmoud Al-Hussary" download>
+			<source type="audio/mp3" src="audio/001_Al_Fatihah_Mahmoud_Al_Hussary.mp3" />
+		</audio>
+		<audio title="112 Al-Ikhlas" descr="Mahmoud Al-Hussary" download>
+			<source type="audio/mp3" src="audio/112_Al_Ikhlas_Mahmoud_Al_Hussary.mp3" />
+		</audio>
+		<audio title="113 Al-Falaq" descr="Mahmoud Al-Hussary" download>
+			<source type="audio/mp3" src="audio/113_Al_Falaq_Mahmoud_Al_Hussary.mp3" />
+		</audio>
+		<audio title="114 An-Nas" descr="Mahmoud Al-Hussary" download>
+			<source type="audio/mp3" src="audio/114_An_Nas_Mahmoud_Al_Hussary.mp3" />
+		</audio>
+		<audio title="1 Al-Fatihah" descr="Mahmoud Al-Hussary" download>
+			<source type="audio/mp3" src="audio/001_Al_Fatihah_Mahmoud_Al_Hussary.mp3" />
+		</audio>
+		<audio title="112 Al-Ikhlas" descr="Mahmoud Al-Hussary" download>
+			<source type="audio/mp3" src="audio/112_Al_Ikhlas_Mahmoud_Al_Hussary.mp3" />
+		</audio>
+		<audio title="113 Al-Falaq" descr="Mahmoud Al-Hussary" download>
+			<source type="audio/mp3" src="audio/113_Al_Falaq_Mahmoud_Al_Hussary.mp3" />
+		</audio>
+		<audio title="114 An-Nas" descr="Mahmoud Al-Hussary" download>
+			<source type="audio/mp3" src="audio/114_An_Nas_Mahmoud_Al_Hussary.mp3" />
+		</audio>
+		<audio title="1 Al-Fatihah" descr="Mahmoud Al-Hussary" download>
+			<source type="audio/mp3" src="audio/001_Al_Fatihah_Mahmoud_Al_Hussary.mp3" />
+		</audio>
+		<audio title="112 Al-Ikhlas" descr="Mahmoud Al-Hussary" download>
+			<source type="audio/mp3" src="audio/112_Al_Ikhlas_Mahmoud_Al_Hussary.mp3" />
+		</audio>
+		<audio title="113 Al-Falaq" descr="Mahmoud Al-Hussary" download>
+			<source type="audio/mp3" src="audio/113_Al_Falaq_Mahmoud_Al_Hussary.mp3" />
+		</audio>
+		<audio title="114 An-Nas" descr="Mahmoud Al-Hussary" download>
+			<source type="audio/mp3" src="audio/114_An_Nas_Mahmoud_Al_Hussary.mp3" />
+		</audio>
+		<audio title="1 Al-Fatihah" descr="Mahmoud Al-Hussary" download>
+			<source type="audio/mp3" src="audio/001_Al_Fatihah_Mahmoud_Al_Hussary.mp3" />
+		</audio>
+		<audio title="112 Al-Ikhlas" descr="Mahmoud Al-Hussary" download>
+			<source type="audio/mp3" src="audio/112_Al_Ikhlas_Mahmoud_Al_Hussary.mp3" />
+		</audio>
+		<audio title="113 Al-Falaq" descr="Mahmoud Al-Hussary" download>
+			<source type="audio/mp3" src="audio/113_Al_Falaq_Mahmoud_Al_Hussary.mp3" />
+		</audio>
+		<audio title="114 An-Nas" descr="Mahmoud Al-Hussary" download>
+			<source type="audio/mp3" src="audio/114_An_Nas_Mahmoud_Al_Hussary.mp3" />
+		</audio>
+		<audio title="1 Al-Fatihah" descr="Mahmoud Al-Hussary" download>
+			<source type="audio/mp3" src="audio/001_Al_Fatihah_Mahmoud_Al_Hussary.mp3" />
+		</audio>
+		<audio title="112 Al-Ikhlas" descr="Mahmoud Al-Hussary" download>
+			<source type="audio/mp3" src="audio/112_Al_Ikhlas_Mahmoud_Al_Hussary.mp3" />
+		</audio>
+		<audio title="113 Al-Falaq" descr="Mahmoud Al-Hussary" download>
+			<source type="audio/mp3" src="audio/113_Al_Falaq_Mahmoud_Al_Hussary.mp3" />
+		</audio>
+		<audio title="114 An-Nas" descr="Mahmoud Al-Hussary" download>
+			<source type="audio/mp3" src="audio/114_An_Nas_Mahmoud_Al_Hussary.mp3" />
+		</audio>
+		<audio title="1 Al-Fatihah" descr="Mahmoud Al-Hussary" download>
+			<source type="audio/mp3" src="audio/001_Al_Fatihah_Mahmoud_Al_Hussary.mp3" />
+		</audio>
+		<audio title="112 Al-Ikhlas" descr="Mahmoud Al-Hussary" download>
+			<source type="audio/mp3" src="audio/112_Al_Ikhlas_Mahmoud_Al_Hussary.mp3" />
+		</audio>
+		<audio title="113 Al-Falaq" descr="Mahmoud Al-Hussary" download>
+			<source type="audio/mp3" src="audio/113_Al_Falaq_Mahmoud_Al_Hussary.mp3" />
+		</audio>
+		<audio title="114 An-Nas" descr="Mahmoud Al-Hussary" download>
+			<source type="audio/mp3" src="audio/114_An_Nas_Mahmoud_Al_Hussary.mp3" />
+		</audio>
+		<audio title="1 Al-Fatihah" descr="Mahmoud Al-Hussary" download>
+			<source type="audio/mp3" src="audio/001_Al_Fatihah_Mahmoud_Al_Hussary.mp3" />
+		</audio>
+		<audio title="112 Al-Ikhlas" descr="Mahmoud Al-Hussary" download>
+			<source type="audio/mp3" src="audio/112_Al_Ikhlas_Mahmoud_Al_Hussary.mp3" />
+		</audio>
+		<audio title="113 Al-Falaq" descr="Mahmoud Al-Hussary" download>
+			<source type="audio/mp3" src="audio/113_Al_Falaq_Mahmoud_Al_Hussary.mp3" />
+		</audio>
+		<audio title="114 An-Nas" descr="Mahmoud Al-Hussary" download>
+			<source type="audio/mp3" src="audio/114_An_Nas_Mahmoud_Al_Hussary.mp3" />
+		</audio>
+		<audio title="1 Al-Fatihah" descr="Mahmoud Al-Hussary" download>
+			<source type="audio/mp3" src="audio/001_Al_Fatihah_Mahmoud_Al_Hussary.mp3" />
+		</audio>
+		<audio title="112 Al-Ikhlas" descr="Mahmoud Al-Hussary" download>
+			<source type="audio/mp3" src="audio/112_Al_Ikhlas_Mahmoud_Al_Hussary.mp3" />
+		</audio>
+		<audio title="113 Al-Falaq" descr="Mahmoud Al-Hussary" download>
+			<source type="audio/mp3" src="audio/113_Al_Falaq_Mahmoud_Al_Hussary.mp3" />
+		</audio>
+		<audio title="114 An-Nas" descr="Mahmoud Al-Hussary" download>
+			<source type="audio/mp3" src="audio/114_An_Nas_Mahmoud_Al_Hussary.mp3" />
+		</audio>
+		<audio title="1 Al-Fatihah" descr="Mahmoud Al-Hussary" download>
+			<source type="audio/mp3" src="audio/001_Al_Fatihah_Mahmoud_Al_Hussary.mp3" />
+		</audio>
+		<audio title="112 Al-Ikhlas" descr="Mahmoud Al-Hussary" download>
+			<source type="audio/mp3" src="audio/112_Al_Ikhlas_Mahmoud_Al_Hussary.mp3" />
+		</audio>
+		<audio title="113 Al-Falaq" descr="Mahmoud Al-Hussary" download>
+			<source type="audio/mp3" src="audio/113_Al_Falaq_Mahmoud_Al_Hussary.mp3" />
+		</audio>
+		<audio title="114 An-Nas" descr="Mahmoud Al-Hussary" download>
+			<source type="audio/mp3" src="audio/114_An_Nas_Mahmoud_Al_Hussary.mp3" />
+		</audio>
+		<audio title="1 Al-Fatihah" descr="Mahmoud Al-Hussary" download>
+			<source type="audio/mp3" src="audio/001_Al_Fatihah_Mahmoud_Al_Hussary.mp3" />
+		</audio>
+		<audio title="112 Al-Ikhlas" descr="Mahmoud Al-Hussary" download>
+			<source type="audio/mp3" src="audio/112_Al_Ikhlas_Mahmoud_Al_Hussary.mp3" />
+		</audio>
+		<audio title="113 Al-Falaq" descr="Mahmoud Al-Hussary" download>
+			<source type="audio/mp3" src="audio/113_Al_Falaq_Mahmoud_Al_Hussary.mp3" />
+		</audio>
+		<audio title="114 An-Nas" descr="Mahmoud Al-Hussary" download>
+			<source type="audio/mp3" src="audio/114_An_Nas_Mahmoud_Al_Hussary.mp3" />
+		</audio>
+		<audio title="1 Al-Fatihah" descr="Mahmoud Al-Hussary" download>
+			<source type="audio/mp3" src="audio/001_Al_Fatihah_Mahmoud_Al_Hussary.mp3" />
+		</audio>
+		<audio title="112 Al-Ikhlas" descr="Mahmoud Al-Hussary" download>
+			<source type="audio/mp3" src="audio/112_Al_Ikhlas_Mahmoud_Al_Hussary.mp3" />
+		</audio>
+		<audio title="113 Al-Falaq" descr="Mahmoud Al-Hussary" download>
+			<source type="audio/mp3" src="audio/113_Al_Falaq_Mahmoud_Al_Hussary.mp3" />
+		</audio>
+		<audio title="114 An-Nas" descr="Mahmoud Al-Hussary" download>
+			<source type="audio/mp3" src="audio/114_An_Nas_Mahmoud_Al_Hussary.mp3" />
+		</audio>
+		<audio title="1 Al-Fatihah" descr="Mahmoud Al-Hussary" download>
+			<source type="audio/mp3" src="audio/001_Al_Fatihah_Mahmoud_Al_Hussary.mp3" />
+		</audio>
+		<audio title="112 Al-Ikhlas" descr="Mahmoud Al-Hussary" download>
+			<source type="audio/mp3" src="audio/112_Al_Ikhlas_Mahmoud_Al_Hussary.mp3" />
+		</audio>
+		<audio title="113 Al-Falaq" descr="Mahmoud Al-Hussary" download>
+			<source type="audio/mp3" src="audio/113_Al_Falaq_Mahmoud_Al_Hussary.mp3" />
+		</audio>
+		<audio title="114 An-Nas" descr="Mahmoud Al-Hussary" download>
+			<source type="audio/mp3" src="audio/114_An_Nas_Mahmoud_Al_Hussary.mp3" />
+		</audio>
+	</div>
+
+	<script src="js/jquery.min.js"></script>
+	<script src="js/mediaelement.min.js"></script>
+	<script src="js/clean-html-player.js"></script>
+	<script src="js/custom.js"></script>
+</body>
+</html>
