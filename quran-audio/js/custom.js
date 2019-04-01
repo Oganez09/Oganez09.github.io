@@ -12,18 +12,4 @@ $(document).ready(function() {
 		})
 	}
 
-	$(document).on("click", ".checkbox_input", function() {
-		if ( $(".checkbox_input").is(":checked") ) {
-			$("#download-select").addClass("show");
-		} else {
-			$("#download-select").removeClass("show");
-		}
-	})
-
 })
-
-// document.querySelectorAll(".checkbox_input").forEach(function (item) {
-// 	item.addEventListener("click", function (event) {
-// 		event.stopPropagation();
-// 	});
-// });

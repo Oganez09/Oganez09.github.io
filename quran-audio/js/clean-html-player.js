@@ -228,7 +228,7 @@ function CleanPlayer(_container, _cleanPlayerOptions, _plyrOptions) {
       }"></ul>`
     );
     playlist.forEach(function (item, index) {
-      items.push(`<li data-id="${index}" class="${index ? "chp__item" : "chp__item chp__item--active"}">
+      items.push(`<li data-id="${index}" surah-num="${item.surah}" class="${index ? "chp__item" : "chp__item chp__item--active"}">
           ${
         item.download
           ? '<a target="_blank" download href="' +
