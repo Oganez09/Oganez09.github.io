@@ -1,13 +1,5 @@
 $(function() {
 
-	$(window).on('load', function() {
-		setTimeout(function() {
-			$('.preloader').fadeOut('slow');
-			$('body').css('overflowY', 'auto');
-		}, 150);
-
-	});
-
 	$(document).on("click", "[data-toggle = us_modal]", function(e) {
 		
 		e.preventDefault();
@@ -176,5 +168,14 @@ $(function() {
 		$input.change();
 		return false;
 	});
+
+});
+
+$(window).on('load', function() {
+	
+	setTimeout(function() {
+		$('.preloader').fadeOut('slow');
+		$('body').css('overflowY', 'auto');
+	}, 150);
 
 });
