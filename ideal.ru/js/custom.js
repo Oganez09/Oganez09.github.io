@@ -1,9 +1,14 @@
-$(document).ready(function() {
+// document.body.onload = function(){
+// 	setTimeout(function() {
+// 		var preloader = document.getElementById('loader');
+// 		if( !preloader.classList.contains('done') )
+// 		{
+// 			preloader.classList.add('done');
+// 		}
+// 	}, 1000)
+// }
 
-	setTimeout(function() {
-		$('.preloader').fadeOut('slow');
-		$('body').css('overflowY', 'auto');
-	}, 150);
+$(document).ready(function() {
 
 	$(document).on("click", "[data-toggle = us_modal]", function(e) {
 		
@@ -173,5 +178,14 @@ $(document).ready(function() {
 		$input.change();
 		return false;
 	});
+
+});
+
+$(window).load(function() {
+
+	setTimeout(function() {
+		$('.preloader').fadeOut('slow');
+		$('body').css('overflowY', 'auto');
+	}, 150);
 
 });
