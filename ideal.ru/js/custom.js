@@ -1,16 +1,6 @@
-// document.body.onload = function(){
-// 	setTimeout(function() {
-// 		var preloader = document.getElementById('loader');
-// 		if( !preloader.classList.contains('done') )
-// 		{
-// 			preloader.classList.add('done');
-// 		}
-// 	}, 1000)
-// }
+$(function() {
 
-$(document).ready(function() {
-
-	$(window).load(function() {
+	$(window).on('load', function() {
 		setTimeout(function() {
 			$('.preloader').fadeOut('slow');
 			$('body').css('overflowY', 'auto');
