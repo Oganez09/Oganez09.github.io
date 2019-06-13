@@ -10,7 +10,6 @@ $(document).ready(function(){
 
 		setTimeout(function() {
 			$('.preloader').fadeOut('slow');
-			$('body').css('overflowY', 'auto');
 		}, 150);
 
 		$('.menu_list_item_link').mPageScroll2id();
