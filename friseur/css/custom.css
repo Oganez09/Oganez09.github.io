@@ -275,7 +275,6 @@ h3, .h3 {
   height: 100%;
   background-color: #bdd96b;
   z-index: 9999;
-  display: none;
 }
 
 .preloader_line, .preloader_line::before, .preloader_line::after {
