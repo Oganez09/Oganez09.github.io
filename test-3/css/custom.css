@@ -98,7 +98,7 @@
 .table th {
 	text-align: center;
 	position: relative;
-	padding-bottom: 10px;
+	padding-bottom: 30px;
 }
 .table th::after {
 	content: '\f0d7';
