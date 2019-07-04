@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0">
+
+	<title>Document</title>
+
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/fontawesome.min.css">
+	<link rel="stylesheet" href="css/custom.css">
+
+</head>
+<body>
+
+	<div class="sidebar">
+		<ul class="sidebar_list">
+			<li class="sidebar_list_item active"><a href="#" class="sidebar_list_item_link"><i class="fas fa-exclamation"></i>Входяшие заявки <span class="badge badge-secondary">5</span></a></li>
+			<li class="sidebar_list_item"><a href="#" class="sidebar_list_item_link"><i class="fas fa-exclamation"></i>Верифакиция <span class="badge badge-secondary">1</span></a></li>
+			<li class="sidebar_list_item"><a href="#" class="sidebar_list_item_link"><i class="fas fa-exclamation"></i>Отправленные предложения <span class="badge badge-secondary">1598</span></a></li>
+			<li class="sidebar_list_item"><a href="#" class="sidebar_list_item_link"><i class="fas fa-exclamation"></i>Отправить запрос <span class="badge badge-secondary">3504</span></a></li>
+			<li class="sidebar_list_item"><a href="#" class="sidebar_list_item_link"><i class="fas fa-exclamation"></i>Запрос юридической экспертизы</a></li>
+			<li class="sidebar_list_item"><a href="#" class="sidebar_list_item_link"><i class="fas fa-check"></i>Принятые предложения <span class="badge badge-secondary">219</span></a></li>
+			<li class="sidebar_list_item active">
+				<a href="#" class="sidebar_list_item_link"><i class="fas fa-ruble-sign"></i>Оплаченные БГ и ТК <span class="badge badge-secondary">28</span></a>
+				<ul class="sidebar_sub_list">
+					<li class="sidebar_list_item"><a href="#" class="sidebar_list_item_link"><i class="fas fa-circle"></i>Редактор макета</a></li>
+					<li class="sidebar_list_item"><a href="#" class="sidebar_list_item_link"><i class="fas fa-circle"></i>Печать документо</a></li>
+					<li class="sidebar_list_item"><a href="#" class="sidebar_list_item_link"><i class="fas fa-circle"></i>Загрузка сканов</a></li>
+					<li class="sidebar_list_item"><a href="#" class="sidebar_list_item_link"><i class="fas fa-circle"></i>Подпись документов</a></li>
+				</ul>
+			</li>
+			<li class="sidebar_list_item"><a href="#" class="sidebar_list_item_link"><i class="fas fa-exclamation"></i>Полеченные ТК</a></li>
+			<li class="sidebar_list_separator"></li>
+			<li class="sidebar_list_item"><a href="#" class="sidebar_list_item_link"><i class="fas fa-exclamation"></i>Статистика</a></li>
+			<li class="sidebar_list_item"><a href="#" class="sidebar_list_item_link"><i class="fas fa-exclamation"></i>Публикация в ЕИС</a></li>
+			<li class="sidebar_list_separator"></li>
+		</ul>
+	</div>
+	<div class="content">
+		<div class="content_title">Оплаченные БГ</div>
+		<form action="" class="content_form">
+			<div class="form-group">
+				<label for="create_1">Заявка создана с:</label>
+				<input type="date" class="form-control" id="create_1">
+			</div>
+			<div class="form-group">
+				<label for="create_2">Заявка создана до:</label>
+				<input type="date" class="form-control" id="create_2">
+			</div>
+			<div class="form-group">
+				<label for="update_1">Заявка обновлена с:</label>
+				<input type="date" class="form-control" id="update_1">
+			</div>
+			<div class="form-group">
+				<label for="update_2">Заявка обновлена по:</label>
+				<input type="date" class="form-control" id="update_2">
+			</div>
+			<div class="form-group">
+				<label for="number">Номер заявки:</label>
+				<input type="text" class="form-control" id="number">
+			</div>
+			<div class="form-group">
+				<label for="personal">Ответственный сотрудник:</label>
+				<input type="text" class="form-control" id="personal">
+			</div>
+			<div class="form-group">
+				<input class="form-check-input" type="checkbox" id="only_tk" value="option1">
+				<label class="form-check-label" for="only_tk">Показывать только заявки по ТК</label>
+			</div>
+			<button type="submit" class="btn btn-primary">Применить</button>
+		</form>
+		<div class="table-responsive">
+			<table class="table">
+				<tr>
+					<th>№ заявки</th>
+					<th>Обновлено</th>
+					<th>Время в регионе</th>
+					<th>Тип заявки</th>
+					<th>Ответственный сотрудник</th>
+					<th>НМЦ</th>
+					<th>Сумма БГ/ТК</th>
+					<th>Клиент</th>
+					<th>Актуально до</th>
+					<th>Офис выпускающих</th>
+					<th>Осталось дней</th>
+					<th>Срок БГ/ТК дней</th>
+					<th>ФЗ</th>
+					<th>Номер лота</th>
+					<th>Дата принятия в работу</th>
+					<th>последний обрабатывающий</th>
+					<th>Утверждающий решение</th>
+				</tr>
+				<tr>
+					<td>246279</td>
+					<td>24.01.2019 12.08</td>
+					<td><span class="text-danger"><i class="far fa-clock"></i> 12:33</span></td>
+					<td>Исполнение</td>
+					<td>Швецова Юлия Николаевна</td>
+					<td>1 600 000.00</td>
+					<td>1 600 000.00</td>
+					<td>МУП "Пушкинская электросеть</td>
+					<td>-</td>
+					<td>Msk</td>
+					<td>-</td>
+					<td>401</td>
+					<td>44ФЗ</td>
+					<td>03483003807180011302</td>
+					<td>-</td>
+					<td>-</td>
+					<td>-</td>
+				</tr>
+				<tr>
+					<td>246279</td>
+					<td>24.01.2019 12.08</td>
+					<td><span class="text-danger"><i class="far fa-clock"></i> 12:33</span></td>
+					<td>Исполнение</td>
+					<td>Швецова Юлия Николаевна</td>
+					<td>1 600 000.00</td>
+					<td>1 600 000.00</td>
+					<td>МУП "Пушкинская электросеть</td>
+					<td>-</td>
+					<td>Msk</td>
+					<td>-</td>
+					<td>401</td>
+					<td>44ФЗ</td>
+					<td>03483003807180011302</td>
+					<td>-</td>
+					<td>-</td>
+					<td>-</td>
+				</tr>
+				<tr>
+					<td>246279</td>
+					<td>24.01.2019 12.08</td>
+					<td><span class="text-danger"><i class="far fa-clock"></i> 12:33</span></td>
+					<td>Исполнение</td>
+					<td>Швецова Юлия Николаевна</td>
+					<td>1 600 000.00</td>
+					<td>1 600 000.00</td>
+					<td>МУП "Пушкинская электросеть</td>
+					<td>-</td>
+					<td>Msk</td>
+					<td>-</td>
+					<td>401</td>
+					<td>44ФЗ</td>
+					<td>03483003807180011302</td>
+					<td>-</td>
+					<td>-</td>
+					<td>-</td>
+				</tr>
+				<tr>
+					<td>246279</td>
+					<td>24.01.2019 12.08</td>
+					<td><span class="text-warning"><i class="far fa-clock"></i> 12:33</span></td>
+					<td>Исполнение</td>
+					<td>Автоматическое одобрение</td>
+					<td>1 600 000.00</td>
+					<td>1 600 000.00</td>
+					<td>МУП "Пушкинская электросеть</td>
+					<td>-</td>
+					<td>Msk</td>
+					<td>-</td>
+					<td>401</td>
+					<td>44ФЗ</td>
+					<td>03483003807180011302</td>
+					<td>-</td>
+					<td>-</td>
+					<td>-</td>
+				</tr>
+				<tr>
+					<td>246279</td>
+					<td>24.01.2019 12.08</td>
+					<td><span class="text-success"><i class="far fa-clock"></i> 12:33</span></td>
+					<td>Исполнение</td>
+					<td>Автоматическое одобрение</td>
+					<td>1 600 000.00</td>
+					<td>1 600 000.00</td>
+					<td>МУП "Пушкинская электросеть</td>
+					<td>-</td>
+					<td>Msk</td>
+					<td>-</td>
+					<td>401</td>
+					<td>44ФЗ</td>
+					<td>03483003807180011302</td>
+					<td>-</td>
+					<td>-</td>
+					<td>Хазиева Юлия Витальевна</td>
+				</tr>
+			</table>
+		</div>
+	</div>
+
+	<script src="js/jquery.min.js"></script>
+	<script src="js/custom.js"></script>
+	
+</body>
+</html>
