@@ -384,6 +384,7 @@ h1 {
   position: relative;
   cursor: pointer;
   text-align: left;
+  display: block;
 }
 
 .form_agree_input {
@@ -498,6 +499,10 @@ h1 {
   position: relative;
 }
 
+.header_menu_item:hover .header_menu_sub {
+  display: block;
+}
+
 .header_menu_item:not(:last-child) {
   margin-right: 20px;
 }
@@ -505,6 +510,8 @@ h1 {
 .header_menu_item_link {
   font-size: 14px;
   color: #fff;
+  display: block;
+  padding: 20px 0;
 }
 
 .header_menu_item_link:hover {
@@ -536,7 +543,6 @@ h1 {
   position: absolute;
   top: 100%;
   left: 50%;
-  margin-top: 18px;
   margin-left: -170px;
 }
 
@@ -581,17 +587,21 @@ h1 {
   margin-top: 9px;
 }
 
-.header_search {
+.header_search:hover .header_search_input {
+  display: block;
+}
+
+.header_search_item {
   margin-right: 7px;
-  padding: 5px 8px;
+  padding: 23px 8px;
   cursor: pointer;
 }
 
-.header_search:hover .header_search_icon {
+.header_search_item:hover .header_search_icon {
   border-color: #b1f19d;
 }
 
-.header_search:hover .header_search_icon::before {
+.header_search_item:hover .header_search_icon::before {
   background-color: #b1f19d;
 }
 
@@ -617,7 +627,7 @@ h1 {
           transform: rotateZ(50deg);
 }
 
-.header_input {
+.header_search_input {
   display: none;
   font-size: 14px;
   color: #68778f;
@@ -633,7 +643,6 @@ h1 {
   position: absolute;
   top: 100%;
   right: 0;
-  margin-top: 10px;
 }
 
 .header_btn_item {
@@ -685,7 +694,7 @@ h1 {
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 0 50px;
+  padding-left: 50px;
 }
 
 .footer_form_box_item:first-child {
@@ -694,6 +703,7 @@ h1 {
 
 .footer_form_box_item:last-child {
   margin-top: 10px;
+  margin-left: 100px;
 }
 
 .footer_form_box .us_input {
@@ -709,10 +719,7 @@ h1 {
     margin-right: 30px;
   }
   .footer_form_box_item:last-child {
-    -webkit-box-flex: 1;
-    -webkit-flex: 1;
-        -ms-flex: 1;
-            flex: 1;
+    margin-left: 0;
   }
 }
 
@@ -732,8 +739,17 @@ h1 {
   .footer_form_box_item:first-child {
     margin-right: 0;
   }
+  .footer_form_box_item:last-child {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0;
+        -ms-flex: 0;
+            flex: 0;
+  }
   .footer_form_box .form_desc {
     margin-bottom: 50px;
+  }
+  .footer_form_box .us_input {
+    max-width: 100%;
   }
 }
 
@@ -1171,6 +1187,10 @@ h1 {
   text-decoration: none;
 }
 
+.company_nav {
+  padding-bottom: 50px;
+}
+
 .company_nav .us_tabs_nav {
   -webkit-box-pack: start;
   -webkit-justify-content: flex-start;
@@ -1200,10 +1220,15 @@ h1 {
 .company_nav_quote {
   color: #08367f;
   border-left: 3px solid #3ec82d;
+  margin-bottom: 20px;
   padding-left: 20px;
 }
 
 .company_branches {
   background-color: #f8f9fb;
   padding: 50px 0;
+}
+
+.company_branches_title {
+  text-align: center;
 }

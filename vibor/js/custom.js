@@ -27,7 +27,7 @@ $(document).ready(function() {
 		$(this).closest(".us_tabs_nav").children().removeClass("active");
 		$(this).parent().addClass("active");
 
-		$(this).closest(".us_tabs_nav").next().children().removeClass("active");
+		$(this).closest(".us_tabs").next().children().removeClass("active");
 		$(target).addClass("active");
 	});
 
