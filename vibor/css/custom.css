@@ -1733,8 +1733,7 @@ ul li {
   padding: 60px 0;
 }
 
-.company_branches_title {
-  text-align: center;
+.company_branches .title_sub_page {
   margin-bottom: 40px;
 }
 
@@ -1802,7 +1801,286 @@ ul li {
 }
 
 .company_year {
-  padding: 60px 0;
+  padding: 60px 0 70px;
+}
+
+.company_year_box {
+  position: relative;
+  margin-top: -30px;
+  padding: 300px 0;
+}
+
+.company_year_box::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  border-top: 1px dashed rgba(161, 161, 161, 0.56);
+  z-index: 100;
+}
+
+.company_year_flex {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.company_year_item {
+  position: relative;
+  width: 270px;
+}
+
+.company_year_item_line::before {
+  content: '';
+  width: 30px;
+  height: 30px;
+  display: block;
+  border-radius: 50%;
+  background-color: #0cb71c;
+  background-image: -o-linear-gradient(51deg, #0cb71c 0%, #83c914 100%);
+  background-image: linear-gradient(39deg, #0cb71c 0%, #83c914 100%);
+  opacity: 0.27;
+  position: absolute;
+  top: 50%;
+  left: 75%;
+  margin-top: -15px;
+  margin-left: -15px;
+}
+
+.company_year_item_line::after {
+  content: '';
+  width: 18px;
+  height: 18px;
+  display: block;
+  border-radius: 50%;
+  background-color: #0cb71c;
+  background-image: -o-linear-gradient(51deg, #0cb71c 0%, #83c914 100%);
+  background-image: linear-gradient(39deg, #0cb71c 0%, #83c914 100%);
+  position: absolute;
+  top: 50%;
+  left: 75%;
+  margin-top: -9px;
+  margin-left: -9px;
+}
+
+.company_year_item_line_year {
+  font-size: 22px;
+  font-weight: 700;
+  color: #4cc118;
+  text-align: right;
+  width: 170px;
+  border-bottom: 2px solid #61c316;
+  -webkit-transform: rotatez(-90deg);
+      -ms-transform: rotate(-90deg);
+          transform: rotatez(-90deg);
+  position: absolute;
+  top: 50%;
+  left: 75%;
+  margin-top: -102px;
+  margin-left: -102px;
+}
+
+.company_year_item_info {
+  background-color: rgba(221, 227, 239, 0.55);
+  border-radius: 10px;
+  padding: 25px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  margin-top: 50px;
+}
+
+.company_year_item_info::before {
+  content: '';
+  position: absolute;
+  top: -36px;
+  left: 75%;
+  margin-left: -18px;
+  border: 18px solid transparent;
+  border-bottom-color: rgba(221, 227, 239, 0.55);
+}
+
+.company_year_item_title {
+  font-size: 18px;
+  font-weight: 500;
+  color: #08367f;
+  margin-bottom: 10px;
+}
+
+.company_year_item__top .company_year_item_line_year {
+  top: auto;
+  bottom: 50%;
+  margin-top: auto;
+  margin-bottom: -102px;
+  text-align: left;
+}
+
+.company_year_item__top .company_year_item_info {
+  top: auto;
+  bottom: 50%;
+  margin-bottom: 50px;
+}
+
+.company_year_item__top .company_year_item_info::before {
+  top: auto;
+  bottom: -36px;
+  border-bottom-color: transparent;
+  border-top-color: rgba(221, 227, 239, 0.55);
+}
+
+@media screen and (max-width: 1199px) {
+  .company_year_flex {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .company_year_item_info {
+    left: -20px;
+    right: -20px;
+  }
+  .company_year_item_info::before {
+    left: 72%;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .company_year_flex {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .company_year_item_line::before, .company_year_item_line::after {
+    left: 25%;
+  }
+  .company_year_item_line_year {
+    left: 25%;
+  }
+  .company_year_item_info {
+    left: 0px;
+    right: -100px;
+  }
+  .company_year_item_info::before {
+    left: 15%;
+  }
+  .company_year_item__top .company_year_item_line::before, .company_year_item__top .company_year_item_line::after {
+    left: 80%;
+  }
+  .company_year_item__top .company_year_item_line_year {
+    left: 80%;
+  }
+  .company_year_item__top .company_year_item_info {
+    left: -100px;
+    right: 0px;
+  }
+  .company_year_item__top .company_year_item_info::before {
+    left: 87%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .company_year .title_sub_page {
+    margin-bottom: 40px;
+  }
+  .company_year_box {
+    margin-top: 0;
+    padding: 0;
+  }
+  .company_year_box::before {
+    display: none;
+  }
+  .company_year .container {
+    position: relative;
+  }
+  .company_year_flex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    border-left: 1px dashed rgba(161, 161, 161, 0.56);
+  }
+  .company_year_flex::before {
+    content: '';
+    top: 0;
+    bottom: 0;
+    left: 0;
+  }
+  .company_year_item {
+    width: 100%;
+  }
+  .company_year_item:not(:last-child) {
+    margin-bottom: 50px;
+  }
+  .company_year_item_line {
+    position: relative;
+  }
+  .company_year_item_line::before {
+    position: absolute;
+    top: 33px;
+    left: 0;
+    margin-top: -15px;
+    margin-left: -15px;
+  }
+  .company_year_item_line::after {
+    position: absolute;
+    top: 33px;
+    left: 0;
+    margin-top: -9px;
+    margin-left: -9px;
+  }
+  .company_year_item_line_year {
+    position: relative;
+    top: auto;
+    left: auto;
+    -webkit-transform: none;
+        -ms-transform: none;
+            transform: none;
+    margin-top: 0;
+    margin-left: 0;
+  }
+  .company_year_item_info {
+    position: relative;
+    top: auto;
+    left: auto;
+    right: auto;
+    margin-top: 30px;
+    margin-left: 20px;
+  }
+  .company_year_item_info::before {
+    top: -36px;
+    left: 25%;
+    margin-left: -18px;
+    border: 18px solid transparent;
+    border-bottom-color: rgba(221, 227, 239, 0.55);
+  }
+  .company_year_item__top .company_year_item_line::before, .company_year_item__top .company_year_item_line::after, .company_year_item__top .company_year_item_line_year {
+    left: 0;
+  }
+  .company_year_item__top .company_year_item_line_year {
+    position: relative;
+    top: auto;
+    left: auto;
+    bottom: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+    text-align: right;
+  }
+  .company_year_item__top .company_year_item_info {
+    position: relative;
+    top: auto;
+    left: auto;
+    bottom: auto;
+    margin-bottom: 0;
+  }
+  .company_year_item__top .company_year_item_info::before {
+    top: -36px;
+    left: 25%;
+    bottom: auto;
+    margin-left: -18px;
+    border-top-color: transparent;
+    border-bottom-color: rgba(221, 227, 239, 0.55);
+  }
 }
 
 @media screen and (max-width: 1199px) {
