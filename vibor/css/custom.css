@@ -1406,7 +1406,8 @@ ul li {
 
 .bunners_item {
   height: 500px;
-  padding-right: 60%;
+  padding-left: 110px;
+  padding-right: 50%;
   padding-bottom: 100px;
   position: relative;
 }
@@ -1437,6 +1438,7 @@ ul li {
 .bunners_item_desc {
   color: #fff;
   margin-bottom: 40px;
+  padding-right: 100px;
 }
 
 .bunners_item_link {
@@ -1479,6 +1481,9 @@ ul li {
   .bunners::after {
     height: 2000px;
   }
+  .bunners_item {
+    padding-left: 50px;
+  }
   .bunners_item_img {
     max-width: 60% !important;
   }
@@ -1487,6 +1492,7 @@ ul li {
 @media screen and (max-width: 991px) {
   .bunners_item {
     padding-right: 0;
+    padding-left: 25px;
   }
   .bunners_item_img {
     top: auto;
