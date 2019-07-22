@@ -1390,9 +1390,9 @@ ul li {
   width: 2000px;
   height: 3000px;
   background-color: #fff;
-  -webkit-transform: rotateZ(-35deg);
-      -ms-transform: rotate(-35deg);
-          transform: rotateZ(-35deg);
+  -webkit-transform: rotateZ(-33deg);
+      -ms-transform: rotate(-33deg);
+          transform: rotateZ(-33deg);
   position: absolute;
   top: 0;
   left: 65%;
@@ -1497,6 +1497,9 @@ ul li {
   .bunners_item_img {
     top: auto;
     bottom: 100px;
+  }
+  .bunners_item_img_bottom {
+    bottom: 0;
   }
   .bunners_item_desc {
     padding-right: 50%;
