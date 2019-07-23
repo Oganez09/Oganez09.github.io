@@ -67,7 +67,7 @@ button:focus
 	outline: none
 
 h1
-	font-size: 30px
+	font-size: 35px
 	color: $accent
 	font-weight: 400
 	color: $accent
@@ -96,7 +96,7 @@ blockquote
 		font-weight: 900
 
 ul
-	padding-left: 15px
+	padding-left: 17px
 	li
 		margin-bottom: 10px
 
@@ -474,32 +474,19 @@ ul
 				color: #fff
 				display: block
 				padding: 20px 0
-				&_icon
-					display: inline-block
-					width: 7px
-					height: 6px
-					margin-left: 3px
-					border: 3px solid transparent
-					border-top: 3px solid #fff
+			&_icon
+				position: absolute
+				right: 0
+				top: 50%
+				margin-top: -2px
+				background: url(../img/i_arrow.png) 50% 50% no-repeat
+				width: 8px
+				height: 4px
+			&_sub
+				.header_menu_item_link
+					padding-right: 13px
 		&_sub
 			display: none
-			width: 340px
-			padding: 30px
-			border-radius: 6px
-			background-color: #fff
-			box-shadow: 2px 5px 29px rgba(173, 173, 173, 0.4)
-			position: absolute
-			top: 100%
-			left: 50%
-			margin-left: -170px
-			&_item
-				&_link
-					font-size: 14px	
-					color: $text
-					line-height: 30px
-					&:hover
-						color: #6fc354
-						text-decoration: none
 	&_right
 		display: flex
 		align-items: center
@@ -587,16 +574,33 @@ ul
 				&:hover
 					.header_menu_sub
 						display: block
-				&:not(:nth-last-child(2))
-					margin-right: 20px
-				&_link
-					&:hover
+					.header_menu_item_link
 						color: #b1f19d
 						text-decoration: none
-						.header_menu_item_link_icon
-							border-top-color: #b1f19d
+					.header_menu_item_icon
+						opacity: .5
+				&:not(:nth-last-child(2))
+					margin-right: 20px
 				&_phone
 					display: none
+			&_sub
+				width: 340px
+				padding: 30px
+				border-radius: 6px
+				background-color: #fff
+				box-shadow: 2px 5px 29px rgba(173, 173, 173, 0.4)
+				position: absolute
+				top: 100%
+				left: 50%
+				margin-left: -170px
+				&_item
+					&_link
+						font-size: 14px	
+						color: $text
+						line-height: 30px
+						&:hover
+							color: #6fc354
+							text-decoration: none
 	@media screen and (max-width: 1199px)
 		&_menu
 			display: none
@@ -608,6 +612,12 @@ ul
 			padding-top: 40px
 			&_item
 				text-align: center
+				&.show
+					.header_menu_sub
+						display: block
+				&_box
+					display: inline-block
+					position: relative
 				&_link
 					font-size: 16px
 					color: $text
@@ -616,8 +626,14 @@ ul
 					margin-bottom: 20px
 					&:hover
 						color: $text
-					&_icon
-						border-top-color: $text
+				&_sub
+					.header_menu_item_link
+						padding-right: 0
+				&_icon
+					top: 0
+					right: -40px
+					padding: 14px 20px
+					background-image: url(../img/i_arrow_hover.png)
 				&_phone
 					border-top: 1px solid #dedede
 					margin-top: 20px
@@ -631,6 +647,14 @@ ul
 							display: inline-block
 						&:hover
 							color: $text
+			&_sub_item_link
+				font-size: 16px
+				color: $text
+				display: inline-block
+				padding: 0
+				margin-bottom: 20px
+				&:hover
+					color: $text
 		.show
 			.header_menu
 				display: block
@@ -836,7 +860,7 @@ ul
 		width: 2000px
 		height: 3000px
 		background-color: #fff
-		transform: rotateZ(-35deg)
+		transform: rotateZ(-33deg)
 		position: absolute
 		top: 0
 		left: 65%
@@ -846,7 +870,8 @@ ul
 		z-index: 10
 	&_item
 		height: 500px
-		padding-right: 60%
+		padding-left: 110px
+		padding-right: 50%
 		padding-bottom: 100px
 		position: relative
 		&_title
@@ -869,6 +894,7 @@ ul
 		&_desc
 			color: #fff
 			margin-bottom: 40px
+			padding-right: 100px
 		&_link
 			color: #2cc62e
 			padding: 9px 45px
@@ -899,14 +925,18 @@ ul
 		&::after
 			height: 2000px
 		&_item
+			padding-left: 50px
 			&_img
 				max-width: 60% !important
 	@media screen and (max-width: 991px)
 		&_item
 			padding-right: 0
+			padding-left: 25px
 			&_img
 				top: auto
 				bottom: 100px
+				&_bottom
+					bottom: 0
 			&_desc
 				padding-right: 50%
 	@media screen and (max-width: 767px)
@@ -1017,7 +1047,7 @@ ul
 		margin-right: 0
 	&_box
 	&_item
-		border-radius: 10px
+		border-radius: 25px
 		margin: 30px
 		overflow: hidden
 		&:hover
@@ -1057,10 +1087,6 @@ ul
 					color: $text
 					box-shadow: 0 0 0 2px #0cb71c
 					text-decoration: none
-	@media screen and (min-width: 576px)
-		.col-lg-6
-			padding-left: 0
-			padding-right: 0
 	@media screen and (max-width: 1199px)
 		&_item
 			margin: 30px
@@ -1076,6 +1102,10 @@ ul
 		.container
 			padding-left: 0
 			padding-right: 0
+		&_item
+			max-width: 100%
+			margin-right: 15px
+			margin-left: 15px
 
 .about
 	padding: 70px 0
@@ -1168,8 +1198,6 @@ ul
 		.us_content
 			column-count: 2
 			column-width: 400px
-			h2
-				column-span: all
 	&_branches
 		background-color: #f8f9fb
 		padding: 60px 0
@@ -1531,13 +1559,6 @@ ul
 				padding-left: 30px
 				&::before
 					content: url(../img/i_services_p.png)
-					width: 18px
-					height: 18px
-					line-height: 18px
-					text-align: center
-					border-radius: 50%
-					background-color: #0cb71c
-					background-image: linear-gradient(39deg, #0cb71c 0%, #83c914 100%)
 					position: absolute
 					top: 2px
 					left: 0
@@ -1552,7 +1573,7 @@ ul
 			&_item
 		&_img
 			position: absolute
-			bottom: -100px
+			bottom: -75px
 		@media screen and (max-width: 991px)
 			&_img
 				display: none

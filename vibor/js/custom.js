@@ -37,6 +37,14 @@ $(document).ready(function() {
 		} else {
 			$(this).closest(".header_box").addClass("show");
 		}
+	})
+
+	.on("click", ".header_menu_item_icon", function() {
+		if ($(this).closest(".header_menu_item_sub").hasClass("show")) {
+			$(this).closest(".header_menu_item_sub").removeClass("show");
+		} else {
+			$(this).closest(".header_menu_item_sub").addClass("show");
+		}
 	});
 
 	$(window).on("scroll load", function () {
@@ -45,6 +53,13 @@ $(document).ready(function() {
 		} else {
 			$(".home .header").removeClass("header_fixed");
 		}
+	});
+
+	$('.services_nav .us_tabs_nav_item_link').on('click', function(e){
+		var target = $(this).attr('href');
+		$('html,body').stop().animate({ scrollTop: $(target).offset().top - 100 }, 777);
+		e.preventDefault();
+		return false;
 	});
 
 });
