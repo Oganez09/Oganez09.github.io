@@ -1,0 +1,1040 @@
+$accent: #1a8c5b
+$green: #198b5b
+$green2: #1a8b5b
+$green3: #1a8b5c
+$dark: #000
+$grey: #77838f
+$light-grey: #d3d3d3
+$ff_main: "PT Sans"
+
+::placeholder
+	color: #888
+
+input,
+textarea,
+select
+	-webkit-appearance: none
+	border-radius: 0
+	
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button
+	-webkit-appearance: none
+	margin: 0
+input[type="number"]
+	-moz-appearance: textfield
+
+input[type=date]::-webkit-inner-spin-button,
+input[type=date]::-webkit-calendar-picker-indicator
+	-webkit-appearance: none
+	display: none
+	
+html, body
+	height: 100%
+
+body
+	font-family: $ff_main
+	font-size: 14px
+	font-weight: 400
+	color: #000
+	background-color: #fff
+	overflow-x: hidden
+	min-width: 320px
+	position: relative
+	-webkit-font-smoothing: antialiased
+	-moz-osx-font-smoothing: grayscale
+
+button:focus
+	outline: none
+
+*:focus
+	outline: none
+
+h1
+	color: $dark
+
+.us_list
+	list-style-type: none
+	margin: 0
+	padding: 0
+
+.breadcrambs
+	display: flex
+	padding: 0 15px
+	justify-content: center
+	background: #f5f5f5 url(../img/bg_breadcrambs.jpg) 50% 50% no-repeat
+	background-size: cover
+	&_box
+		display: inline-flex
+		align-items: center
+		justify-content: center
+		flex-direction: column
+		min-width: 260px
+		min-height: 146px
+		background-color: $green3
+		position: relative
+		&::before,
+		&::after
+			content: ''
+			position: absolute
+			top: 0
+			bottom: 0
+			border: 73px solid transparent
+		&::before
+			left: -146px
+			border-right-color: $green3
+			border-bottom-color: $green3
+		&::after
+			right: -146px
+			border-left-color: $green3
+			border-top-color: $green3
+	&_list
+		display: flex
+		flex-wrap: wrap
+		justify-content: center
+		&_item
+			color: #a7dfc7
+			&:not(:last-child)
+				&::after
+					content: "/"
+					color: #87bfa7
+					margin: 0 10px
+			&_link
+				color: #87bfa7
+				&:hover
+					color: #87bfa7
+	&_title
+		font-size: 25px
+		font-weight: 700
+		color: #fff
+		margin: 0
+
+.us_btn
+	font-weight: 700
+	color: #fff
+	background-color: $green3
+	border: 2px solid $green3
+	height: 54px
+	padding: 0 35px
+	text-transform: uppercase
+	letter-spacing: 1px
+	display: inline-flex
+	align-items: center
+	&:hover
+		color: #fff
+		background-color: #26a771
+		border-color: #26a771
+		text-decoration: none
+	&_white
+		color: $green3
+		background-color: #fff
+		&:hover
+			color: #26a771
+			background-color: #fff
+			border-color: #26a771
+
+.us_modal
+	position: fixed
+	top: 0
+	right: 0
+	bottom: 0
+	left: 0
+	z-index: 1050
+	background: rgba(0,0,0,0.2)
+	opacity: 0
+	visibility: hidden
+	transition: all .15s linear
+	&.us_visible
+		opacity: 1
+		visibility: visible
+		.us_modal_box
+			opacity: 1
+			transform: translateY(100px)
+	&_box
+		position: relative
+		box-sizing: border-box
+		margin: 0 auto
+		padding: 30px 30px 40px
+		width: 640px
+		max-width: calc(100% - 30px)
+		max-height: calc(100% - 150px)
+		border-radius: 0px
+		background: #fff
+		opacity: 0
+		overflow-y: auto
+		transform: translateY(0px)
+		transition: .3s linear
+		transition-property: opacity,transform
+	&_close
+		position: absolute
+		top: 30px
+		right: 30px
+		width: 32px
+		height: 32px
+		padding: 0
+		background-color: transparent
+		opacity: .5
+		border: none
+		outline: none
+		cursor: pointer
+		z-index: 952
+		&:focus
+			outline: none
+		&:hover
+			opacity: 1
+	@media screen and (max-width: 767px)
+		&.us_visible
+			.us_modal_box
+				transform: translateY(30px)
+		&_box
+			padding-left: 20px
+			padding-right: 20px
+			max-height: calc(100% - 60px)
+		&_close
+			right: 20px
+
+.form
+	&_title
+		font-size: 21px
+		font-weight: 700
+		margin-bottom: 30px
+		padding-right: 40px
+	&_agree
+		margin-bottom: 16px
+		position: relative
+		cursor: pointer
+		display: block
+		&_input
+			display: none
+			&:checked + .form_agree_check::before
+				display: block
+		&_check
+			width: 26px
+			height: 26px
+			background-color: #fff
+			border: 2px solid #e8e8e8
+			position: absolute
+			top: 4px
+			left: 0
+			&::before
+				content: ''
+				position: absolute
+				top: 5px
+				left: 5px
+				width: 12px
+				height: 12px
+				background-color: $green
+				display: none
+		&_text
+			font-size: 14px
+			padding-left: 40px
+			line-height: 34px
+			&_link
+				color: #000
+				text-decoration: underline
+				&:hover
+					color: #000
+					text-decoration: none
+	&_item
+		display: flex
+		justify-content: space-between
+		&_label
+			width: 50%
+			margin-bottom: 16px
+			&:first-child
+				margin-right: 10px
+			&_fullwidth
+				width: 100%
+		&_title
+			margin-bottom: 6px
+			span
+				color: #ec3f0a
+	@media screen and (max-width: 767px)
+		&_title
+			font-size: 19px
+	@media screen and (max-width: 575px)
+		&_item
+			flex-direction: column
+			&_label
+				width: 100%
+
+.us_input,
+.us_textarea,
+.us_select
+	font-size: 14px
+	width: 100%
+	height: 40px
+	padding: 0 10px
+	border: none
+	outline: none
+	background-color: #fff
+	border: 2px solid #e8e8e8
+	display: block
+.us_textarea
+	height: 90px
+	padding: 5px 10px
+.us_select
+	padding-right: 20px
+	&_box
+		position: relative
+		&::before
+			content: url(../img/i_select_down.png)
+			position: absolute
+			top: 8px
+			right: 10px
+
+.owl-theme
+	.owl-dots
+		position: absolute
+		bottom: -60px
+		left: 0
+		right: 0
+		.owl-dot
+			span
+				width: 8px
+				height: 8px
+				background-color: #e2e2e2
+			&.active span,
+			&:hover span
+				background-color: $green2
+	.owl-nav
+		margin-bottom: 0
+		[class*=owl-]
+			position: absolute
+			top: 50%
+			width: 42px
+			height: 42px
+			margin: -40px 0 0
+			border-radius: 50%
+
+.owl-carousel .owl-nav button
+	&.owl-next
+		right: -21px
+		background-color: $green3
+		&:hover
+			background-color: #26a771
+	&.owl-prev
+		left: -21px
+		background-color: #fff
+		&:hover
+			background-color: #fff
+			box-shadow: 0 5px 5px rgba(0, 0, 0, 0.08)
+
+.us_tabs
+	&_nav
+		list-style-type: none
+		margin: 0
+		padding: 0
+		display: flex
+		border-bottom: 3px solid #f4f4f4
+		&_item
+			&.active
+				.us_tabs_nav_item_link
+					color: #fff
+					background-color: #414141
+			&_link
+				font-weight: 700
+				color: #414141
+				display: flex
+				align-items: center
+				height: 60px
+				padding: 0 30px
+				&:hover
+					color: #414141
+					text-decoration: none
+	&_content
+		padding-top: 30px
+		&_item
+			display: none
+			&.active
+				display: block
+		table
+			width: 100%
+			tr
+				&:not(:last-child)
+					border-bottom: 1px dashed #c3c3c3
+				td
+					padding: 15px 15px 15px 0
+					&:first-child
+						font-weight: 700
+						width: 300px
+		h4
+			font-size: 17px
+			margin-bottom: 20px
+		p
+			line-height: 24px
+			margin-bottom: 20px
+		ul
+			list-style-image: url(../img/i_list_marker.png)
+			margin-bottom: 20px
+			padding-left: 17px
+			li
+				line-height: 33px
+				padding-left: 5px
+		ol
+			list-style-type: none
+			counter-reset: item
+			margin-bottom: 20px
+			padding-left: 0
+			li
+				line-height: 33px
+				&::before
+					content: counter(item) ". "
+					counter-increment: item
+					font-weight: 700
+					color: $green2
+
+	@media screen and (max-width: 575px)
+		&_nav
+			flex-direction: column
+			justify-content: center
+			&_item
+				&_link
+					justify-content: center
+
+.us_pagination
+	list-style-type: none
+	margin: 50px 0 0
+	padding: 0
+	display: flex
+	align-items: center
+	flex-wrap: wrap
+	&_list
+		margin-right: 25px
+		margin-bottom: 10px
+		&.active .us_pagination_link
+			color: $green2
+			text-decoration: none
+	&_link
+		font-size: 16px
+		font-weight: 700
+		color: #9c9c9c
+		display: block
+		position: relative
+		&:hover
+			color: $green2
+			text-decoration: none
+	&_prev,
+	&_next
+		.us_pagination_link
+			color: #000
+			border-bottom: 1px solid #000
+			line-height: 16px
+	&_prev
+		margin-right: 40px
+	&_next
+		margin-left: 15px
+		margin-right: 0
+	@media screen and (max-width: 575px)
+		display: block
+		text-align: center
+		&_list
+			display: inline-block
+		&_link
+			font-size: 14px
+			display: inline-block
+		&_prev,
+		&_next
+			display: block
+			margin: 0 0 15px
+
+.header
+	position: relative
+	&_box
+		display: flex
+		align-items: center
+		justify-content: space-between
+		padding: 25px 0
+	&_logo
+		margin-top: -10px
+	&_btn_menu
+		display: none
+		padding: 0
+		background-color: transparent
+		border: none
+		outline: none
+		&_item
+			width: 28px
+			height: 2px
+			background-color: $green
+			display: block
+			& + .header_btn_menu_item
+				margin-top: 6px
+	&_menu
+		display: flex
+		&_item
+			position: relative
+			&:not(:last-child)
+				.header_menu_item_link
+					padding-right: 50px
+			&_link
+				font-size: 15px
+				font-weight: 700
+				color: #000
+				padding: 20px 0
+				display: block
+				&:hover
+					color: $green
+					text-decoration: none
+			&_icon
+				position: absolute
+				right: 45px
+				top: 50%
+				margin-top: -3px
+				background: url(../img/i_menu_down.png) 50% 50% no-repeat
+				width: 8px
+				height: 7px
+			&_sub
+				.header_menu_item_link
+					padding-right: 65px !important
+		&_sub
+			display: none
+			&_item
+				&_link
+					font-size: 15px
+					font-weight: 700
+					color: #000
+					padding: 10px 25px
+					display: block
+					&:hover
+						color: $green
+						text-decoration: none
+	&_info
+		display: flex
+		flex-direction: column
+		align-items: flex-end
+		&_phone
+			font-size: 22px
+			font-weight: 700
+			color: #000
+			line-height: 24px
+			&:hover
+				color: #000
+				text-decoration: none
+		&_mail
+			color: $green
+			&:hover
+				color: $green
+	@media screen and (max-width: 1199.5px)
+		&_menu
+			&_item
+				&:not(:last-child)
+					.header_menu_item_link
+						padding-right: 25px
+				&_icon
+					right: 25px
+				&_sub
+					.header_menu_item_link
+						padding-right: 40px !important
+	@media screen and (min-width: 992px)
+		&_menu
+			&_item
+				&:hover
+					.header_menu_item_link
+						color: $green
+						text-decoration: none
+					.header_menu_item_icon
+						transform: rotateZ(180deg)
+					.header_menu_sub
+						display: block
+			&_sub
+				position: absolute
+				top: 100%
+				left: 0
+				width: 140px
+				padding: 10px 0
+				background-color: #fff
+				box-shadow: 0 28px 57px rgba(0, 0, 0, 0.21)
+				z-index: 999
+	@media screen and (max-width: 991.5px)
+		&_btn_menu
+			display: block
+		&_menu
+			display: none
+			background-color: #fff
+			padding: 15px 0
+			position: absolute
+			top: 100%
+			left: 0
+			right: 0
+			z-index: 999
+			box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.21)
+			&_item
+				text-align: center
+				&:not(:last-child)
+					.header_menu_item_link
+						padding-right: 0
+				&_link
+					display: inline-block
+					padding: 5px 0
+					position: relative
+				.header_menu_item_icon
+					right: -40px
+					margin-top: -10px
+					padding: 10px 20px
+				&_sub
+					.header_menu_item_link
+						padding-right: 0px !important
+					&.show
+						.header_menu_sub
+							display: block
+		&_info
+			display: none
+		.show
+			.header_menu
+				display: block
+	@media screen and (max-width: 767px)
+		&_logo
+			&_item
+				height: 50px
+
+.footer
+	padding-top: 50px
+	padding-bottom: 15px
+	background-color: #fff
+	// background-image: linear-gradient(to top, #ffffff 0%, #f7f7f7 100%)
+	box-shadow: 0 -5px 32px rgba(0, 0, 0, 0.06)
+	&_main
+		display: flex
+		align-items: center
+		justify-content: space-between
+	&_logo
+		margin-top: -10px
+		&_item
+			height: 46px
+	&_menu
+		display: flex
+		&_item
+			&:not(:last-child)
+				padding-right: 25px
+			&_link
+				font-size: 14px
+				font-weight: 700
+				color: #000
+				display: block
+				&:hover
+					color: $green
+					text-decoration: none
+	&_info
+		display: flex
+		flex-direction: column
+		align-items: flex-end
+		&_phone
+			font-size: 22px
+			font-weight: 700
+			color: #000
+			line-height: 24px
+			&:hover
+				color: #000
+				text-decoration: none
+		&_mail
+			color: $green
+			&:hover
+				color: $green
+	&_loc
+		&_img
+			margin-right: 15px
+		&_item
+			font-size: 16px
+			font-weight: 700
+	&_copy
+		font-size: 11px
+		color: #8b8b8b
+		margin-top: 15px
+	@media screen and (max-width: 1199px)
+		&_main
+			flex-direction: column
+		&_logo,
+		&_menu
+			margin-bottom: 20px
+		&_info
+			align-items: center
+			margin-top: 10px
+			margin-bottom: 10px
+		&_copy
+			margin-top: 20px
+			text-align: center
+	@media screen and (max-width: 575px)
+		&_menu
+			flex-direction: column
+			align-items: center
+			&_item
+				&:not(:last-child)
+					padding-right: 0
+				&_link
+					padding: 5px 10px
+
+.main	
+	padding: 40px 0 60px
+	&_title
+		font-size: 25px
+		font-weight: 700
+		text-align: center
+		margin-bottom: 50px
+	&_banner
+		background: #fff url(../img/bg_main.jpg) 50% 50% no-repeat
+		background-size: cover
+		overflow: hidden
+		&_box
+			padding-top: 200px
+			padding-bottom: 200px
+			max-width: 620px
+			position: relative
+			&::before
+				content: url(../img/bg_main_car.png)
+				position: absolute
+				top: 0
+				left: 115%
+		&_title
+			font-size: 28px
+			font-weight: 700
+			text-transform: uppercase
+			margin-bottom: 30px
+		@media screen and (max-width: 767px)
+			&_box
+				padding-top: 90px
+				padding-bottom: 70px
+				&::before
+					display: none
+			&_title
+				font-size: 22px
+	&_info
+		padding-top: 15px
+		background-color: #fff
+		box-shadow: 3px 4px 16px rgba(0, 0, 0, 0.05)
+		position: relative
+		z-index: 1
+		&_item
+			display: flex
+			align-items: center
+			border: 1px solid #f1f1f1
+			padding: 8px
+			margin-bottom: 15px
+			&_img
+				margin-right: 20px
+			&_title
+				font-size: 15px
+				font-weight: 700
+				text-transform: uppercase
+		@media screen and (max-width: 991px)
+			&_item
+				&_img
+					height: 54px
+		@media screen and (max-width: 575px)
+			&_item
+				&_img
+					height: 46px
+				&_title
+					font-size: 14px
+	&_car
+		padding-top: 70px
+		padding-bottom: 40px
+		background: #fff url(../img/bg_car_plate.png) 50% 50% no-repeat
+		.main_title
+			color: #fff
+		&_item
+			display: flex
+			flex-direction: column
+			align-items: center
+			background-color: #26a771
+			border-bottom: 6px solid #26a771
+			margin: 0 auto 30px
+			max-width: 370px
+			&:hover
+				background-color: #f7f7f7
+				text-decoration: none
+				.main_car_item_title
+					color: #000
+			&_img
+				max-width: 100%
+				height: auto
+			&_title
+				font-size: 15px
+				font-weight: 700
+				color: #fff
+				text-transform: uppercase
+				margin-top: 25px
+				margin-bottom: 35px
+		@media screen and (max-width: 991px)
+			background-size: cover
+	&_products
+		padding-top: 100px
+		padding-bottom: 130px
+	&_about
+		overflow: hidden
+		&_box
+			padding-top: 120px
+			padding-bottom: 90px
+			max-width: 620px
+			position: relative
+			&::before
+				content: url(../img/bg_about.png)
+				position: absolute
+				top: 0
+				left: 50%
+		&_title
+			font-size: 25px
+			font-weight: 700
+			margin-bottom: 25px
+			&_mini
+				font-size: 17px
+				font-weight: 700
+				margin-bottom: 10px
+		p
+			font-size: 15px
+			margin-bottom: 30px
+		@media screen and (max-width: 767px)
+			&_box
+				padding-top: 70px
+				padding-bottom: 50px
+				&::before
+					display: none
+
+.contacts
+	&_box
+		font-size: 14px
+		color: #000
+		text-transform: uppercase
+		li
+			margin-bottom: 20px
+		a
+			color: #000
+			&:hover
+				color: #000
+				text-decoration: underline
+		span
+			font-weight: 700
+	.map
+		margin-top: 40px
+
+.price
+	&_item
+		&:not(:last-child)
+			margin-bottom: 40px
+	&_title
+		font-size: 21px
+		font-weight: 700
+		margin-bottom: 20px
+	&_table
+		width: 100%
+		border: 2px solid #f8f8f8
+		thead
+			background-color: #f8f8f8
+		tr
+			border-bottom: 2px solid #f8f8f8
+			th, td
+				padding: 15px 20px
+				&:first-child
+					width: 30%
+		th
+			font-weight: 700
+			text-transform: uppercase
+		a
+			color: #2c9368
+			text-decoration: underline
+			&:hover
+				color: #2c9368
+				text-decoration: none
+	@media screen and (max-width: 991px)
+		&_table
+			tr
+				th, td
+					&:first-child
+						width: 50%
+	@media screen and (max-width: 767px)
+		&_table
+			tr
+				th, td
+					&:first-child
+						width: 60%
+
+.catalog
+	.main_car
+		padding-top: 50px
+		padding-bottom: 60px
+		background-image: url(../img/bg_car_plate2.png)
+		background-position: 50% 100%
+	.main_about
+		padding-top: 60px
+	@media screen and (max-width: 991px)
+		.main_car
+			background-image: none
+		.main_about
+			padding-top: 0
+
+.products
+	&_item
+		margin-bottom: 30px
+		padding: 0 20px 15px
+		background-color: #f7f7f7
+		border-bottom: 3px solid transparent
+		text-transform: uppercase
+		position: relative
+		&:hover
+			border-bottom-color: #26a771
+			.products_item_link
+				display: flex
+		&_img
+			height: 240px
+			padding: 20px 0
+			display: flex
+			align-items: center
+			justify-content: center
+			&_item
+				max-width: 100%
+				height: auto
+		&_title
+			font-weight: 700
+			margin-bottom: 0
+		&_cat
+			font-size: 12px
+			color: $green3
+			margin-top: 15px
+		&_list
+			margin-top: 15px
+			&_item
+				font-size: 12px
+				margin-bottom: 5px
+		&_price
+			font-weight: 700
+			margin-top: 15px
+		&_link
+			display: none
+			justify-content: center
+			align-items: center
+			background-color: rgba(#fff,.7)
+			position: absolute
+			top: 0
+			right: 0
+			bottom: 0
+			left: 0
+			.us_btn
+				display: inline-flex
+				align-items: center
+				padding: 0 20px
+				height: 40px
+	&_list
+		padding-top: 45px
+		padding-bottom: 70px
+	&_table
+		width: 100%
+		margin-bottom: 15px
+		border: 2px solid #f8f8f8
+		thead
+			background-color: #f8f8f8
+			font-weight: 700
+			text-transform: uppercase
+		tr
+			border-bottom: 2px solid #f8f8f8
+			th, td
+				padding: 15px 20px
+				&:first-child
+					width: 40%
+			td
+				&:last-child
+					font-weight: 700
+					text-transform: uppercase
+		&_title
+			font-size: 12px
+			font-weight: 700
+			width: 15px
+			height: 15px
+			margin-left: 10px
+			display: inline-block
+			text-align: center
+			line-height: 15px
+			background-color: #f8f8f8
+			cursor: pointer
+			position: relative
+			&:hover
+				.products_table_title_box
+					opacity: 1
+					visibility: visible
+			&_box
+				position: absolute
+				bottom: calc(100% + 4px)
+				left: 100%
+				z-index: 1
+				background-color: #fff
+				text-align: left
+				width: 205px
+				padding: 10px 15px
+				box-shadow: 0 9px 16px rgba(0, 0, 0, 0.16)
+				opacity: 0
+				visibility: hidden
+				transition: opacity .3s, visibility .3s
+				&::before
+					content: ''
+					border: 4px solid #fff
+					border-right-color: transparent
+					border-bottom-color: transparent
+					position: absolute
+					top: 100%
+					left: 0
+			&_item
+				&:first-child
+					margin-bottom: 5px
+				span
+					font-weight: 400
+	&_btns
+		margin-bottom: 50px
+		.us_btn
+			margin-right: 10px
+			margin-top: 10px
+	&_flex
+		display: flex
+	&_info
+		flex: 1
+	@media screen and (max-width: 991px)
+		&_table
+			tr
+				th, td
+					&:first-child
+						width: 50%
+	@media screen and (max-width: 767px)
+		&_flex
+			flex-direction: column
+	@media screen and (max-width: 575px)
+		&_table
+			&_title
+				&_box
+					width: 160px
+				&_item
+					span
+						display: block
+.gallery
+	&_wrap
+		width: 500px
+		margin-right: 30px
+		margin-bottom: 50px
+	&_main
+		margin-bottom: 17px
+	&_item
+		display: none
+		text-align: center
+		&.active
+			display: block
+		&_img
+			max-width: 100%
+			height: auto
+	&_thrumbs
+		display: flex
+		justify-content: center
+		width: 100%
+		&_item
+			&:not(:last-child)
+				margin-right: 17px
+			&_img
+				max-width: 100%
+				height: auto
+	@media screen and (max-width: 1199px)
+		&_wrap
+			width: 400px
+	@media screen and (max-width: 991px)
+		&_wrap
+			width: 350px
+	@media screen and (max-width: 767px)
+		&_wrap
+			width: 100%
+			flex: 1
+
+
