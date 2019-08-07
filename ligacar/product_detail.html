@@ -157,8 +157,8 @@
 						</tbody>
 					</table>
 					<div class="products_btns">
-						<button class="us_btn" type="button" data-toggle="us_modal" data-target="#us_modal_book_now">ЗАБРОНИРОВАТЬ</button>
-						<button class="us_btn us_btn_white" type="button" data-toggle="us_modal" data-target="#us_modal_one_click">ЗАКАЗАТЬ В 1 КЛИК</button>
+						<a class="us_btn" data-fancybox data-src="#us_modal_book_now" href="javascript:;">ЗАБРОНИРОВАТЬ</a>
+						<a class="us_btn us_btn_white" data-fancybox data-src="#us_modal_one_click" href="javascript:;">ЗАКАЗАТЬ В 1 КЛИК</a>
 					</div>
 				</div>
 			</div>
@@ -270,89 +270,85 @@
 		</div>
 	</footer>
 
-	<div class="us_modal" id="us_modal_book_now">
-		<div class="us_modal_box">
-			<button class="us_modal_close" data-dismiss="us_modal"><img src="img/i_modal_close.png" alt=""></button>
-			<form action="" class="form_modal">
-				<div class="form_title">Забронировать Mitsubishi Lancer X</div>
-				<div class="form_item">
-					<label class="form_item_label">
-						<div class="form_item_title">Ваше имя <span>*</span></div>
-						<input type="text" name="" id="" class="us_input">
-					</label>
-					<label class="form_item_label">
-						<div class="form_item_title">Телефон <span>*</span></div>
-						<input type="phone" name="" id="" class="us_input">
-					</label>
-				</div>
-				<div class="form_item">
-					<label class="form_item_label">
-						<div class="form_item_title">Тариф <span>*</span></div>
-						<div class="us_select_box">
-							<select name="" id="" class="us_select">
-								<option value="" selected disabled></option>
-								<option value="">Тариф 1</option>
-								<option value="">Тариф 2</option>
-								<option value="">Тариф 3</option>
-							</select>
-						</div>
-					</label>
-					<label class="form_item_label">
-						<div class="form_item_title">E-mail</div>
-						<input type="phone" name="" id="" class="us_input">
-					</label>
-				</div>
-				<div class="form_item">
-					<label class="form_item_label">
-						<div class="form_item_title">Начало аренды <span>*</span></div>
-						<input type="text" name="" id="" class="us_input">
-					</label>
-					<label class="form_item_label">
-						<div class="form_item_title">Конец аренды <span>*</span></div>
-						<input type="phone" name="" id="" class="us_input">
-					</label>
-				</div>
-				<label class="form_item_label form_item_label_fullwidth">
-					<div class="form_item_title">Комментарий</div>
-					<textarea name="" id="" class="us_textarea"></textarea>
+	<div class="us_modal" id="us_modal_book_now" style="display: none;">
+		<button class="us_modal_close" data-fancybox-close><img src="img/i_modal_close.png" alt=""></button>
+		<form action="" class="form_modal">
+			<div class="form_title">Забронировать Mitsubishi Lancer X</div>
+			<div class="form_item">
+				<label class="form_item_label">
+					<div class="form_item_title">Ваше имя <span>*</span></div>
+					<input type="text" name="" id="" class="us_input">
 				</label>
-				<label class="form_agree">
-					<input type="checkbox" class="form_agree_input">
-					<span class="form_agree_check"></span>
-					<span class="form_agree_text">Я принимаю условия <a href="#" class="form_agree_text_link">Политики и конфиденциальности</a></span>
+				<label class="form_item_label">
+					<div class="form_item_title">Телефон <span>*</span></div>
+					<input type="phone" name="" id="" class="us_input">
 				</label>
-				<button type="submit" class="us_btn">Забронировать</button>
-			</form>
-		</div>
+			</div>
+			<div class="form_item">
+				<label class="form_item_label">
+					<div class="form_item_title">Тариф <span>*</span></div>
+					<div class="us_select_box">
+						<select name="" id="" class="us_select">
+							<option value="" selected disabled></option>
+							<option value="">Тариф 1</option>
+							<option value="">Тариф 2</option>
+							<option value="">Тариф 3</option>
+						</select>
+					</div>
+				</label>
+				<label class="form_item_label">
+					<div class="form_item_title">E-mail</div>
+					<input type="phone" name="" id="" class="us_input">
+				</label>
+			</div>
+			<div class="form_item">
+				<label class="form_item_label">
+					<div class="form_item_title">Начало аренды <span>*</span></div>
+					<input type="text" name="" id="" class="us_input">
+				</label>
+				<label class="form_item_label">
+					<div class="form_item_title">Конец аренды <span>*</span></div>
+					<input type="phone" name="" id="" class="us_input">
+				</label>
+			</div>
+			<label class="form_item_label form_item_label_fullwidth">
+				<div class="form_item_title">Комментарий</div>
+				<textarea name="" id="" class="us_textarea"></textarea>
+			</label>
+			<label class="form_agree">
+				<input type="checkbox" class="form_agree_input">
+				<span class="form_agree_check"></span>
+				<span class="form_agree_text">Я принимаю условия <a href="#" class="form_agree_text_link">Политики и конфиденциальности</a></span>
+			</label>
+			<button type="submit" class="us_btn">Забронировать</button>
+		</form>
 	</div>
 
-	<div class="us_modal" id="us_modal_one_click">
-		<div class="us_modal_box">
-			<button class="us_modal_close" data-dismiss="us_modal"><img src="img/i_modal_close.png" alt=""></button>
-			<form action="" class="form_modal">
-				<div class="form_title">Заказать “Mitsubishi Lancer X”</div>
-				<div class="form_item">
-					<label class="form_item_label">
-						<div class="form_item_title">Ваше имя <span>*</span></div>
-						<input type="text" name="" id="" class="us_input">
-					</label>
-					<label class="form_item_label">
-						<div class="form_item_title">Телефон <span>*</span></div>
-						<input type="phone" name="" id="" class="us_input">
-					</label>
-				</div>
-				<label class="form_item_label form_item_label_fullwidth">
-					<div class="form_item_title">Комментарий</div>
-					<textarea name="" id="" class="us_textarea"></textarea>
+	<div class="us_modal" id="us_modal_one_click" style="display: none;">
+		<button class="us_modal_close" data-fancybox-close><img src="img/i_modal_close.png" alt=""></button>
+		<form action="" class="form_modal">
+			<div class="form_title">Заказать “Mitsubishi Lancer X”</div>
+			<div class="form_item">
+				<label class="form_item_label">
+					<div class="form_item_title">Ваше имя <span>*</span></div>
+					<input type="text" name="" id="" class="us_input">
 				</label>
-				<label class="form_agree">
-					<input type="checkbox" class="form_agree_input">
-					<span class="form_agree_check"></span>
-					<span class="form_agree_text">Я принимаю условия <a href="#" class="form_agree_text_link">Политики и конфиденциальности</a></span>
+				<label class="form_item_label">
+					<div class="form_item_title">Телефон <span>*</span></div>
+					<input type="phone" name="" id="" class="us_input">
 				</label>
-				<button type="submit" class="us_btn">Заказать</button>
-			</form>
-		</div>
+			</div>
+			<label class="form_item_label form_item_label_fullwidth">
+				<div class="form_item_title">Комментарий</div>
+				<textarea name="" id="" class="us_textarea"></textarea>
+			</label>
+			<label class="form_agree">
+				<input type="checkbox" class="form_agree_input">
+				<span class="form_agree_check"></span>
+				<span class="form_agree_text">Я принимаю условия <a href="#" class="form_agree_text_link">Политики и конфиденциальности</a></span>
+			</label>
+			<button type="submit" class="us_btn">Заказать</button>
+		</form>
 	</div>
 
 	<script src="js/jquery.min.js"></script>

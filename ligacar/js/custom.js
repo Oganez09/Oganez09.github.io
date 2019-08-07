@@ -2,24 +2,6 @@ $(document).ready(function() {
 
 	$(document)
 
-	.on("click", "[data-toggle = us_modal]", function(e) {
-		e.preventDefault();
-
-		if ($(this).is("a")) {
-			var target = $(this).attr("href");
-		} else if($(this).is("button")) {
-			var target = $(this).attr("data-target");
-		}
-
-		$(target).addClass("us_visible");
-	})
-	.on("click", "[data-dismiss = us_modal], .us_modal", function() {
-		$(".us_modal").removeClass("us_visible");
-	})
-	.on("click", ".us_modal_box", function(e) {
-		e.stopPropagation();
-	})
-
 	.on("click", "[data-toggle = us_tabs]", function(e) {
 		e.preventDefault();
 
@@ -47,6 +29,15 @@ $(document).ready(function() {
 			$(this).closest(".header_menu_item_sub").removeClass("show");
 		} else {
 			$(this).closest(".header_menu_item_sub").addClass("show");
+		}
+	})
+
+	.on("click", ".sidebar_item_head", function() {
+
+		if ($(this).parent().hasClass("show")) {
+			$(this).parent().removeClass("show");
+		} else {
+			$(this).parent().addClass("show");
 		}
 	});
 
