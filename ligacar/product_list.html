@@ -43,6 +43,10 @@
 					<li class="header_menu_item"><a href="#" class="header_menu_item_link">Условия аренды</a></li>
 					<li class="header_menu_item"><a href="#" class="header_menu_item_link">Оплата</a></li>
 					<li class="header_menu_item"><a href="contacts.html" class="header_menu_item_link">Контакты</a></li>
+					<li class="header_menu_item_mobile">
+						<a href="tel:+7 495 000-00-00" class="header_info_phone">+7 495 000-00-00</a>
+						<a href="mailto:ligacar@ligacar.ru" class="header_info_mail">ligacar@ligacar.ru</a>
+					</li>
 				</ul>
 				<div class="header_info">
 					<a href="tel:+7 495 000-00-00" class="header_info_phone">+7 495 000-00-00</a>
@@ -121,12 +125,12 @@
 								<div class="sidebar_item_body">
 									<div class="form_slider">
 										<div class="form_slider_filter">
-											<input type="number" name="" id="form_slider_filter_min" value="" minlength="0" maxlength="23000" class="form_slider_filter_input us_input">
+											<input type="number" name="" id="form_slider_filter_min" value="1200" min="0" max="23000" class="form_slider_filter_input us_input">
 											<span class="form_slider_filter_separator"></span>
-											<input type="number" name="" id="form_slider_filter_max" value="" minlength="0" maxlength="23000" class="form_slider_filter_input us_input">
+											<input type="number" name="" id="form_slider_filter_max" value="19500" min="0" max="23000" class="form_slider_filter_input us_input">
 										</div>
 										<div id="slider-range"></div>
-										<div class="form_slider_val"><span class="form_slider_val_min">0</span><span class="form_slider_val_max">0</span></div>
+										<div class="form_slider_val"><span class="form_slider_val_min">0</span><span class="form_slider_val_max">23000</span></div>
 									</div>
 								</div>
 							</div>
@@ -355,6 +359,7 @@
 
 	<script src="js/jquery.min.js"></script>
 	<script src="js/jquery-ui.min.js"></script>
+	<script src="js/jquery.ui.touch-punch.min.js"></script>
 	<script src="js/owl.carousel.min.js"></script>
 	<script src="js/custom.js"></script>
 
@@ -379,6 +384,18 @@
 			$(".form_slider_val_min").text($("#slider-range").slider("values", 0));
 			$(".form_slider_val_max").text($("#slider-range").slider("values", 1));
 
+			$('#form_slider_filter_min').on("click keyup change blur", function() {
+				if($(this).val() < 0) {
+					$(this).val(0);
+					$(".form_slider_val_min").text("0");
+					$("#form_slider_filter_min").val("0");
+				} else if ($(this).val() > 23000) {
+					// ориентир максимально выбранное число, а не по умолчанию
+					$(this).val(23000);
+					$(".form_slider_val_min").text("23000");
+					$("#form_slider_filter_min").val("23000");
+				}
+			});
 		});
 	</script>
 </body>
