@@ -125,12 +125,15 @@
 								<div class="sidebar_item_body">
 									<div class="form_slider">
 										<div class="form_slider_filter">
-											<input type="number" name="" id="form_slider_filter_min" value="1200" min="0" max="23000" class="form_slider_filter_input us_input">
+											<input type="number" name="" id="form_slider_filter_min" value="1200" class="form_slider_filter_input us_input">
 											<span class="form_slider_filter_separator"></span>
-											<input type="number" name="" id="form_slider_filter_max" value="19500" min="0" max="23000" class="form_slider_filter_input us_input">
+											<input type="number" name="" id="form_slider_filter_max" value="19500" class="form_slider_filter_input us_input">
 										</div>
 										<div id="slider-range"></div>
-										<div class="form_slider_val"><span class="form_slider_val_min">0</span><span class="form_slider_val_max">23000</span></div>
+										<div class="form_slider_val">
+											<span class="form_slider_val_min" value="0"></span>
+											<span class="form_slider_val_max" value="23000"></span>
+										</div>
 									</div>
 								</div>
 							</div>
@@ -366,12 +369,17 @@
 	<script>
 		$(document).ready(function() {
 
-			$( "#slider-range" ).slider({
+			var minLength = +$(".form_slider_val_min").attr("value");
+			var maxLength = +$(".form_slider_val_max").attr("value");
+			var minVal = +$("#form_slider_filter_min").val();
+			var maxVal = +$("#form_slider_filter_max").val();
+
+			$("#slider-range").slider({
 				range: true,
-				min: 0,
-				max: 23000,
+				min: minLength,
+				max: maxLength,
 				step: 100,
-				values: [ 1200, 19500 ],
+				values: [ minVal, maxVal ],
 				slide: function( event, ui ) {
 					$("#form_slider_filter_min").val(ui.values[0]);
 					$("#form_slider_filter_max").val(ui.values[1]);
@@ -384,16 +392,41 @@
 			$(".form_slider_val_min").text($("#slider-range").slider("values", 0));
 			$(".form_slider_val_max").text($("#slider-range").slider("values", 1));
 
-			$('#form_slider_filter_min').on("click keyup change blur", function() {
-				if($(this).val() < 0) {
-					$(this).val(0);
-					$(".form_slider_val_min").text("0");
-					$("#form_slider_filter_min").val("0");
-				} else if ($(this).val() > 23000) {
-					// ориентир максимально выбранное число, а не по умолчанию
-					$(this).val(23000);
-					$(".form_slider_val_min").text("23000");
-					$("#form_slider_filter_min").val("23000");
+			$('#form_slider_filter_min').on("change blur", function() {
+				var maxValue = $("#slider-range").slider("values", 1);
+
+				$(".form_slider_val_min").text($(this).val());
+				$("#form_slider_filter_min").val($(this).val());
+
+				$("#slider-range").slider( "values", 0, $(this).val() )
+
+				if($(this).val() < minLength || $(this).val() == "") {
+					$(this).val(minLength);
+					$(".form_slider_val_min").text(minLength);
+					$("#form_slider_filter_min").val(minLength);
+				} else if ($(this).val() > maxValue) {
+					$(this).val(maxValue);
+					$(".form_slider_val_min").text(maxValue);
+					$("#form_slider_filter_min").val(maxValue);
+				}
+
+			});
+			$('#form_slider_filter_max').on("change blur", function() {
+				var minValue = $("#slider-range").slider("values", 0);
+				
+				$(".form_slider_val_max").text($(this).val());
+				$("#form_slider_filter_max").val($(this).val());
+
+				$("#slider-range").slider( "values", 1, $(this).val() )
+
+				if($(this).val() > maxLength || $(this).val() == "") {
+					$(this).val(maxLength);
+					$(".form_slider_val_max").text(maxLength);
+					$("#form_slider_filter_max").val(maxLength);
+				} else if ($(this).val() < minValue) {
+					$(this).val(minValue);
+					$(".form_slider_val_max").text(minValue);
+					$("#form_slider_filter_max").val(minValue);
 				}
 			});
 		});
