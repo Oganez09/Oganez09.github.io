@@ -35,12 +35,6 @@ input[type="number"] {
   -moz-appearance: textfield;
 }
 
-input[type=date]::-webkit-inner-spin-button,
-input[type=date]::-webkit-calendar-picker-indicator {
-  -webkit-appearance: none;
-  display: none;
-}
-
 html, body {
   height: 100%;
 }
@@ -381,6 +375,10 @@ h1 {
   background-color: #fff;
   border: 2px solid #e8e8e8;
   display: block;
+}
+
+.us_input_date {
+  padding: 10px;
 }
 
 .us_textarea {
