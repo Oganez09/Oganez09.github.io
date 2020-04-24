@@ -1,0 +1,37 @@
+@font-face {
+  font-family: "LR Autoru Icon";
+  src: url("../fonts/lr-autoru-icon.eot");
+  src: url("../fonts/lr-autoru-icon.eot?#iefix") format("embedded-opentype"),
+       url("../fonts/lr-autoru-icon.woff2") format("woff2"),
+       url("../fonts/lr-autoru-icon.woff") format("woff"),
+       url("../fonts/lr-autoru-icon.ttf") format("truetype"),
+       url("../fonts/lr-autoru-icon.svg#lr-autoru-icon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: "lr-autoru-icon";
+    src: url("../fonts/lr-autoru-icon.svg#lr-autoru-icon") format("svg");
+  }
+}
+
+[class^="lr-autoru-"]:before, [class*=" lr-autoru-"]:before,
+[class^="lr-autoru-"]:after, [class*=" lr-autoru-"]:after {   
+  font-family: "LR Autoru Icon";
+  font-size: inherit;
+  font-style: normal;
+}
+
+.lr-autoru-back:before { content: "\f100"; }
+.lr-autoru-star:before { content: "\f101"; }
+.lr-autoru-call:before { content: "\f102"; }
+.lr-autoru-vk:before { content: "\f103"; }
+.lr-autoru-facebook:before { content: "\f104"; }
+.lr-autoru-youtube:before { content: "\f105"; }
+.lr-autoru-map:before { content: "\f106"; }
+.lr-autoru-loupe:before { content: "\f107"; }
+.lr-autoru-shopping-cart:before { content: "\f108"; }
+.lr-autoru-telephone:before { content: "\f109"; }
+.lr-autoru-next:before { content: "\f10a"; }
