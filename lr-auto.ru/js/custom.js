@@ -1,5 +1,16 @@
 $(document).ready(function() {
 
+	$(document).on("click", "[data-toggle = us-tab]", function(e) {
+		e.preventDefault();
+
+		var target = $(this).attr("href");
+
+		$(".main_product_slider_nav_item").removeClass("active");
+		$(this).addClass("active");
+		$(".main_product_slider_content").removeClass("active");
+		$(target).addClass("active");
+	})
+
 	$(".brand_block_owl").owlCarousel({
 		margin: 10,
 		dots: false,
@@ -74,6 +85,47 @@ $(document).ready(function() {
 			},
 			992:{
 				items: 4
+			}
+		}
+	});
+	
+	$(".product_slider_owl").owlCarousel({
+		margin: 15,
+		dots: false,
+		nav: true,
+		loop: true,
+		navText: ["<i class='lr-autoru-back'></i>","<i class='lr-autoru-next'></i>"],
+		responsive: {
+			0: {
+				items: 1
+			},
+			576:{
+				items: 2
+			},
+			768:{
+				items: 3
+			},
+			992:{
+				items: 4
+			}
+		}
+	});
+	
+	$(".related_products_owl").owlCarousel({
+		margin: 15,
+		dots: false,
+		nav: true,
+		loop: true,
+		navText: ["<i class='lr-autoru-back'></i>","<i class='lr-autoru-next'></i>"],
+		responsive: {
+			0: {
+				items: 1
+			},
+			576:{
+				items: 2
+			},
+			992:{
+				items: 3
 			}
 		}
 	});
