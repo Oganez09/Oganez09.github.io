@@ -5,10 +5,10 @@ $(document).ready(function() {
 
 		var target = $(this).attr("href");
 
-		$(".main_product_slider_nav_item").removeClass("active");
-		$(this).addClass("active");
-		$(".main_product_slider_content").removeClass("active");
-		$(target).addClass("active");
+		$(".us_tab_nav").removeClass("us_active");
+		$(this).addClass("us_active");
+		$(".us_tab_pane").removeClass("us_active");
+		$(target).addClass("us_active");
 	})
 
 	$(".brand_block_owl").owlCarousel({
@@ -66,6 +66,15 @@ $(document).ready(function() {
 		}
 	});
 	
+	$(".catalog_sidebar_certificates_owl").owlCarousel({
+		items: 1,
+		margin: 10,
+		dots: false,
+		nav: true,
+		loop: true,
+		navText: ["<i class='lr-autoru-back'></i>","<i class='lr-autoru-next'></i>"]
+	});
+	
 	$(".latest_reviews_owl").owlCarousel({
 		margin: 15,
 		dots: false,
@@ -111,6 +120,25 @@ $(document).ready(function() {
 		}
 	});
 	
+	$(".catalog_product_slider_owl").owlCarousel({
+		margin: 15,
+		dots: false,
+		nav: true,
+		loop: true,
+		navText: ["<i class='lr-autoru-back'></i>","<i class='lr-autoru-next'></i>"],
+		responsive: {
+			0: {
+				items: 1
+			},
+			576:{
+				items: 2
+			},
+			768:{
+				items: 3
+			}
+		}
+	});
+	
 	$(".related_products_owl").owlCarousel({
 		margin: 15,
 		dots: false,
@@ -128,6 +156,15 @@ $(document).ready(function() {
 				items: 3
 			}
 		}
+	});
+	
+	$(".product_detail_gallery_main").owlCarousel({
+		items: 1,
+		margin: 10,
+		dots: false,
+		nav: true,
+		loop: true,
+		navText: ["<i class='lr-autoru-back'></i>","<i class='lr-autoru-next'></i>"]
 	});
 	
 });

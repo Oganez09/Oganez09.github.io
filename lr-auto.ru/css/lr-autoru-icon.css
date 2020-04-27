@@ -35,3 +35,10 @@
 .lr-autoru-cart:before { content: "\f108"; }
 .lr-autoru-telephone:before { content: "\f109"; }
 .lr-autoru-next:before { content: "\f10a"; }
+.lr-autoru-left-quote:before { content: "\f10b"; }
+.lr-autoru-menu:before { content: "\f10c"; }
+.lr-autoru-close:before { content: "\f10d"; }
+.lr-autoru-gift:before { content: "\f10e"; }
+.lr-autoru-like:before { content: "\f10f"; }
+.lr-autoru-down-arrow:before { content: "\f110"; }
+.lr-autoru-up-arrow:before { content: "\f111"; }
