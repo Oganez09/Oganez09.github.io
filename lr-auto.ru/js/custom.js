@@ -177,15 +177,31 @@ $(document).ready(function() {
 		margin: 10,
 		dots: false,
 		nav: true,
-		loop: true,
+		mouseDrag: false,
+		touchDrag: false,
+		navText: ["<i class='lr-autoru-back'></i>","<i class='lr-autoru-next'></i>"]
+	});
+	$(".product_detail_gallery_thrumbs").owlCarousel({
+		items: 3,
+		margin: 20,
+		dots: false,
+		nav: true,
+		mouseDrag: false,
+		touchDrag: false,
 		navText: ["<i class='lr-autoru-back'></i>","<i class='lr-autoru-next'></i>"]
 	});
 
-	$(".product_detail_gallery_thrumbs_item").on("click", function() {
+	$(".product_detail_gallery_thrumbs .owl-item").on("click", function() {
 		var index = $(this).index();
 
 		$(".product_detail_gallery_main").trigger("to.owl.carousel", [index, 300, true]);
 	});
+
+	// $(".product_detail_gallery_thrumbs_item").on("click", function() {
+	// 	var index = $(this).index();
+
+	// 	$(".product_detail_gallery_main").trigger("to.owl.carousel", [index, 300, true]);
+	// });
 
 
 

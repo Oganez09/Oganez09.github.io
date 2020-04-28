@@ -2245,18 +2245,15 @@ h1, h2, h3, h4, h5, h6 {
 .product_detail_gallery_main .owl-nav .owl-next {
 	right: -25px;
 }
-.product_detail_gallery_thrumbs {
-	display: flex;
-	align-items: center;
-	justify-content: center;
+.product_detail_gallery_thrumbs .owl-nav .owl-prev {
+	left: -25px;
+}
+.product_detail_gallery_thrumbs .owl-nav .owl-next {
+	right: -25px;
 }
 .product_detail_gallery_thrumbs_item {
 	cursor: pointer;
 }
-.product_detail_gallery_thrumbs_item:not(:last-child) {
-	margin-right: 30px;
-}
-.product_detail_gallery_thrumbs_item {}
 
 .product_detail_price {
 	padding-left: 3px !important;
