@@ -1,6 +1,7 @@
 $(document).ready(function() {
 
-	$(document).on("click", "[data-toggle = us-tab]", function(e) {
+	$(document)
+	.on("click", "[data-toggle = us-tab]", function(e) {
 		e.preventDefault();
 
 		var target = $(this).attr("href");
@@ -10,6 +11,16 @@ $(document).ready(function() {
 		$(".us_tab_pane").removeClass("us_active");
 		$(target).addClass("us_active");
 	})
+	.on("click", ".catalog_sidebar_filter_item_head", function(){
+		if ( $(this).parent().hasClass("us_active") ) {
+			$(this).next().slideUp(300);
+			$(this).parent().removeClass("us_active");
+		} else {
+			$(this).next().slideDown(300);
+			$(this).parent().addClass("us_active");
+		}
+	});
+	
 
 	$(".brand_block_owl").owlCarousel({
 		margin: 10,
@@ -166,5 +177,30 @@ $(document).ready(function() {
 		loop: true,
 		navText: ["<i class='lr-autoru-back'></i>","<i class='lr-autoru-next'></i>"]
 	});
-	
+
+	$(".product_detail_gallery_thrumbs_item").on("click", function() {
+		var index = $(this).index();
+
+		$(".product_detail_gallery_main").trigger("to.owl.carousel", [index, 300, true]);
+	});
+
+
+
+	var minLength = +$(".us_slider_range_val_min").attr("value");
+	var maxLength = +$(".us_slider_range_val_max").attr("value");
+
+	$("#us-slider-range").slider({
+		range: true,
+		min: minLength,
+		max: maxLength,
+		step: 1,
+		values: [ minLength, maxLength ],
+		slide: function( event, ui ) {
+			$(".us_slider_range_val_min").text(ui.values[0]);
+			$(".us_slider_range_val_max").text(ui.values[1]);
+		}
+	});
+	$(".us_slider_range_val_min").text($("#us-slider-range").slider("values", 0));
+	$(".us_slider_range_val_max").text($("#us-slider-range").slider("values", 1));
+
 });

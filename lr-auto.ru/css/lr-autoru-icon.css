@@ -42,3 +42,6 @@
 .lr-autoru-like:before { content: "\f10f"; }
 .lr-autoru-down-arrow:before { content: "\f110"; }
 .lr-autoru-up-arrow:before { content: "\f111"; }
+.lr-autoru-down-arrow-1:before { content: "\f112"; }
+.lr-autoru-check:before { content: "\f113"; }
+.lr-autoru-gps:before { content: "\f114"; }

@@ -16,10 +16,256 @@
 	<link rel="stylesheet" href="css/owl.carousel.min.css">
 	<link rel="stylesheet" href="css/owl.theme.default.min.css">
 	<link rel="stylesheet" href="css/lr-autoru-icon.css">
+	<link rel="stylesheet" href="css/jquery.fancybox.min.css">
 	<link rel="stylesheet" href="css/custom.css">
 
 </head>
 <body>
+
+	<div class="modal_city us_modal" style="display: none;" id="modal-city">
+		<div class="modal_city_title">Выберите свой город</div>
+		<div class="modal_city_search">
+			<input type="text" class="modal_city_search_input" placeholder="Введите название Вашего города">
+			<button class="modal_city_search_btn"><i class="lr-autoru-loupe"></i></button>
+		</div>
+		<div class="modal_city_box">
+			<ul class="modal_city_list us_list">
+				<li class="modal_city_item modal_city_item__bold"><a href="#" class="modal_city_item_link"><i class="lr-autoru-gps"></i>Москва</a></li>
+				<li class="modal_city_item modal_city_item__bold"><a href="#" class="modal_city_item_link"><i class="lr-autoru-gps"></i>Санкт-Петербург</a></li>
+				<li class="modal_city_item modal_city_item__bold"><a href="#" class="modal_city_item_link"><i class="lr-autoru-gps"></i>Пермь</a></li>
+				<li class="modal_city_item modal_city_item__bold"><a href="#" class="modal_city_item_link"><i class="lr-autoru-gps"></i>Екатеринбург</a></li>
+				<li class="modal_city_item"><a href="#" class="modal_city_item_link"><i class="lr-autoru-gps"></i>Александров</a></li>
+				<li class="modal_city_item"><a href="#" class="modal_city_item_link"><i class="lr-autoru-gps"></i>Абакан</a></li>
+				<li class="modal_city_item"><a href="#" class="modal_city_item_link"><i class="lr-autoru-gps"></i>Александров</a></li>
+				<li class="modal_city_item"><a href="#" class="modal_city_item_link"><i class="lr-autoru-gps"></i>Абакан</a></li>
+				<li class="modal_city_item"><a href="#" class="modal_city_item_link"><i class="lr-autoru-gps"></i>Александров</a></li>
+				<li class="modal_city_item"><a href="#" class="modal_city_item_link"><i class="lr-autoru-gps"></i>Абакан</a></li>
+				<li class="modal_city_item"><a href="#" class="modal_city_item_link"><i class="lr-autoru-gps"></i>Александров</a></li>
+				<li class="modal_city_item"><a href="#" class="modal_city_item_link"><i class="lr-autoru-gps"></i>Абакан</a></li>
+				<li class="modal_city_item"><a href="#" class="modal_city_item_link"><i class="lr-autoru-gps"></i>Александров</a></li>
+				<li class="modal_city_item"><a href="#" class="modal_city_item_link"><i class="lr-autoru-gps"></i>Абакан</a></li>
+				<li class="modal_city_item"><a href="#" class="modal_city_item_link"><i class="lr-autoru-gps"></i>Александров</a></li>
+				<li class="modal_city_item"><a href="#" class="modal_city_item_link"><i class="lr-autoru-gps"></i>Абакан</a></li>
+				<li class="modal_city_item"><a href="#" class="modal_city_item_link"><i class="lr-autoru-gps"></i>Александров</a></li>
+				<li class="modal_city_item"><a href="#" class="modal_city_item_link"><i class="lr-autoru-gps"></i>Абакан</a></li>
+			</ul>
+			<ul class="modal_city_list us_list">
+				<li class="modal_city_item"><a href="#" class="modal_city_item_link"><i class="lr-autoru-gps"></i>Александров</a></li>
+				<li class="modal_city_item"><a href="#" class="modal_city_item_link"><i class="lr-autoru-gps"></i>Абакан</a></li>
+				<li class="modal_city_item"><a href="#" class="modal_city_item_link"><i class="lr-autoru-gps"></i>Александров</a></li>
+				<li class="modal_city_item"><a href="#" class="modal_city_item_link"><i class="lr-autoru-gps"></i>Абакан</a></li>
+				<li class="modal_city_item"><a href="#" class="modal_city_item_link"><i class="lr-autoru-gps"></i>Александров</a></li>
+				<li class="modal_city_item"><a href="#" class="modal_city_item_link"><i class="lr-autoru-gps"></i>Абакан</a></li>
+				<li class="modal_city_item"><a href="#" class="modal_city_item_link"><i class="lr-autoru-gps"></i>Александров</a></li>
+				<li class="modal_city_item"><a href="#" class="modal_city_item_link"><i class="lr-autoru-gps"></i>Абакан</a></li>
+				<li class="modal_city_item"><a href="#" class="modal_city_item_link"><i class="lr-autoru-gps"></i>Александров</a></li>
+				<li class="modal_city_item"><a href="#" class="modal_city_item_link"><i class="lr-autoru-gps"></i>Абакан</a></li>
+				<li class="modal_city_item"><a href="#" class="modal_city_item_link"><i class="lr-autoru-gps"></i>Александров</a></li>
+				<li class="modal_city_item"><a href="#" class="modal_city_item_link"><i class="lr-autoru-gps"></i>Абакан</a></li>
+				<li class="modal_city_item"><a href="#" class="modal_city_item_link"><i class="lr-autoru-gps"></i>Александров</a></li>
+				<li class="modal_city_item"><a href="#" class="modal_city_item_link"><i class="lr-autoru-gps"></i>Абакан</a></li>
+				<li class="modal_city_item"><a href="#" class="modal_city_item_link"><i class="lr-autoru-gps"></i>Александров</a></li>
+				<li class="modal_city_item"><a href="#" class="modal_city_item_link"><i class="lr-autoru-gps"></i>Абакан</a></li>
+				<li class="modal_city_item"><a href="#" class="modal_city_item_link"><i class="lr-autoru-gps"></i>Александров</a></li>
+				<li class="modal_city_item"><a href="#" class="modal_city_item_link"><i class="lr-autoru-gps"></i>Абакан</a></li>
+			</ul>
+			<ul class="modal_city_list us_list">
+				<li class="modal_city_item"><a href="#" class="modal_city_item_link"><i class="lr-autoru-gps"></i>Александров</a></li>
+				<li class="modal_city_item"><a href="#" class="modal_city_item_link"><i class="lr-autoru-gps"></i>Абакан</a></li>
+				<li class="modal_city_item"><a href="#" class="modal_city_item_link"><i class="lr-autoru-gps"></i>Александров</a></li>
+				<li class="modal_city_item"><a href="#" class="modal_city_item_link"><i class="lr-autoru-gps"></i>Абакан</a></li>
+				<li class="modal_city_item"><a href="#" class="modal_city_item_link"><i class="lr-autoru-gps"></i>Александров</a></li>
+				<li class="modal_city_item"><a href="#" class="modal_city_item_link"><i class="lr-autoru-gps"></i>Абакан</a></li>
+				<li class="modal_city_item"><a href="#" class="modal_city_item_link"><i class="lr-autoru-gps"></i>Александров</a></li>
+				<li class="modal_city_item"><a href="#" class="modal_city_item_link"><i class="lr-autoru-gps"></i>Абакан</a></li>
+				<li class="modal_city_item"><a href="#" class="modal_city_item_link"><i class="lr-autoru-gps"></i>Александров</a></li>
+				<li class="modal_city_item"><a href="#" class="modal_city_item_link"><i class="lr-autoru-gps"></i>Абакан</a></li>
+				<li class="modal_city_item"><a href="#" class="modal_city_item_link"><i class="lr-autoru-gps"></i>Александров</a></li>
+				<li class="modal_city_item"><a href="#" class="modal_city_item_link"><i class="lr-autoru-gps"></i>Абакан</a></li>
+				<li class="modal_city_item"><a href="#" class="modal_city_item_link"><i class="lr-autoru-gps"></i>Александров</a></li>
+				<li class="modal_city_item"><a href="#" class="modal_city_item_link"><i class="lr-autoru-gps"></i>Абакан</a></li>
+				<li class="modal_city_item"><a href="#" class="modal_city_item_link"><i class="lr-autoru-gps"></i>Александров</a></li>
+				<li class="modal_city_item"><a href="#" class="modal_city_item_link"><i class="lr-autoru-gps"></i>Абакан</a></li>
+				<li class="modal_city_item"><a href="#" class="modal_city_item_link"><i class="lr-autoru-gps"></i>Александров</a></li>
+				<li class="modal_city_item"><a href="#" class="modal_city_item_link"><i class="lr-autoru-gps"></i>Абакан</a></li>
+			</ul>
+			<ul class="modal_city_list us_list">
+				<li class="modal_city_item"><a href="#" class="modal_city_item_link"><i class="lr-autoru-gps"></i>Александров</a></li>
+				<li class="modal_city_item"><a href="#" class="modal_city_item_link"><i class="lr-autoru-gps"></i>Абакан</a></li>
+				<li class="modal_city_item"><a href="#" class="modal_city_item_link"><i class="lr-autoru-gps"></i>Александров</a></li>
+				<li class="modal_city_item"><a href="#" class="modal_city_item_link"><i class="lr-autoru-gps"></i>Абакан</a></li>
+				<li class="modal_city_item"><a href="#" class="modal_city_item_link"><i class="lr-autoru-gps"></i>Александров</a></li>
+				<li class="modal_city_item"><a href="#" class="modal_city_item_link"><i class="lr-autoru-gps"></i>Абакан</a></li>
+				<li class="modal_city_item"><a href="#" class="modal_city_item_link"><i class="lr-autoru-gps"></i>Александров</a></li>
+				<li class="modal_city_item"><a href="#" class="modal_city_item_link"><i class="lr-autoru-gps"></i>Абакан</a></li>
+				<li class="modal_city_item"><a href="#" class="modal_city_item_link"><i class="lr-autoru-gps"></i>Александров</a></li>
+				<li class="modal_city_item"><a href="#" class="modal_city_item_link"><i class="lr-autoru-gps"></i>Абакан</a></li>
+				<li class="modal_city_item"><a href="#" class="modal_city_item_link"><i class="lr-autoru-gps"></i>Александров</a></li>
+				<li class="modal_city_item"><a href="#" class="modal_city_item_link"><i class="lr-autoru-gps"></i>Абакан</a></li>
+				<li class="modal_city_item"><a href="#" class="modal_city_item_link"><i class="lr-autoru-gps"></i>Александров</a></li>
+				<li class="modal_city_item"><a href="#" class="modal_city_item_link"><i class="lr-autoru-gps"></i>Абакан</a></li>
+				<li class="modal_city_item"><a href="#" class="modal_city_item_link"><i class="lr-autoru-gps"></i>Александров</a></li>
+				<li class="modal_city_item"><a href="#" class="modal_city_item_link"><i class="lr-autoru-gps"></i>Абакан</a></li>
+				<li class="modal_city_item"><a href="#" class="modal_city_item_link"><i class="lr-autoru-gps"></i>Александров</a></li>
+				<li class="modal_city_item"><a href="#" class="modal_city_item_link"><i class="lr-autoru-gps"></i>Абакан</a></li>
+			</ul>
+			<ul class="modal_city_list us_list">
+				<li class="modal_city_item"><a href="#" class="modal_city_item_link"><i class="lr-autoru-gps"></i>Александров</a></li>
+				<li class="modal_city_item"><a href="#" class="modal_city_item_link"><i class="lr-autoru-gps"></i>Абакан</a></li>
+				<li class="modal_city_item"><a href="#" class="modal_city_item_link"><i class="lr-autoru-gps"></i>Александров</a></li>
+				<li class="modal_city_item"><a href="#" class="modal_city_item_link"><i class="lr-autoru-gps"></i>Абакан</a></li>
+				<li class="modal_city_item"><a href="#" class="modal_city_item_link"><i class="lr-autoru-gps"></i>Александров</a></li>
+				<li class="modal_city_item"><a href="#" class="modal_city_item_link"><i class="lr-autoru-gps"></i>Абакан</a></li>
+				<li class="modal_city_item"><a href="#" class="modal_city_item_link"><i class="lr-autoru-gps"></i>Александров</a></li>
+				<li class="modal_city_item"><a href="#" class="modal_city_item_link"><i class="lr-autoru-gps"></i>Абакан</a></li>
+				<li class="modal_city_item"><a href="#" class="modal_city_item_link"><i class="lr-autoru-gps"></i>Александров</a></li>
+				<li class="modal_city_item"><a href="#" class="modal_city_item_link"><i class="lr-autoru-gps"></i>Абакан</a></li>
+				<li class="modal_city_item"><a href="#" class="modal_city_item_link"><i class="lr-autoru-gps"></i>Александров</a></li>
+				<li class="modal_city_item"><a href="#" class="modal_city_item_link"><i class="lr-autoru-gps"></i>Абакан</a></li>
+				<li class="modal_city_item"><a href="#" class="modal_city_item_link"><i class="lr-autoru-gps"></i>Александров</a></li>
+				<li class="modal_city_item"><a href="#" class="modal_city_item_link"><i class="lr-autoru-gps"></i>Абакан</a></li>
+				<li class="modal_city_item"><a href="#" class="modal_city_item_link"><i class="lr-autoru-gps"></i>Александров</a></li>
+				<li class="modal_city_item"><a href="#" class="modal_city_item_link"><i class="lr-autoru-gps"></i>Абакан</a></li>
+				<li class="modal_city_item"><a href="#" class="modal_city_item_link"><i class="lr-autoru-gps"></i>Александров</a></li>
+				<li class="modal_city_item"><a href="#" class="modal_city_item_link"><i class="lr-autoru-gps"></i>Абакан</a></li>
+			</ul>
+		</div>
+	</div>
+
+	<div class="modal_callback us_modal" style="display: none;" id="modal-callback">
+		<div class="modal_callback_title">Заказать обратный звонок</div>
+		<form action="" class="modal_callback_form">
+			<input type="text" name="" id="" class="modal_callback_input" placeholder="Ваше имя">
+			<input type="text" name="" id="" class="modal_callback_input" placeholder="Ваше имя">
+			<div class="modal_callback_cond">
+				<label class="modal_callback_cond_box">
+					<input type="checkbox" class="modal_callback_cond_input">
+					<span class="modal_callback_cond_check"></span>
+				</label>
+				<div class="modal_callback_cond_title">Я согласен с уловиями <br><a href="#" class="modal_callback_cond_link">политики конфиденциальности</a></div>
+			</div>
+			<div class="modal_callback_btnwrap">
+				<button class="modal_callback_btn">Заказать звонок</button>
+			</div>
+		</form>
+	</div>
+
+	<div class="modal_success us_modal" style="display: none;" id="modal-success">
+		<div class="modal_success_title">Спасибо за обращение!</div>
+		<div class="modal_success_text">Наш менеджер свяжется с Вами в ближайшее время</div>
+		<button type="button" class="modal_success_btn" data-fancybox-close>Вернуться к покупкам!</button>
+	</div>
+
+	<header>
+		<div class="header_top">
+			<div class="container">
+				<div class="header_top_box">
+					<div class="header_top_city"><a data-fancybox data-src="#modal-city" href="javascript:;" class="header_top_city_item"><i class="lr-autoru-map"></i><span class="header_top_city_item_title">Москва</span></a></div>
+					<div class="header_top_phonewrap">
+						<a href="tel:8 (495) 123-45-67" class="header_top_phone"><i class="lr-autoru-call"></i><span class="header_top_phone_item">8 (495) 123-45-67</span></a>
+					</div>
+					<ul class="header_top_list us_list">
+						<li class="header_top_list_item header_top_list_item__sub">
+							<a href="#" class="header_top_list_item_link">Покупателям</a>
+							<ul class="header_top_list_sub us_list">
+								<li class="header_top_list_sub_item"><a href="#" class="header_top_list_sub_item_link">Подкатегория 1</a></li>
+								<li class="header_top_list_sub_item"><a href="#" class="header_top_list_sub_item_link">Подкатегория 2</a></li>
+								<li class="header_top_list_sub_item"><a href="#" class="header_top_list_sub_item_link">Подкатегория 1</a></li>
+								<li class="header_top_list_sub_item"><a href="#" class="header_top_list_sub_item_link">Подкатегория 2</a></li>
+							</ul>
+						</li>
+						<li class="header_top_list_item"><a href="#" class="header_top_list_item_link">Доставка и самовывоз</a></li>
+						<li class="header_top_list_item"><a href="#" class="header_top_list_item_link">Сервисная служба</a></li>
+						<li class="header_top_list_item"><a href="#" class="header_top_list_item_link">Юр. лицам</a></li>
+					</ul>
+					<form action="" class="header_top_search">
+						<input type="text" name="" id="" class="header_top_search_input" placeholder="Введите Ваш запрос или артикул">
+						<button type="submit" class="header_top_search_btn"><i class="lr-autoru-loupe"></i></button>
+						<ul class="header_top_search_result us_list">
+							<li class="header_top_search_result_item"><a href="#" class="header_top_search_result_item_link">Бензопила <span>Champion</span></a></li>
+							<li class="header_top_search_result_item"><a href="#" class="header_top_search_result_item_link">Бензопила <span>Champion</span></a></li>
+							<li class="header_top_search_result_item"><a href="#" class="header_top_search_result_item_link">Бензопила <span>Champion</span></a></li>
+							<li class="header_top_search_result_item"><a href="#" class="header_top_search_result_item_link">Бензопила <span>Champion</span></a></li>
+						</ul>
+					</form>
+				</div>
+			</div>
+		</div>
+		<div class="header_main">
+			<div class="container">
+				<div class="header_main_box">
+					<div class="header_main_logowrap">
+						<img src="img/logo.png" alt="" class="header_main_logo_img us_img">
+						<div class="header_main_logo_text">садовая техника</div>
+						<div class="header_main_logo_email"><a href="mailto:info@lr-avto.ru" class="header_main_email">info@lr-avto.ru</a></div>
+					</div>
+					<div class="header_main_mobile">
+						<a href="#" class="header_main_mobile_item hm_search"><i class="lr-autoru-loupe"></i></a>
+						<a href="#" class="header_main_mobile_item hm_feedback"><i class="lr-autoru-telephone"></i></a>
+						<a href="#" class="header_main_mobile_item hm_cart"><i class="lr-autoru-cart"></i></a>
+					</div>
+					<button type="button" class="header_main_menubtn"><i class="lr-autoru-menu"></i></button>
+					<div class="header_main_info">
+						<div class="header_main_phonewrap">
+							<a href="tel:8 (495) 123-45-67" class="header_main_phone"><i class="lr-autoru-call"></i><span class="header_main_phone_item">8 (495) 123-45-67</span></a>
+						</div>
+						<div class="header_main_phonewrap">
+							<a href="tel:8 (495) 123-45-67" class="header_main_phone"><i class="lr-autoru-call"></i><span class="header_main_phone_item">8 (495) 123-45-67</span></a>
+						</div>
+						<div class="header_main_time">Работаем ежедневно с 10 до 23</div>
+						<a data-fancybox data-src="#modal-callback" href="javascript:;" class="header_main_callback">Заказать обратный звонок</a>
+					</div>
+					<div class="header_main_desktop">
+						<a data-fancybox data-src="#modal-callback" href="javascript:;" class="header_main_callback">Заказать обратный звонок</a>
+						<div class="header_main_emailwrap"><a href="mailto:info@lr-avto.ru" class="header_main_email">info@lr-avto.ru</a></div>
+					</div>
+					<div class="header_main_cart">
+						<div class="header_main_cart_title">КОРЗИНА</div>
+						<div class="header_main_cart_num">Товаров: 15</div>
+						<div class="header_main_cart_sum">Сумма: <b>2 900</b> руб</div>
+						<a href="#" class="header_main_cart_order">Оформить</a>
+					</div>
+					<div class="header_main_desktop">
+						<a href="#" class="header_main_cart_order">Оформить</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="main_menu">
+			<div class="container">
+				<ul class="main_menu_list us_list">
+					<li class="main_menu_list_item main_menu_list_item__sub">
+						<a href="#" class="main_menu_list_item_link">Производители<i class="lr-autoru-down-arrow"></i></a>
+						<div class="main_menu_list_sub">
+							<div class="main_menu_list_sub_item">
+								<div class="main_menu_list_sub_item_title">Категория</div>
+								<ul class="main_menu_list_sub_list us_list">
+									<li class="main_menu_list_sub_list_item"><a href="#" class="main_menu_list_sub_list_item_link">Подкатегория 1</a></li>
+									<li class="main_menu_list_sub_list_item"><a href="#" class="main_menu_list_sub_list_item_link">Подкатегория 2</a></li>
+									<li class="main_menu_list_sub_list_item"><a href="#" class="main_menu_list_sub_list_item_link">Подкатегория 1</a></li>
+									<li class="main_menu_list_sub_list_item"><a href="#" class="main_menu_list_sub_list_item_link">Подкатегория 2</a></li>
+								</ul>
+							</div>
+							<div class="main_menu_list_sub_item">
+								<div class="main_menu_list_sub_item_title">Категория</div>
+								<ul class="main_menu_list_sub_list us_list">
+									<li class="main_menu_list_sub_list_item"><a href="#" class="main_menu_list_sub_list_item_link">Подкатегория 1</a></li>
+									<li class="main_menu_list_sub_list_item"><a href="#" class="main_menu_list_sub_list_item_link">Подкатегория 2</a></li>
+									<li class="main_menu_list_sub_list_item"><a href="#" class="main_menu_list_sub_list_item_link">Подкатегория 1</a></li>
+									<li class="main_menu_list_sub_list_item"><a href="#" class="main_menu_list_sub_list_item_link">Подкатегория 2</a></li>
+								</ul>
+							</div>
+						</div>
+					</li>
+					<li class="main_menu_list_item"><a href="#" class="main_menu_list_item_link">Садовая техника</a></li>
+					<li class="main_menu_list_item"><a href="#" class="main_menu_list_item_link">Силовая техника</a></li>
+					<li class="main_menu_list_item"><a href="#" class="main_menu_list_item_link">Строительная техника</a></li>
+					<li class="main_menu_list_item"><a href="#" class="main_menu_list_item_link">Коммунальная техника</a></li>
+					<li class="main_menu_list_item"><a href="#" class="main_menu_list_item_link">Трактора</a></li>
+				</ul>
+			</div>
+		</div>
+	</header>
 
 	<div class="breadcrambs">
 		<div class="container">
@@ -250,7 +496,7 @@
 					<div class="col-md-8">
 				<div class="related_products_owl us_owl owl-carousel owl-theme">
 					<div class="product_slider_item">
-						<a href="#" class="product_slider_item_imgwrap"><img src="img/img_product.jpg" alt="" class="product_slider_item_img us_auto"></a>
+						<a href="#" class="product_slider_item_imgwrap"><img src="img/img_product.jpg" alt="" class="product_slider_item_img us_img"></a>
 						<h5 class="product_slider_item_title"><a href="#" class="product_slider_item_title_link">Электрическая тепловая пушка Ресанта ТЭП-3000К</a></h5>
 						<div class="product_slider_item_info">
 							<div class="product_slider_item_price">
@@ -268,44 +514,7 @@
 						<a href="#" class="product_slider_item_btn"><i class="lr-autoru-cart"></i> Добавить в корзину</a>
 					</div>
 					<div class="product_slider_item">
-						<a href="#" class="product_slider_item_imgwrap"><img src="img/img_product.jpg" alt="" class="product_slider_item_img us_auto"></a>
-						<h5 class="product_slider_item_title"><a href="#" class="product_slider_item_title_link">Электрическая тепловая пушка Ресанта ТЭП-3000К</a></h5>
-						<div class="product_slider_item_info">
-							<div class="product_slider_item_price">
-								<div class="product_slider_item_price_title">Цена</div>
-								<div class="product_slider_item_price_old">12 000 руб</div>
-								<div class="product_slider_item_price_now">6 000 руб</div>
-							</div>
-							<ul class="product_slider_item_stars us_list">
-								<li class="product_slider_item_stars_item product_slider_item_stars_item__active"><i class="lr-autoru-star"></i></li>
-								<li class="product_slider_item_stars_item product_slider_item_stars_item__active"><i class="lr-autoru-star"></i></li>
-								<li class="product_slider_item_stars_item product_slider_item_stars_item__active"><i class="lr-autoru-star"></i></li>
-								<li class="product_slider_item_stars_item"><i class="lr-autoru-star"></i></li>
-								<li class="product_slider_item_stars_item"><i class="lr-autoru-star"></i></li>
-							</ul>
-						</div>
-						<a href="#" class="product_slider_item_btn"><i class="lr-autoru-cart"></i> Добавить в корзину</a>
-					</div>
-					<div class="product_slider_item">
-						<a href="#" class="product_slider_item_imgwrap"><img src="img/img_product.jpg" alt="" class="product_slider_item_img us_auto"></a>
-						<h5 class="product_slider_item_title"><a href="#" class="product_slider_item_title_link">Электрическая тепловая пушка Ресанта ТЭП-3000К</a></h5>
-						<div class="product_slider_item_info">
-							<div class="product_slider_item_price">
-								<div class="product_slider_item_price_title">Цена</div>
-								<div class="product_slider_item_price_now">6 000 руб</div>
-							</div>
-							<ul class="product_slider_item_stars us_list">
-								<li class="product_slider_item_stars_item product_slider_item_stars_item__active"><i class="lr-autoru-star"></i></li>
-								<li class="product_slider_item_stars_item product_slider_item_stars_item__active"><i class="lr-autoru-star"></i></li>
-								<li class="product_slider_item_stars_item product_slider_item_stars_item__active"><i class="lr-autoru-star"></i></li>
-								<li class="product_slider_item_stars_item"><i class="lr-autoru-star"></i></li>
-								<li class="product_slider_item_stars_item"><i class="lr-autoru-star"></i></li>
-							</ul>
-						</div>
-						<a href="#" class="product_slider_item_btn"><i class="lr-autoru-cart"></i> Добавить в корзину</a>
-					</div>
-					<div class="product_slider_item">
-						<a href="#" class="product_slider_item_imgwrap"><img src="img/img_product.jpg" alt="" class="product_slider_item_img us_auto"></a>
+						<a href="#" class="product_slider_item_imgwrap"><img src="img/img_product.jpg" alt="" class="product_slider_item_img us_img"></a>
 						<h5 class="product_slider_item_title"><a href="#" class="product_slider_item_title_link">Электрическая тепловая пушка Ресанта ТЭП-3000К</a></h5>
 						<div class="product_slider_item_info">
 							<div class="product_slider_item_price">
@@ -324,7 +533,7 @@
 						<a href="#" class="product_slider_item_btn"><i class="lr-autoru-cart"></i> Добавить в корзину</a>
 					</div>
 					<div class="product_slider_item">
-						<a href="#" class="product_slider_item_imgwrap"><img src="img/img_product.jpg" alt="" class="product_slider_item_img us_auto"></a>
+						<a href="#" class="product_slider_item_imgwrap"><img src="img/img_product.jpg" alt="" class="product_slider_item_img us_img"></a>
 						<h5 class="product_slider_item_title"><a href="#" class="product_slider_item_title_link">Электрическая тепловая пушка Ресанта ТЭП-3000К</a></h5>
 						<div class="product_slider_item_info">
 							<div class="product_slider_item_price">
@@ -342,7 +551,44 @@
 						<a href="#" class="product_slider_item_btn"><i class="lr-autoru-cart"></i> Добавить в корзину</a>
 					</div>
 					<div class="product_slider_item">
-						<a href="#" class="product_slider_item_imgwrap"><img src="img/img_product.jpg" alt="" class="product_slider_item_img us_auto"></a>
+						<a href="#" class="product_slider_item_imgwrap"><img src="img/img_product.jpg" alt="" class="product_slider_item_img us_img"></a>
+						<h5 class="product_slider_item_title"><a href="#" class="product_slider_item_title_link">Электрическая тепловая пушка Ресанта ТЭП-3000К</a></h5>
+						<div class="product_slider_item_info">
+							<div class="product_slider_item_price">
+								<div class="product_slider_item_price_title">Цена</div>
+								<div class="product_slider_item_price_old">12 000 руб</div>
+								<div class="product_slider_item_price_now">6 000 руб</div>
+							</div>
+							<ul class="product_slider_item_stars us_list">
+								<li class="product_slider_item_stars_item product_slider_item_stars_item__active"><i class="lr-autoru-star"></i></li>
+								<li class="product_slider_item_stars_item product_slider_item_stars_item__active"><i class="lr-autoru-star"></i></li>
+								<li class="product_slider_item_stars_item product_slider_item_stars_item__active"><i class="lr-autoru-star"></i></li>
+								<li class="product_slider_item_stars_item"><i class="lr-autoru-star"></i></li>
+								<li class="product_slider_item_stars_item"><i class="lr-autoru-star"></i></li>
+							</ul>
+						</div>
+						<a href="#" class="product_slider_item_btn"><i class="lr-autoru-cart"></i> Добавить в корзину</a>
+					</div>
+					<div class="product_slider_item">
+						<a href="#" class="product_slider_item_imgwrap"><img src="img/img_product.jpg" alt="" class="product_slider_item_img us_img"></a>
+						<h5 class="product_slider_item_title"><a href="#" class="product_slider_item_title_link">Электрическая тепловая пушка Ресанта ТЭП-3000К</a></h5>
+						<div class="product_slider_item_info">
+							<div class="product_slider_item_price">
+								<div class="product_slider_item_price_title">Цена</div>
+								<div class="product_slider_item_price_now">6 000 руб</div>
+							</div>
+							<ul class="product_slider_item_stars us_list">
+								<li class="product_slider_item_stars_item product_slider_item_stars_item__active"><i class="lr-autoru-star"></i></li>
+								<li class="product_slider_item_stars_item product_slider_item_stars_item__active"><i class="lr-autoru-star"></i></li>
+								<li class="product_slider_item_stars_item product_slider_item_stars_item__active"><i class="lr-autoru-star"></i></li>
+								<li class="product_slider_item_stars_item"><i class="lr-autoru-star"></i></li>
+								<li class="product_slider_item_stars_item"><i class="lr-autoru-star"></i></li>
+							</ul>
+						</div>
+						<a href="#" class="product_slider_item_btn"><i class="lr-autoru-cart"></i> Добавить в корзину</a>
+					</div>
+					<div class="product_slider_item">
+						<a href="#" class="product_slider_item_imgwrap"><img src="img/img_product.jpg" alt="" class="product_slider_item_img us_img"></a>
 						<h5 class="product_slider_item_title"><a href="#" class="product_slider_item_title_link">Электрическая тепловая пушка Ресанта ТЭП-3000К</a></h5>
 						<div class="product_slider_item_info">
 							<div class="product_slider_item_price">
@@ -373,7 +619,7 @@
 				<h4 class="related_products_title related_products_title__center">Похожие товары</h4>
 				<div class="product_slider_owl us_owl owl-carousel owl-theme">
 					<div class="product_slider_item">
-						<a href="#" class="product_slider_item_imgwrap"><img src="img/img_product.jpg" alt="" class="product_slider_item_img us_auto"></a>
+						<a href="#" class="product_slider_item_imgwrap"><img src="img/img_product.jpg" alt="" class="product_slider_item_img us_img"></a>
 						<h5 class="product_slider_item_title"><a href="#" class="product_slider_item_title_link">Электрическая тепловая пушка Ресанта ТЭП-3000К</a></h5>
 						<div class="product_slider_item_info">
 							<div class="product_slider_item_price">
@@ -391,44 +637,7 @@
 						<a href="#" class="product_slider_item_btn"><i class="lr-autoru-cart"></i> Добавить в корзину</a>
 					</div>
 					<div class="product_slider_item">
-						<a href="#" class="product_slider_item_imgwrap"><img src="img/img_product.jpg" alt="" class="product_slider_item_img us_auto"></a>
-						<h5 class="product_slider_item_title"><a href="#" class="product_slider_item_title_link">Электрическая тепловая пушка Ресанта ТЭП-3000К</a></h5>
-						<div class="product_slider_item_info">
-							<div class="product_slider_item_price">
-								<div class="product_slider_item_price_title">Цена</div>
-								<div class="product_slider_item_price_old">12 000 руб</div>
-								<div class="product_slider_item_price_now">6 000 руб</div>
-							</div>
-							<ul class="product_slider_item_stars us_list">
-								<li class="product_slider_item_stars_item product_slider_item_stars_item__active"><i class="lr-autoru-star"></i></li>
-								<li class="product_slider_item_stars_item product_slider_item_stars_item__active"><i class="lr-autoru-star"></i></li>
-								<li class="product_slider_item_stars_item product_slider_item_stars_item__active"><i class="lr-autoru-star"></i></li>
-								<li class="product_slider_item_stars_item"><i class="lr-autoru-star"></i></li>
-								<li class="product_slider_item_stars_item"><i class="lr-autoru-star"></i></li>
-							</ul>
-						</div>
-						<a href="#" class="product_slider_item_btn"><i class="lr-autoru-cart"></i> Добавить в корзину</a>
-					</div>
-					<div class="product_slider_item">
-						<a href="#" class="product_slider_item_imgwrap"><img src="img/img_product.jpg" alt="" class="product_slider_item_img us_auto"></a>
-						<h5 class="product_slider_item_title"><a href="#" class="product_slider_item_title_link">Электрическая тепловая пушка Ресанта ТЭП-3000К</a></h5>
-						<div class="product_slider_item_info">
-							<div class="product_slider_item_price">
-								<div class="product_slider_item_price_title">Цена</div>
-								<div class="product_slider_item_price_now">6 000 руб</div>
-							</div>
-							<ul class="product_slider_item_stars us_list">
-								<li class="product_slider_item_stars_item product_slider_item_stars_item__active"><i class="lr-autoru-star"></i></li>
-								<li class="product_slider_item_stars_item product_slider_item_stars_item__active"><i class="lr-autoru-star"></i></li>
-								<li class="product_slider_item_stars_item product_slider_item_stars_item__active"><i class="lr-autoru-star"></i></li>
-								<li class="product_slider_item_stars_item"><i class="lr-autoru-star"></i></li>
-								<li class="product_slider_item_stars_item"><i class="lr-autoru-star"></i></li>
-							</ul>
-						</div>
-						<a href="#" class="product_slider_item_btn"><i class="lr-autoru-cart"></i> Добавить в корзину</a>
-					</div>
-					<div class="product_slider_item">
-						<a href="#" class="product_slider_item_imgwrap"><img src="img/img_product.jpg" alt="" class="product_slider_item_img us_auto"></a>
+						<a href="#" class="product_slider_item_imgwrap"><img src="img/img_product.jpg" alt="" class="product_slider_item_img us_img"></a>
 						<h5 class="product_slider_item_title"><a href="#" class="product_slider_item_title_link">Электрическая тепловая пушка Ресанта ТЭП-3000К</a></h5>
 						<div class="product_slider_item_info">
 							<div class="product_slider_item_price">
@@ -447,7 +656,7 @@
 						<a href="#" class="product_slider_item_btn"><i class="lr-autoru-cart"></i> Добавить в корзину</a>
 					</div>
 					<div class="product_slider_item">
-						<a href="#" class="product_slider_item_imgwrap"><img src="img/img_product.jpg" alt="" class="product_slider_item_img us_auto"></a>
+						<a href="#" class="product_slider_item_imgwrap"><img src="img/img_product.jpg" alt="" class="product_slider_item_img us_img"></a>
 						<h5 class="product_slider_item_title"><a href="#" class="product_slider_item_title_link">Электрическая тепловая пушка Ресанта ТЭП-3000К</a></h5>
 						<div class="product_slider_item_info">
 							<div class="product_slider_item_price">
@@ -465,7 +674,44 @@
 						<a href="#" class="product_slider_item_btn"><i class="lr-autoru-cart"></i> Добавить в корзину</a>
 					</div>
 					<div class="product_slider_item">
-						<a href="#" class="product_slider_item_imgwrap"><img src="img/img_product.jpg" alt="" class="product_slider_item_img us_auto"></a>
+						<a href="#" class="product_slider_item_imgwrap"><img src="img/img_product.jpg" alt="" class="product_slider_item_img us_img"></a>
+						<h5 class="product_slider_item_title"><a href="#" class="product_slider_item_title_link">Электрическая тепловая пушка Ресанта ТЭП-3000К</a></h5>
+						<div class="product_slider_item_info">
+							<div class="product_slider_item_price">
+								<div class="product_slider_item_price_title">Цена</div>
+								<div class="product_slider_item_price_old">12 000 руб</div>
+								<div class="product_slider_item_price_now">6 000 руб</div>
+							</div>
+							<ul class="product_slider_item_stars us_list">
+								<li class="product_slider_item_stars_item product_slider_item_stars_item__active"><i class="lr-autoru-star"></i></li>
+								<li class="product_slider_item_stars_item product_slider_item_stars_item__active"><i class="lr-autoru-star"></i></li>
+								<li class="product_slider_item_stars_item product_slider_item_stars_item__active"><i class="lr-autoru-star"></i></li>
+								<li class="product_slider_item_stars_item"><i class="lr-autoru-star"></i></li>
+								<li class="product_slider_item_stars_item"><i class="lr-autoru-star"></i></li>
+							</ul>
+						</div>
+						<a href="#" class="product_slider_item_btn"><i class="lr-autoru-cart"></i> Добавить в корзину</a>
+					</div>
+					<div class="product_slider_item">
+						<a href="#" class="product_slider_item_imgwrap"><img src="img/img_product.jpg" alt="" class="product_slider_item_img us_img"></a>
+						<h5 class="product_slider_item_title"><a href="#" class="product_slider_item_title_link">Электрическая тепловая пушка Ресанта ТЭП-3000К</a></h5>
+						<div class="product_slider_item_info">
+							<div class="product_slider_item_price">
+								<div class="product_slider_item_price_title">Цена</div>
+								<div class="product_slider_item_price_now">6 000 руб</div>
+							</div>
+							<ul class="product_slider_item_stars us_list">
+								<li class="product_slider_item_stars_item product_slider_item_stars_item__active"><i class="lr-autoru-star"></i></li>
+								<li class="product_slider_item_stars_item product_slider_item_stars_item__active"><i class="lr-autoru-star"></i></li>
+								<li class="product_slider_item_stars_item product_slider_item_stars_item__active"><i class="lr-autoru-star"></i></li>
+								<li class="product_slider_item_stars_item"><i class="lr-autoru-star"></i></li>
+								<li class="product_slider_item_stars_item"><i class="lr-autoru-star"></i></li>
+							</ul>
+						</div>
+						<a href="#" class="product_slider_item_btn"><i class="lr-autoru-cart"></i> Добавить в корзину</a>
+					</div>
+					<div class="product_slider_item">
+						<a href="#" class="product_slider_item_imgwrap"><img src="img/img_product.jpg" alt="" class="product_slider_item_img us_img"></a>
 						<h5 class="product_slider_item_title"><a href="#" class="product_slider_item_title_link">Электрическая тепловая пушка Ресанта ТЭП-3000К</a></h5>
 						<div class="product_slider_item_info">
 							<div class="product_slider_item_price">
@@ -553,7 +799,10 @@
 	</footer>
 
 	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery-ui.min.js"></script>
+	<script src="js/jquery.ui.touch-punch.min.js"></script>
 	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/jquery.fancybox.min.js"></script>
 	<script src="js/custom.js"></script>
 	
 </body>
