@@ -19,7 +19,10 @@ $(document).ready(function() {
 			$(this).next().slideDown(300);
 			$(this).parent().addClass("us_active");
 		}
-	});
+	})
+	.on("click", "#us-mobile-search", function() {
+		$(this).parent().next().toggleClass("us_show");
+	})
 	
 
 	$(".brand_block_owl").owlCarousel({
