@@ -20,8 +20,20 @@ $(document).ready(function() {
 			$(this).parent().addClass("us_active");
 		}
 	})
+	.on("click", "#us-tablet-search", function() {
+		$(this).prev().toggleClass("us_show");
+	})
 	.on("click", "#us-mobile-search", function() {
 		$(this).parent().next().toggleClass("us_show");
+	})
+	.on("click", "#us-main-menu", function() {
+		if( $("body").hasClass("us_show_main_menu") ) {
+			$("body").removeClass("us_show_main_menu");
+			$("#main-menu").slideUp();
+		} else {
+			$("body").addClass("us_show_main_menu");
+			$("#main-menu").slideDown();
+		}
 	})
 	
 
