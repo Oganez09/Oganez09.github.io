@@ -1,0 +1,37 @@
+[
+	{
+		"categories": [
+			{
+				"cat_name": "Cat name",
+				"sub_categories": [
+					{
+						"sub_cat_name": "Sub cat name",
+						"sites": [
+							{
+								"site_name": "Site name",
+								"site_url": "www.site_url.ru"
+							},
+							{
+								"site_name": "Site name",
+								"site_url": "www.site_url.ru"
+							}
+						]
+					},
+					{
+						"sub_cat_name": "Sub cat name",
+						"sites": [
+							{
+								"site_name": "Site name",
+								"site_url": "www.site_url.ru"
+							},
+							{
+								"site_name": "Site name",
+								"site_url": "www.site_url.ru"
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+]
