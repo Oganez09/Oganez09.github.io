@@ -534,7 +534,7 @@ button {
 	border: none;
 }
 .page-content {
-	padding: 16px;
+	padding: 16px 16px 22px;
 	display: flex;
 }
 .page-image {
@@ -588,17 +588,18 @@ button {
 .page-footer {
 	padding: 0 16px 16px;
 }
-.tab-item {
-	display: flex;
-	/* border: 1px solid #1890FF;
-	border: 1px solid #d9d9d9; */
-}
-.tab-item::before {
+.page-footer::before {
 	content: '';
+	width: 100%;
 	height: 1px;
 	background-color: #d9d9d9;
 	margin-bottom: 16px;
 	display: block;
+}
+.tab-item {
+	display: flex;
+	/* border: 1px solid #1890FF;
+	border: 1px solid #d9d9d9; */
 }
 .tab-item-link {
 	font-size: 16px;
