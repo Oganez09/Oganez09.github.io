@@ -1129,30 +1129,11 @@ button:focus {
   height: 150px;
   padding: 25px;
   background-color: #fff;
-  background: linear-gradient(135deg, transparent 6px, #fff 0) top left, linear-gradient(-45deg, transparent 6px, #fff 0) bottom right;
-  background-size: 50% 50%;
-  background-repeat: no-repeat;
-  -webkit-box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.1);
-          box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.1);
 }
 
 .s_customers_owl_item img {
   max-width: 100%;
   width: auto !important;
-}
-
-.s_customers .owl-stage-outer {
-  overflow: visible;
-}
-
-.s_customers .owl-item {
-  opacity: 0;
-  -webkit-transition: opacity .3s ease;
-  transition: opacity .3s ease;
-}
-
-.s_customers .owl-item.active {
-  opacity: 1;
 }
 
 .s_customers .owl-theme .owl-nav {
