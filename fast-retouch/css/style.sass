@@ -1,0 +1,150 @@
+html,
+body
+  margin: 0
+  padding: 0
+
+body
+  font-family: Roboto, sans-serif
+
+.content
+  width: 236px
+  height: auto
+  background: #393939
+  &-header
+    font-size: 11px
+    color: #ffffff
+    line-height: 20px
+    background: #535353
+    text-align: center
+  &-body
+    padding: 12px
+  &-box
+    display: flex
+    align-items: center
+    justify-content: space-between
+    flex-wrap: wrap
+    margin-bottom: 7px
+  &-btn
+    font-size: 11px
+    color: #ffffff
+    width: 97px
+    height: 20px
+    margin-bottom: 9px
+    padding: 0
+    background: #525353
+    border: 1px solid #7D7D7C
+    outline: none
+    border-radius: 12px
+    cursor: pointer
+    &:hover
+      color: #000000
+      background-color: #7D7D7C
+    &.small
+      width: 67px
+      margin-bottom: 7px
+    &.layer
+      width: 58px
+      margin-bottom: 0
+  &-height
+    height: 117px
+  &-title
+    font-size: 12px
+    color: #ffffff
+    text-align: center
+    margin-bottom: 10px
+  &-elipses
+    display: flex
+    justify-content: center
+    margin-top: -3px
+    margin-bottom: 7px
+    &-item
+      width: 30px
+      height: 30px
+      padding: 0
+      background-color: #252525
+      border: 1px solid #252525
+      outline: none
+      border-radius: 50%
+      display: flex
+      align-items: center
+      justify-content: center
+      cursor: pointer
+      &:hover
+        border-color: #029BB2
+    &-item:not(:last-child)
+      margin-right: 6px
+  &-layer
+    display: flex
+    align-items: center
+    justify-content: space-between
+    margin-bottom: 5px
+    &-color
+      width: 16px
+      height: 16px
+      padding: 0
+      background-color: transparent
+      border: none
+      border-radius: 50%
+      outline: none
+      cursor: pointer
+      display: flex
+      align-items: center
+      justify-content: center
+      &::before
+        content: ''
+        width: 8px
+        height: 8px
+        border-radius: 50%
+        border: none
+      &.tranparent
+        &::before
+          border: 2px solid #d5d5d5
+          background-color: transparent
+          box-sizing: border-box
+      &.red
+        &:hover
+          background-color: #831E1E
+        &::before
+          background-color: #F70203
+      &.orange
+        &:hover
+          background-color: #9A5920
+        &::before
+          background-color: #FB7907
+      &.yellow
+        &:hover
+          background-color: #7F7531
+        &::before
+          background-color: #FFE204
+      &.green
+        &:hover
+          background-color: #559B4E
+        &::before
+          background-color: #70FC62
+      &.blue
+        &:hover
+          background-color: #3B5C9C
+        &::before
+          background-color: #3D7FFF
+      &.purple
+        &:hover
+          background-color: #634A9A
+        &::before
+          background-color: #8C5AFA
+      &.grey
+        &:hover
+          background-color: #787878
+        &::before
+          background-color: #B7B7B7
+  &-action
+    display: flex
+    justify-content: space-between
+    &-box
+      width: 50%
+      text-align: center
+    &-link
+      font-size: 11px
+      color: #ffffff
+      text-decoration: none
+      &:hover
+        text-decoration: underline

@@ -46,7 +46,7 @@ body {
   color: #ffffff;
   width: 97px;
   height: 20px;
-  margin-bottom: 7px;
+  margin-bottom: 9px;
   padding: 0;
   background: #525353;
   border: 1px solid #7D7D7C;
@@ -62,11 +62,16 @@ body {
 
 .content-btn.small {
   width: 67px;
+  margin-bottom: 7px;
 }
 
 .content-btn.layer {
   width: 58px;
   margin-bottom: 0;
+}
+
+.content-height {
+  height: 117px;
 }
 
 .content-title {
@@ -83,8 +88,8 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-top: 7px;
-  margin-bottom: 14px;
+  margin-top: -3px;
+  margin-bottom: 7px;
 }
 
 .content-elipses-item {
@@ -125,7 +130,7 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-bottom: 9px;
+  margin-bottom: 5px;
 }
 
 .content-layer-color {
@@ -223,8 +228,14 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.content-action-box {
+  width: 50%;
+  text-align: center;
 }
 
 .content-action-link {
