@@ -4,7 +4,13 @@ $(document).ready(function () {
       $(this).next().slideToggle(300).parent().toggleClass('show');
     })
     .on('click', '.urm_card_toggle_all', function () {
-      $(this).parent().find('.urm_card_body').slideToggle(300);
+      $(this).toggleClass('show_all');
+      $('.urm_card').find('.urm_card_body').slideToggle(300);
+      if ($(this).hasClass('show_all')) {
+        $(this).text("Развернуть все");
+      } else {
+        $(this).text("Свернуть все");
+      }
     });
 });
 

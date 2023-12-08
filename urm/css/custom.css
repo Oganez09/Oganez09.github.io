@@ -9,6 +9,23 @@ body {
   position: relative;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  scrollbar-color: #6969dd #e0e0e0;
+  scrollbar-width: thin;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #00f;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #fff;
+  border-radius: 5px;
 }
 
 .urm {
@@ -16,7 +33,7 @@ body {
 }
 .urm_title {
   font-size: 16px;
-  font-weight: 600;
+  font-weight: 500;
 }
 .urm_input, .urm_textarea {
   color: #222;
@@ -39,6 +56,82 @@ body {
   height: 200px;
   resize: none;
 }
+.urm_form {
+  max-width: 400px;
+}
+.urm_form_control {
+  margin-bottom: 0;
+  display: block;
+  position: relative;
+}
+.urm_form_label {
+  font-weight: 500;
+  margin-bottom: 8px;
+  display: inline-block;
+}
+.urm_form_error {
+  color: #f35253;
+  position: absolute;
+  top: 100%;
+  left: 0;
+}
+.urm_form .urm_btn {
+  width: 150px;
+}
+.urm_btn {
+  background-color: #00f;
+  color: #fff;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 12px 16px;
+  display: inline-block;
+  border: none;
+  outline: none;
+  height: 50px;
+  text-align: center;
+}
+.urm_table {
+  width: 100%;
+  overflow-x: auto;
+}
+.urm_table_company_list table tr th:first-child,
+.urm_table_company_list table tr td:first-child {
+  width: 7%;
+}
+.urm_table table {
+  width: 100%;
+  min-width: 700px;
+  table-layout: fixed;
+}
+.urm_table table th,
+.urm_table table td {
+  padding: 16px;
+  vertical-align: top;
+}
+.urm_table table th {
+  font-weight: 500;
+  background-color: #fafafa;
+  border-bottom: 1px solid #f0f0f0;
+}
+.urm_table table td {
+  word-wrap: break-word;
+  border-top: 1px solid #f0f0f0;
+}
+.urm_text_wrapper {
+  background-color: #f5f5f5;
+  padding: 10px;
+  border-radius: 10px;
+  color: #aaa;
+}
+.urm_top_btns {
+  display: flex;
+  flex-direction: row-reverse;
+  margin-bottom: 1rem;
+}
+.urm_top_btns .urm_btn {
+  margin-left: 1rem;
+}
 .urm_card {
   border-radius: 5px;
   border: 1px solid #d9d9d9;
@@ -59,14 +152,24 @@ body {
 .urm_card_body {
   padding: 10px 24px 20px;
 }
+.urm_cargo_item_title {
+  font-weight: 500;
+}
 .urm_truck {
+  margin-top: 1rem;
+}
+.urm_truck_title {
+  border-bottom: 1px #2b2d42 solid;
+  margin-bottom: 5px;
+}
+.urm_truck_wrapper {
   overflow: auto;
   position: relative;
   padding: 156px 50px 50px;
   background: #f6f8fa;
   border-radius: 24px;
 }
-.urm_truck .urm_input {
+.urm_truck_wrapper .urm_input {
   background-color: #efefef;
   width: 65px;
   padding: 5px 8px;
@@ -190,7 +293,7 @@ body {
 }
 .urm_truck_cargo_text {
   color: #00f;
-  font-weight: 600;
+  font-weight: 500;
 }
 .urm_truck_cargo_side {
   width: 927px;
