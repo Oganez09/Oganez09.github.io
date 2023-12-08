@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0">
+
+  <title>urm detail</title>
+
+  <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
+  <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+  <link rel="stylesheet" href="css/custom.css">
+
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=8ef7aeb9-bf6a-47d4-a371-08a2af015b1d&lang=ru_RU"></script>
+</head>
+<body>
+
+  <div class="urm">
+    <div class="container-fluid">
+      <div class="urm_wrapper">
+        <div class="urm_card mb-4 show">
+          <div class="urm_card_head">
+            <div class="urm_title">Данные о разрешении</div>
+            <svg class="urm_card_head_icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect width="24" height="24" fill="white"/>
+              <path d="M7 14.5L12 9.5L17 14.5" stroke="#000000" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <div class="urm_card_body">
+            <div class="row">
+              <div class="col-sm-6 col-md-2 mb-3"><b>№ Разрешения:</b></div>
+              <div class="col-sm-6 col-md-10">IR991634</div>
+            </div>
+            <div class="row">
+              <div class="col-sm-6 col-md-2 mb-3"><b>Дата оформления:</b></div>
+              <div class="col-sm-6 col-md-10">27.07.2023</div>
+            </div>
+            <div class="row">
+              <div class="col-sm-6 col-md-2 mb-3"><b>Уполномоченный орган:</b></div>
+              <div class="col-sm-6 col-md-10">Федеральное казенное учреждение "Центр мониторинга безопасной эксплуатации автомобильных дорог Федерального дорожного агентства"</div>
+            </div>
+            <div class="row">
+              <div class="col-sm-6 col-md-2"><b>Статус разрешения:</b></div>
+              <div class="col-sm-6 col-md-10">Выдано</div>
+            </div>
+          </div>
+        </div>
+        <div class="urm_card mb-4 show">
+          <div class="urm_card_head">
+            <div class="urm_title">Схема ТС</div>
+            <svg class="urm_card_head_icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect width="24" height="24" fill="white"/>
+              <path d="M7 14.5L12 9.5L17 14.5" stroke="#000000" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <div class="urm_card_body">
+  
+            <div class="urm_truck">
+              <img src="img/truck2.png" alt="" class="urm_truck_img">
+
+              <div class="urm_truck_axle">
+                <div class="urm_truck_axle_item">
+                  <div class="urm_truck_axle_title">Ось 1</div>
+                  <div class="urm_truck_axle_load">
+                    <input type="text" class="urm_input" value="5.000" disabled>
+                    <span>(т)</span>
+                  </div>
+                  <div class="urm_truck_axle_line"></div>
+                  <div class="urm_truck_axle_circle"></div>
+                </div>
+                <div class="urm_truck_axle_item">
+                  <div class="urm_truck_axle_title">Ось 2</div>
+                  <div class="urm_truck_axle_load">
+                    <input type="text" class="urm_input" value="6.600" disabled>
+                    <span>(т)</span>
+                  </div>
+                  <div class="urm_truck_axle_line"></div>
+                  <div class="urm_truck_axle_circle"></div>
+                </div>
+                <div class="urm_truck_axle_item">
+                  <div class="urm_truck_axle_title">Ось 3</div>
+                  <div class="urm_truck_axle_load">
+                    <input type="text" class="urm_input" value="6.600" disabled>
+                    <span>(т)</span>
+                  </div>
+                  <div class="urm_truck_axle_line"></div>
+                  <div class="urm_truck_axle_circle"></div>
+                </div>
+                <div class="urm_truck_axle_item">
+                  <div class="urm_truck_axle_title">Ось 4</div>
+                  <div class="urm_truck_axle_load">
+                    <input type="text" class="urm_input" value="6.200" disabled>
+                    <span>(т)</span>
+                  </div>
+                  <div class="urm_truck_axle_line"></div>
+                  <div class="urm_truck_axle_circle"></div>
+                </div>
+                <div class="urm_truck_axle_item">
+                  <div class="urm_truck_axle_title">Ось 5</div>
+                  <div class="urm_truck_axle_load">
+                    <input type="text" class="urm_input" value="6.200" disabled>
+                    <span>(т)</span>
+                  </div>
+                  <div class="urm_truck_axle_line"></div>
+                  <div class="urm_truck_axle_circle"></div>
+                </div>
+                <div class="urm_truck_axle_item">
+                  <div class="urm_truck_axle_title">Ось 6</div>
+                  <div class="urm_truck_axle_load">
+                    <input type="text" class="urm_input" value="6.200" disabled>
+                    <span>(т)</span>
+                  </div>
+                  <div class="urm_truck_axle_line"></div>
+                  <div class="urm_truck_axle_circle"></div>
+                </div>
+                <div class="urm_truck_axle_item">
+                  <div class="urm_truck_axle_title">Ось 7</div>
+                  <div class="urm_truck_axle_load">
+                    <input type="text" class="urm_input" value="6.200" disabled>
+                    <span>(т)</span>
+                  </div>
+                  <div class="urm_truck_axle_line"></div>
+                  <div class="urm_truck_axle_circle"></div>
+                </div>
+              </div>
+              <div class="urm_truck_length">
+                <!-- truck side -->
+                <div class="urm_truck_length_item">
+                  <input type="text" class="urm_input" value="1.49" disabled>
+                  <span>(м)</span>
+                </div>
+                <div class="urm_truck_length_item">
+                  <input type="text" class="urm_input" value="3.60" disabled>
+                  <span>(м)</span>
+                </div>
+                <div class="urm_truck_length_item">
+                  <input type="text" class="urm_input" value="1.40" disabled>
+                  <span>(м)</span>
+                </div>
+                <div class="urm_truck_length_item">
+                  <input type="text" class="urm_input" value="1.36" disabled>
+                  <span>(м)</span>
+                </div>
+                <div class="urm_truck_length_item">
+                  <input type="text" class="urm_input" value="2.51" disabled>
+                  <span>(м)</span>
+                </div>
+                <div class="urm_truck_length_item">
+                  <input type="text" class="urm_input" value="1.36" disabled>
+                  <span>(м)</span>
+                </div>
+                <div class="urm_truck_length_item">
+                  <input type="text" class="urm_input" value="4.28" disabled>
+                  <span>(м)</span>
+                </div>
+                <div class="urm_truck_length_item">
+                  <input type="text" class="urm_input" value="2.00" disabled>
+                  <span>(м)</span>
+                </div>
+                <div class="urm_truck_length_item">
+                  <input type="text" class="urm_input" value="14.00" disabled>
+                  <span>(м)</span>
+                </div>
+                <div class="urm_truck_length_item">
+                  <input type="text" class="urm_input" value="32.00" disabled>
+                  <span>(м)</span>
+                </div>
+                <!-- truck back -->
+                <div class="urm_truck_length_item">
+                  <input type="text" class="urm_input" value="5.50" disabled>
+                  <span>(м)</span>
+                </div>
+                <div class="urm_truck_length_item">
+                  <input type="text" class="urm_input" value="5.00" disabled>
+                  <span>(м)</span>
+                </div>
+              </div>
+              <div class="urm_truck_cargo">
+                <div class="urm_truck_cargo_side">
+                  <span class="urm_truck_cargo_text">Груз 1</span>
+                  <div class="urm_truck_cargo_side_lines">
+                    <span class="urm_truck_cargo_side_lines_size">22 (м)</span>
+                  </div>
+                </div>
+                <div class="urm_truck_cargo_back">
+                  <span class="urm_truck_cargo_text">Груз 1</span>
+                  <span class="urm_truck_cargo_back_size_left">4.5 (м)</span>
+                  <span class="urm_truck_cargo_back_size_bottom">5 (м)</span>
+                </div>
+              </div>
+            </div>
+  
+          </div>
+        </div>
+        <div class="urm_card mb-4 show">
+          <div class="urm_card_head">
+            <div class="urm_title">Маршрут движения</div>
+            <svg class="urm_card_head_icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect width="24" height="24" fill="white"/>
+              <path d="M7 14.5L12 9.5L17 14.5" stroke="#000000" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <div class="urm_card_body">
+            <div class="row">
+              <div class="col-sm-3">
+                <p>Данные по точкам</p>
+                <input type="text" class="urm_input mb-3" value="62.998683, 76.949073" disabled>
+                <input type="text" class="urm_input mb-4" value="65.568653, 72.372517" disabled>
+              </div>
+              <div class="col-sm-9">
+                <div id="map" class="urm_map mb-4" style="width: 100%; height: 400px"></div>
+                <textarea class="urm_textarea" disabled>92.9 км (92.87 км), Ноябрьск, Ноябрьск - Вынгапуровский &#13;&#10;93.2 км (0.34 км), Ноябрьск, проспект Мира &#13;&#10;142.7 км (49.45 км), Ноябрьск, Магистральная улица &#13;&#10;300.6 км (157.89 км), Ямало-Ненецкий автономный округ, 71-140Р-1 &#13;&#10;329.2 км (28.65 км), муниципальный округ Пуровский район, Сургут — Салехард &#13;&#10;338.9 км (9.70 км), городской округ Губкинский, Сургут — Салехард &#13;&#10;358.9 км (19.98 км), Ямало-Ненецкий автономный округ, 71-140Р-1 &#13;&#10;358.9 км (0.06 км), муниципальный округ Пуровский район, Сургут — Салехард &#13;&#10;359.3 км (0.36 км), Пурпе, Сургут — Салехард &#13;&#10;359.4 км (0.10 км), Ямало-Ненецкий автономный округ, 71-140Р-1 &#13;&#10;360.0 км (0.64 км), Пурпе, Сургут — Салехард &#13;&#10;361.5 км (1.47 км), Ямало-Ненецкий автономный округ, 71-140Р-1 &#13;&#10;361.9 км (0.43 км), Пурпе, Сургут — Салехард &#13;&#10;362.0 км (0.02 км), Ямало-Ненецкий автономный округ, 71-140Р-1 &#13;&#10;362.7 км (0.75 км), Пурпе, Сургут — Салехард &#13;&#10;390.7 км (27.99 км), муниципальный округ Пуровский район, Сургут — Салехард &#13;&#10;626.9 км (236.23 км), Ямало-Ненецкий автономный округ, 71-140Р-1 &#13;&#10;628.4 км (1.42 км), Новый Уренгой, Промысловая улица &#13;&#10;635.0 км (6.68 км), Новый Уренгой, Крайняя улица &#13;&#10;639.2 км (4.17 км), Новый Уренгой, Таёжная улица &#13;&#10;643.3 км (4.07 км), Новый Уренгой, Надым — Новый Уренгой &#13;&#10;655.5 км (12.26 км), городской округ Новый Уренгой, Надым — Новый Уренгой &#13;&#10;741.7 км (86.15 км), муниципальный округ Надымский район, Надым — Новый Уренгой &#13;&#10;744.4 км (2.67 км), Пангоды, Надым — Новый Уренгой &#13;&#10;747.8 км (3.40 км), Пангоды, улица Мира &#13;&#10;748.3 км (0.55 км), Пангоды, Надым — Новый Уренгой &#13;&#10;812.7 км (64.41 км), муниципальный округ Надымский район, Надым — Новый Уренгой &#13;&#10;822.3 км (9.59 км), Правохеттинский, Надым — Новый Уренгой &#13;&#10;851.8 км (29.47 км), муниципальный округ Надымский район, Надым — Новый Уренгой &#13;&#10;857.4 км (5.62 км), Ямало-Ненецкий автономный округ, 71-140Р-1-11 &#13;&#10;858.6 км (1.17 км), Ямало-Ненецкий автономный округ, 71-140Р-1-12 &#13;&#10;870.5 км (11.90 км), муниципальный округ Надымский район, Надым — Новый Уренгой &#13;&#10;871.5 км (1.00 км), Надым, Надым-Салехард &#13;&#10;879.9 км (8.42 км), муниципальный округ Надымский район, Надым-Салехард</textarea>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/custom.js"></script>
+</body>
+</html>

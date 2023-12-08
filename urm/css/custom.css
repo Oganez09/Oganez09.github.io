@@ -1,0 +1,252 @@
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #222;
+  background-color: #fff;
+  min-width: 320px;
+  overflow-x: hidden;
+  position: relative;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.urm {
+  padding: 20px;
+}
+.urm_title {
+  font-size: 16px;
+  font-weight: 600;
+}
+.urm_input, .urm_textarea {
+  color: #222;
+  padding: 8px 12px;
+  width: 100%;
+  border-radius: 5px;
+  outline: none;
+  background-color: #f5f5f5;
+  border: 1px solid #f5f5f5;
+}
+.urm_input:focus, .urm_textarea:focus {
+  border-color: #d9d9d9;
+}
+.urm_input[disabled], .urm_textarea[disabled] {
+  color: #bbb;
+  cursor: not-allowed;
+}
+.urm_textarea {
+  padding: 12px;
+  height: 200px;
+  resize: none;
+}
+.urm_card {
+  border-radius: 5px;
+  border: 1px solid #d9d9d9;
+}
+.urm_card.show .urm_card_head_icon {
+  transform: rotate(180deg);
+}
+.urm_card_head {
+  padding: 20px 24px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.urm_card_head_icon {
+  transition: transform 0.3s;
+}
+.urm_card_body {
+  padding: 10px 24px 20px;
+}
+.urm_truck {
+  overflow: auto;
+  position: relative;
+  padding: 156px 50px 50px;
+  background: #f6f8fa;
+  border-radius: 24px;
+}
+.urm_truck .urm_input {
+  background-color: #efefef;
+  width: 65px;
+  padding: 5px 8px;
+}
+.urm_truck_axle_item {
+  position: absolute;
+  top: 67px;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.urm_truck_axle_item:nth-child(1) {
+  left: 117px;
+}
+.urm_truck_axle_item:nth-child(2) {
+  left: 357px;
+}
+.urm_truck_axle_item:nth-child(3) {
+  left: 442px;
+}
+.urm_truck_axle_item:nth-child(4) {
+  left: 670px;
+}
+.urm_truck_axle_item:nth-child(5) {
+  left: 755px;
+}
+.urm_truck_axle_item:nth-child(6) {
+  left: 1160px;
+}
+.urm_truck_axle_item:nth-child(7) {
+  left: 1245px;
+}
+.urm_truck_axle_load {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.urm_truck_axle_line {
+  height: 310px;
+  width: 0;
+  margin: auto;
+  border-left: 2px dashed #f35253;
+}
+.urm_truck_axle_circle {
+  width: 17px;
+  height: 17px;
+  margin: auto;
+  background-color: #f35253;
+  border: 4px solid #fff;
+  border-radius: 50%;
+  box-shadow: 0 0 5px 5px rgba(243, 82, 83, 0.1);
+  position: relative;
+}
+.urm_truck_axle_circle::before, .urm_truck_axle_circle::after {
+  content: "";
+  width: 5px;
+  height: 5px;
+  border: 9px solid transparent;
+  border-top: 13px solid #f35253;
+  position: absolute;
+  top: -18px;
+  left: -4px;
+}
+.urm_truck_axle_circle::after {
+  top: -31px;
+}
+.urm_truck_length_item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 530px;
+  z-index: 2;
+}
+.urm_truck_length_item:nth-child(1) {
+  left: 70px;
+}
+.urm_truck_length_item:nth-child(2) {
+  left: 240px;
+}
+.urm_truck_length_item:nth-child(3) {
+  left: 405px;
+}
+.urm_truck_length_item:nth-child(3) {
+  left: 405px;
+}
+.urm_truck_length_item:nth-child(4) {
+  left: 720px;
+}
+.urm_truck_length_item:nth-child(5) {
+  left: 960px;
+}
+.urm_truck_length_item:nth-child(6) {
+  left: 1210px;
+}
+.urm_truck_length_item:nth-child(7) {
+  left: 1310px;
+}
+.urm_truck_length_item:nth-child(8) {
+  left: 1400px;
+}
+.urm_truck_length_item:nth-child(9) {
+  top: 580px;
+  left: 560px;
+}
+.urm_truck_length_item:nth-child(10) {
+  top: 700px;
+  left: 730px;
+}
+.urm_truck_length_item:nth-child(11) {
+  top: 347px;
+  left: 1885px;
+}
+.urm_truck_length_item:nth-child(12) {
+  top: 700px;
+  left: 1700px;
+}
+.urm_truck_cargo_text {
+  color: #00f;
+  font-weight: 600;
+}
+.urm_truck_cargo_side {
+  width: 927px;
+  height: 240px;
+  position: absolute;
+  top: 159px;
+  left: 550px;
+  border: 2px solid #00f;
+  background-color: rgba(233, 239, 243, 0.7);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.urm_truck_cargo_side_lines {
+  height: 240px;
+  width: 100%;
+  position: absolute;
+  left: -2px;
+  top: 100%;
+}
+.urm_truck_cargo_side_lines_size {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  text-align: center;
+  padding: 3px;
+  color: #7e7e7e;
+}
+.urm_truck_cargo_back {
+  width: 170px;
+  height: 240px;
+  position: absolute;
+  top: 159px;
+  left: 1652px;
+  border: 2px solid #00f;
+  background-color: rgba(233, 239, 243, 0.7);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.urm_truck_cargo_back_size_left {
+  position: absolute;
+  top: 110px;
+  left: -50px;
+  color: #7e7e7e;
+}
+.urm_truck_cargo_back_size_bottom {
+  position: absolute;
+  top: 475px;
+  left: 70px;
+  color: #7e7e7e;
+}
+.urm_map {
+  width: 100%;
+  height: 400px;
+}
