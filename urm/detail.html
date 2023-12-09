@@ -11,6 +11,7 @@
 
   <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
   <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+  <!-- <link href='https://api.mapbox.com/mapbox-gl-js/v3.0.1/mapbox-gl.css' rel='stylesheet' /> -->
   <link rel="stylesheet" href="css/custom.css">
 
 </head>
@@ -337,47 +338,51 @@
           </div>
           <div class="urm_card_body">
             <div class="row">
-              <div class="col-sm-6 mb-5">
-                <label class="urm_form_control">
-                  <span class="urm_form_label">Длина автопоезда с грузом [м]:</span>
-                  <input type="text" class="urm_input" disabled value="32">
-                </label>
+              <div class="col-sm-6">
+                <div class="mb-5">
+                  <label class="urm_form_control">
+                    <span class="urm_form_label">Длина автопоезда с грузом [м]:</span>
+                    <input type="text" class="urm_input" disabled value="32">
+                  </label>
+                </div>
+                <div class="mb-5">
+                  <label class="urm_form_control">
+                    <span class="urm_form_label">Высота автопоезда с грузом [м]:</span>
+                    <input type="text" class="urm_input" disabled value="5.5">
+                  </label>
+                </div>
+                <div class="mb-5">
+                  <label class="urm_form_control">
+                    <span class="urm_form_label">Ширина автопоезда с грузом [м]:</span>
+                    <input type="text" class="urm_input" disabled value="5">
+                  </label>
+                </div>
+                <div class="mb-5">
+                  <label class="urm_form_control">
+                    <span class="urm_form_label">Минимальный радиус поворота с грузом [м]:</span>
+                    <input type="text" class="urm_input" disabled value="15">
+                  </label>
+                </div>
               </div>
-              <div class="col-sm-6 mb-5">
-                <label class="urm_form_control">
-                  <span class="urm_form_label">Высота автопоезда с грузом [м]:</span>
-                  <input type="text" class="urm_input" disabled value="5.5">
-                </label>
-              </div>
-              <div class="col-sm-6 mb-5">
-                <label class="urm_form_control">
-                  <span class="urm_form_label">Ширина автопоезда с грузом [м]:</span>
-                  <input type="text" class="urm_input" disabled value="5">
-                </label>
-              </div>
-              <div class="col-sm-6 mb-5">
-                <label class="urm_form_control">
-                  <span class="urm_form_label">Минимальный радиус поворота с грузом [м]:</span>
-                  <input type="text" class="urm_input" disabled value="15">
-                </label>
-              </div>
-              <div class="col-sm-6 mb-5">
-                <label class="urm_form_control">
-                  <span class="urm_form_label">Масса автопоезда с грузом [т]:</span>
-                  <input type="text" class="urm_input" disabled value="43">
-                </label>
-              </div>
-              <div class="col-sm-6 mb-5">
-                <label class="urm_form_control">
-                  <span class="urm_form_label">Масса автопоезда без груза [т]:</span>
-                  <input type="text" class="urm_input" disabled value="22.885">
-                </label>
-              </div>
-              <div class="col-sm-6 mb-5">
-                <label class="urm_form_control">
-                  <span class="urm_form_label">Длина свеса [м]:</span>
-                  <input type="text" class="urm_input" disabled value="2">
-                </label>
+              <div class="col-sm-6">
+                <div class="mb-5">
+                  <label class="urm_form_control">
+                    <span class="urm_form_label">Масса автопоезда с грузом [т]:</span>
+                    <input type="text" class="urm_input" disabled value="43">
+                  </label>
+                </div>
+                <div class="mb-5">
+                  <label class="urm_form_control">
+                    <span class="urm_form_label">Масса автопоезда без груза [т]:</span>
+                    <input type="text" class="urm_input" disabled value="22.885">
+                  </label>
+                </div>
+                <div class="mb-5">
+                  <label class="urm_form_control">
+                    <span class="urm_form_label">Длина свеса [м]:</span>
+                    <input type="text" class="urm_input" disabled value="2">
+                  </label>
+                </div>
               </div>
             </div>
             <div class="urm_truck">
@@ -615,6 +620,7 @@
   </div>
 
   <script src="https://api-maps.yandex.ru/2.1/?apikey=8ef7aeb9-bf6a-47d4-a371-08a2af015b1d&lang=ru_RU"></script>
+  <!-- <script src='https://api.mapbox.com/mapbox-gl-js/v3.0.1/mapbox-gl.js'></script> -->
   <script src="js/jquery.min.js"></script>
   <script src="js/custom.js"></script>
 </body>

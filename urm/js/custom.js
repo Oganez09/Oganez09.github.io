@@ -49,10 +49,28 @@ function init () {
   const myMap = new ymaps.Map('map', {
     center: [64, 74],
     zoom: 7,
-    controls: []
+    controls: [],
+  }, {
+    suppressMapOpenBlock: true
   });
 
   myMap.geoObjects.add(multiRoute);
 }
 
 ymaps.ready(init);
+
+// TO MAKE THE MAP APPEAR YOU MUST
+// ADD YOUR ACCESS TOKEN FROM
+// https://account.mapbox.com
+// mapboxgl.accessToken = '<your access token here>';
+// const map = new mapboxgl.Map({
+// 	container: 'map', // container ID
+// 	style: 'mapbox://styles/mapbox/streets-v12', // style URL
+// 	center: [-74.5, 40], // starting position [lng, lat]
+// 	zoom: 9, // starting zoom
+// });
+
+// map.setLayoutProperty('country-label', 'text-field', [
+//   'get',
+//   'name_ru'
+//   ]);
