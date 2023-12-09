@@ -1,6 +1,7 @@
 $text-color: #222
 $red: #f35253
-$blue: #00f
+$blue: #0a39c2
+$blue2: #00f
 
 body
   font-family: "Roboto", sans-serif
@@ -28,7 +29,7 @@ body
 
 
 .urm
-  padding: 20px
+  padding: 16px 45px
   &_title
     font-size: 16px
     font-weight: 500
@@ -75,11 +76,11 @@ body
     border-radius: 10px
     font-size: 16px
     font-weight: 500
-    padding: 12px 16px
+    padding: 10px 16px
     display: inline-block
     border: none
     outline: none
-    height: 50px
+    height: 48px
     text-align: center
   &_table
     width: 100%
@@ -94,6 +95,9 @@ body
       width: 100%
       min-width: 700px
       table-layout: fixed
+      tr
+        &:hover td
+          background-color: #fafafa
       th,
       td
         padding: 16px
@@ -105,6 +109,7 @@ body
       td
         word-wrap: break-word
         border-top: 1px solid #f0f0f0
+        transition: background-color .3s
   &_text_wrapper
     background-color: #f5f5f5
     padding: 10px
@@ -114,8 +119,12 @@ body
     display: flex
     flex-direction: row-reverse
     margin-bottom: 1rem
-    .urm_btn
+    button.urm_btn
       margin-left: 1rem
+      width: 155px
+    a.urm_btn
+      color: #c4c4c4
+      background-color: rgba($blue, .15)
   &_card
     border-radius: 2px
     border: 1px solid #d9d9d9
@@ -123,7 +132,7 @@ body
     &.show .urm_card_head_icon
       transform: rotate(180deg)
     &_head
-      padding: 20px 24px
+      padding: 22px 24px
       cursor: pointer
       display: flex
       justify-content: space-between
@@ -131,7 +140,7 @@ body
       &_icon
         transition: transform .3s
     &_body
-      padding: 10px 24px 24px
+      padding: 16px 24px 24px
   &_cargo_item_title
     font-weight: 500
   &_truck
@@ -253,7 +262,7 @@ body
         position: absolute
         top: 159px
         left: 550px
-        border: 2px solid $blue
+        border: 2px solid $blue2
         background-color: rgba(233, 239, 243, .7)
         border-radius: 10px
         display: flex
@@ -294,7 +303,7 @@ body
         position: absolute
         top: 159px
         left: 1652px
-        border: 2px solid $blue
+        border: 2px solid $blue2
         background-color: rgba(233, 239, 243, .7)
         border-radius: 10px
         display: flex
