@@ -268,35 +268,14 @@ body
         display: flex
         align-items: center
         justify-content: center
-        &_lines
-          // border-left: 2px dotted #b0b1b3
-          // border-bottom: 2px solid #b0b1b3
-          height: 240px
-          width: 100%
+        &_size
           position: absolute
-          left: -2px
-          top: 100%
-          // &::before,
-          // &::after
-          //   font-size: 20px
-          //   position: absolute
-          //   bottom: -14px
-          //   font-weight: 500
-          //   color: #b0b1b3
-          // &::before
-          //   content: "\2039"
-          //   left: -3px
-          // &::after
-          //   content: "\203a"
-          //   right: -4px
-          &_size
-            position: absolute
-            top: 100%
-            left: 0
-            right: 0
-            text-align: center
-            padding: 3px
-            color: #7e7e7e
+          top: calc(100% + 240px)
+          left: 0
+          right: 0
+          text-align: center
+          padding: 3px
+          color: #7e7e7e
       &_back
         width: 170px
         height: 240px

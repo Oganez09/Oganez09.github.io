@@ -319,16 +319,9 @@ body {
   align-items: center;
   justify-content: center;
 }
-.urm_truck_cargo_side_lines {
-  height: 240px;
-  width: 100%;
+.urm_truck_cargo_side_size {
   position: absolute;
-  left: -2px;
-  top: 100%;
-}
-.urm_truck_cargo_side_lines_size {
-  position: absolute;
-  top: 100%;
+  top: calc(100% + 240px);
   left: 0;
   right: 0;
   text-align: center;
