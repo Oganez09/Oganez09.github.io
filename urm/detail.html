@@ -7,11 +7,12 @@
 
   <title>urm detail</title>
 
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
   <link rel="stylesheet" href="css/bootstrap-grid.min.css">
-  <!-- <link href='https://api.mapbox.com/mapbox-gl-js/v3.0.1/mapbox-gl.css' rel='stylesheet' /> -->
+  <link href='https://api.mapbox.com/mapbox-gl-js/v3.0.1/mapbox-gl.css' rel='stylesheet' />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.31.3/css/theme.default.min.css">
   <link rel="stylesheet" href="css/custom.css">
 
 </head>
@@ -28,7 +29,7 @@
             </svg>
           </a>
         </div>
-        <div class="urm_card mb-4 show">
+        <div class="urm_card show">
           <div class="urm_card_head">
             <div class="urm_title">Данные о разрешении</div>
             <svg class="urm_card_head_icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -36,25 +37,25 @@
             </svg>
           </div>
           <div class="urm_card_body">
-            <div class="row">
-              <div class="col-sm-6 col-md-2 mb-4"><b>№ Разрешения:</b></div>
+            <div class="row mb-4">
+              <div class="col-sm-6 col-md-2"><b>№ Разрешения:</b></div>
               <div class="col-sm-6 col-md-10">IR991634</div>
             </div>
-            <div class="row">
-              <div class="col-sm-6 col-md-2 mb-4"><b>Дата оформления:</b></div>
+            <div class="row mb-4">
+              <div class="col-sm-6 col-md-2"><b>Дата оформления:</b></div>
               <div class="col-sm-6 col-md-10">27.07.2023</div>
             </div>
-            <div class="row">
-              <div class="col-sm-6 col-md-2 mb-4"><b>Уполномоченный орган:</b></div>
+            <div class="row mb-4">
+              <div class="col-sm-6 col-md-2"><b>Уполномоченный орган:</b></div>
               <div class="col-sm-6 col-md-10">Федеральное казенное учреждение "Центр мониторинга безопасной эксплуатации автомобильных дорог Федерального дорожного агентства"</div>
             </div>
-            <div class="row">
-              <div class="col-sm-6 col-md-2 mb-4"><b>Статус разрешения:</b></div>
+            <div class="row mb-4">
+              <div class="col-sm-6 col-md-2"><b>Статус разрешения:</b></div>
               <div class="col-sm-6 col-md-10">Выдано</div>
             </div>
           </div>
         </div>
-        <div class="urm_card mb-4 show">
+        <div class="urm_card show">
           <div class="urm_card_head">
             <div class="urm_title">Данные о перевозчике</div>
             <svg class="urm_card_head_icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -102,7 +103,7 @@
             </div>
           </div>
         </div>
-        <div class="urm_card mb-4 show">
+        <div class="urm_card show">
           <div class="urm_card_head">
             <div class="urm_title">Контактная информация</div>
             <svg class="urm_card_head_icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -126,7 +127,7 @@
             </div>
           </div>
         </div>
-        <div class="urm_card mb-4 show">
+        <div class="urm_card show">
           <div class="urm_card_head">
             <div class="urm_title">Адрес регистрации</div>
             <svg class="urm_card_head_icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -198,7 +199,7 @@
             </div>
           </div>
         </div>
-        <div class="urm_card mb-4 show">
+        <div class="urm_card show">
           <div class="urm_card_head">
             <div class="urm_title">Сведения о грузе</div>
             <svg class="urm_card_head_icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -249,7 +250,7 @@
             </div>
           </div>
         </div>
-        <div class="urm_card mb-4 show">
+        <div class="urm_card show">
           <div class="urm_card_head">
             <div class="urm_title">Параметры перевозки</div>
             <svg class="urm_card_head_icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -285,7 +286,7 @@
             </div>
           </div>
         </div>
-        <div class="urm_card mb-4 show">
+        <div class="urm_card show">
           <div class="urm_card_head">
             <div class="urm_title">Информация о транспортных средствах и сцепных устройствах</div>
             <svg class="urm_card_head_icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -329,7 +330,7 @@
             </div>
           </div>
         </div>
-        <div class="urm_card mb-4 show">
+        <div class="urm_card show">
           <div class="urm_card_head">
             <div class="urm_title">Схема ТС</div>
             <svg class="urm_card_head_icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -510,7 +511,6 @@
                   <div class="urm_truck_cargo_side">
                     <span class="urm_truck_cargo_text">Груз 1</span>
                     <span class="urm_truck_cargo_side_size">22 (м)</span>
-                    </div>
                   </div>
                   <div class="urm_truck_cargo_back">
                     <span class="urm_truck_cargo_text">Груз 1</span>
@@ -520,10 +520,9 @@
                 </div>
               </div>
             </div>
-  
           </div>
         </div>
-        <div class="urm_card mb-4 show">
+        <div class="urm_card show">
           <div class="urm_card_head">
             <div class="urm_title">Маршрут движения</div>
             <svg class="urm_card_head_icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -544,7 +543,7 @@
             </div>
           </div>
         </div>
-        <div class="urm_card mb-4 show">
+        <div class="urm_card show">
           <div class="urm_card_head">
             <div class="urm_title">Вид сопровождения</div>
             <svg class="urm_card_head_icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -555,7 +554,7 @@
             <div class="urm_text_wrapper">2 а/м прикрытия – при ширине ТС от 3,5м до 4,5м и длине ТС более 25м (на автомобиле прикрытия, следующим впереди, - табло "БОЛЬШАЯ ШИРИНА", а следующим позади, - табло "БОЛЬШАЯ ДЛИНА")</div>
           </div>
         </div>
-        <div class="urm_card mb-4 show">
+        <div class="urm_card show">
           <div class="urm_card_head">
             <div class="urm_title">Особые условия движения</div>
             <svg class="urm_card_head_icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -566,7 +565,7 @@
             <div class="urm_text_wrapper">ГКУ «Дорожная дирекция ЯНАО»: <br>ЗАПРЕЩАЕТСЯ: осуществлять движение в гололед при метеорологической видимости менее 100 м; При полной массе автопоезда, превышающей параметры грузоподъемности моста, определенной д/з 3.11 "Ограничение массы" движение по мостовым сооружениям осуществлять в одиночном порядке; Необходимость и количество автомобилей прикрытия регламентируется приказом Минтранса России № 343 от 31.08.2020г.; При превышении допустимых нагрузок на ось, определенных д/з 3.12 «Ограничения массы, приходящейся на ось транспортного средства», в период временного ограничения разрешение НЕ ДЕЙСТВИТЕЛЬНО; Движение транспортного средства на участке 807,068 – 866,956 км а/д Сургут-Салехард, участок ж/д ст. Ныда - Пангоды осуществлять согласно проекта организации дорожного движения, разработанного в соответствии с требованиями Приказа Минтранса России № 343 от 31.08.2020г. <br>ЗАПРЕЩАЕТСЯ: осуществлять движение в гололед при метеорологической видимости менее 100 м; При полной массе автопоезда, превышающей параметры грузоподъемности моста, определенной д/з 3.11 "Ограничение массы" движение по мостовым сооружениям осуществлять в одиночном порядке; Необходимость и количество автомобилей прикрытия регламентируется приказом Минтранса России № 343 от 31.08.2020г.; При превышении допустимых нагрузок на ось, определенных д/з 3.12 «Ограничения массы, приходящейся на ось транспортного средства», в период временного ограничения разрешение НЕ ДЕЙСТВИТЕЛЬНО; Движение транспортного средства на участке 10,850 – 94,875 а/д «Ноябрьск-Вынгапуровский» осуществлять согласно проекта организации дорожного движения, разработанного в соответствии с требованиями Приказа Минтранса России № 343 от 31.08.2020г.</div>
           </div>
         </div>
-        <div class="urm_card mb-4 show">
+        <div class="urm_card show">
           <div class="urm_card_head">
             <div class="urm_title">Особые условия по согласованию ГИБДД</div>
             <svg class="urm_card_head_icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -577,7 +576,7 @@
             <div class="urm_text_wrapper">На участках с км 10+850 – км 94+875 а/д Ноябрьск – Вынгапуровский и км 807+068 – км 866+956 а/д Сургут - Салехард, движения ТС осуществлять согласно проектов ОДД.</div>
           </div>
         </div>
-        <div class="urm_card mb-4 show">
+        <div class="urm_card show">
           <div class="urm_card_head">
             <div class="urm_title">Список организаций, согласовавших перевозку</div>
             <svg class="urm_card_head_icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -585,32 +584,36 @@
             </svg>
           </div>
           <div class="urm_card_body">
-            <div class="urm_table urm_table_company_list">
+            <div class="urm_table urm_table_company_list tablesorter" id="myTable">
               <table>
-                <tr>
-                  <th>№</th>
-                  <th>Наименование согласующей организации</th>
-                  <th>Номер согласования</th>
-                  <th>Дата согласования</th>
-                </tr>
-                <tr>
-                  <td>1</td>
-                  <td>ГКУ «Дорожная дирекция ЯНАО»</td>
-                  <td>РДС1155169-01</td>
-                  <td>26.07.2023</td>
-                </tr>
-                <tr>
-                  <td>2</td>
-                  <td>Управление жилищно-коммунального хозяйства, транспорта, энергетики и связи Администрации города Ноябрьска</td>
-                  <td>РДС1155169-02</td>
-                  <td>21.07.2023</td>
-                </tr>
-                <tr>
-                  <td>2</td>
-                  <td>УГИБДД УМВД России по Ямало-Ненецкому автономному округу</td>
-                  <td>РДС1155169_ГА_01</td>
-                  <td>27.07.2023</td>
-                </tr>
+                <thead>
+                  <tr>
+                    <th>№</th>
+                    <th>Наименование согласующей организации</th>
+                    <th id="urm-table-sort">Номер согласования</th>
+                    <th>Дата согласования</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1</td>
+                    <td>ГКУ «Дорожная дирекция ЯНАО»</td>
+                    <td>РДС1155169-01</td>
+                    <td>26.07.2023</td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td>Управление жилищно-коммунального хозяйства, транспорта, энергетики и связи Администрации города Ноябрьска</td>
+                    <td>РДС1155169-02</td>
+                    <td>21.07.2023</td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td>УГИБДД УМВД России по Ямало-Ненецкому автономному округу</td>
+                    <td>РДС1155169_ГА_01</td>
+                    <td>27.07.2023</td>
+                  </tr>
+                </tbody>
               </table>
             </div>
           </div>
@@ -619,9 +622,14 @@
     </div>
   </div>
 
-  <script src="https://api-maps.yandex.ru/2.1/?apikey=8ef7aeb9-bf6a-47d4-a371-08a2af015b1d&lang=ru_RU"></script>
-  <!-- <script src='https://api.mapbox.com/mapbox-gl-js/v3.0.1/mapbox-gl.js'></script> -->
+  <button class="urm_up_btn">
+    <svg viewBox="64 64 896 896" focusable="false" fill="currentColor" width="14px" height="14px" data-icon="down" aria-hidden="true"><path d="M884 256h-75c-5.1 0-9.9 2.5-12.9 6.6L512 654.2 227.9 262.6c-3-4.1-7.8-6.6-12.9-6.6h-75c-6.5 0-10.3 7.4-6.5 12.7l352.6 486.1c12.8 17.6 39 17.6 51.7 0l352.6-486.1c3.9-5.3.1-12.7-6.4-12.7z"></path></svg>
+  </button>
+
+  <!-- <script src="https://api-maps.yandex.ru/2.1/?apikey=8ef7aeb9-bf6a-47d4-a371-08a2af015b1d&lang=ru_RU"></script> -->
+  <script src='https://api.mapbox.com/mapbox-gl-js/v3.0.1/mapbox-gl.js'></script>
   <script src="js/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.31.3/js/jquery.tablesorter.min.js"></script>
   <script src="js/custom.js"></script>
 </body>
 </html>
