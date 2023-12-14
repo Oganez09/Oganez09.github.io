@@ -21,10 +21,6 @@ $(document).ready(function () {
       }
     });
   
-  // table sort
-  $(function() {
-    $("#myTable").tablesorter();
-  });
 });
 
 // button Scroll Up/Down
@@ -70,7 +66,7 @@ function hideUpBtn() {
 
 
 
-
+// Yandex map
 // function init () {
 //   const startPoint = [62.998683, 76.949073];
 //   const endPoint = [65.568653, 72.372517];
@@ -108,6 +104,8 @@ function hideUpBtn() {
 
 // ymaps.ready(init);
 
+
+// Mapbox
 // TO MAKE THE MAP APPEAR YOU MUST
 // ADD YOUR ACCESS TOKEN FROM
 // https://account.mapbox.com
@@ -120,5 +118,5 @@ const map = new mapboxgl.Map({
 	container: 'map', // container ID
 	style: 'mapbox://styles/mapbox/streets-v12', // style URL
 	center: startPoint, // starting position [lng, lat]
-	zoom: 30, // starting zoom
+	zoom: 12, // starting zoom
 });
