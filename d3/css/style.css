@@ -1,0 +1,61 @@
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #fff;
+}
+.d3_404 {
+  padding: 15px 24px;
+}
+.d3_404_text {
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 18px;
+  color: #204283;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.d3_404_img {
+  max-width: 100%;
+  margin: 20px auto 50px;
+  display: block;
+}
+.d3_404_card {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 15px;
+  margin-bottom: 50px;
+}
+.d3_404_card_item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: auto;
+  height: 100px;
+  padding: 10px;
+  border-radius: 20px;
+  box-shadow: 0px 15px 15px 0px rgba(0,0,0,.2);
+}
+.d3_404_card_item img {
+  max-width: 100%;
+}
+.d3_404_btn {
+  font-size: 15px;
+  line-height: 18px;
+  color: #204283;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  border-radius: 20px;
+  box-shadow: 0px 15px 15px 0px rgba(0,0,0,.2);
+}
