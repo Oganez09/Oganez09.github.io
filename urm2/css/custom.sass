@@ -1,0 +1,336 @@
+$text-color: #222
+$red: #f35253
+$blue: #0a39c2
+$blue2: #00f
+
+body
+  font-family: Inter, sans-serif
+  font-size: 14px
+  font-weight: 400
+  color: $text-color
+  background-color: #fff
+  min-width: 320px
+  overflow-x: hidden
+  position: relative
+  -webkit-font-smoothing: antialiased
+  -moz-osx-font-smoothing: grayscale
+*
+  scrollbar-color: $blue #fff
+  scrollbar-width: thin
+  &::-webkit-scrollbar
+    width: 5px
+    height: 5px
+  &::-webkit-scrollbar-thumb
+    background-color: $blue
+    border-radius: 5px
+  &::-webkit-scrollbar-track
+    background-color: #fff
+    border-radius: 5px
+
+
+.urm
+  padding: 16px 48px
+  @media screen and (max-width: 767px)
+    padding: 8px
+  &_title
+    font-size: 16px
+    font-weight: 600
+  &_input,
+  &_textarea
+    color: $text-color
+    padding: 12px 16px
+    width: 100%
+    border-radius: 5px
+    outline: none
+    background-color: #f5f5f5
+    border: 1px solid #f5f5f5
+    transition: border-color .3s
+    &:focus,
+    &:hover
+      border-color: #d9d9d9
+    &[disabled]
+      color: #aaa
+      cursor: not-allowed
+  &_textarea
+    padding: 12px
+    height: 200px
+    resize: none
+  &_form
+    max-width: 400px
+    &_control
+      margin-bottom: 0
+      display: block
+      position: relative
+    &_label
+      font-weight: 600
+      line-height: 32px
+      display: inline-block
+    &_error
+      color: $red
+      position: absolute
+      top: 100%
+      left: 0
+    .urm_btn
+      width: 150px
+  &_btn
+    background-color: $blue
+    color: #fff
+    border-radius: 10px
+    font-size: 16px
+    font-weight: 600
+    padding: 10px 16px
+    display: inline-block
+    border: none
+    outline: none
+    height: 48px
+    text-align: center
+  &_table
+    width: 100%
+    overflow-x: auto
+    table
+      min-width: 700px
+      width: 100%
+      table-layout: fixed
+    &_truck_info
+      table
+        tr
+          th:first-child,
+          td:first-child
+            // width: 12%
+    &_company_list
+      table
+        min-width: 100px
+        tr
+          th:first-child,
+          td:first-child
+            width: 7%
+    table
+      tr
+        &:hover td
+          background-color: #fafafa
+      th,
+      td
+        padding: 16px
+        word-wrap: break-word
+        border-top: 1px solid #dee2e6
+        border-bottom: 1px solid #f0f0f0
+      th
+        vertical-align: bottom
+        font-weight: 500
+        background-color: #fafafa
+      td
+        vertical-align: top
+        transition: background-color .3s
+  &_text_wrapper
+    background-color: #f5f5f5
+    padding: 10px
+    border-radius: 10px
+    color: #aaa
+  &_top_btns
+    display: flex
+    flex-direction: row-reverse
+    margin-bottom: 1rem
+    button.urm_btn
+      margin-left: 1rem
+      width: 155px
+    a.urm_btn
+      color: #c4c4c4
+      background-color: rgba($blue, .15)
+  &_card
+    margin-bottom: 30px
+    border-radius: 2px
+    border: 1px solid #d9d9d9
+    box-shadow: 0 3px 1px -2px #0003, 0 2px 2px #00000024, 0 1px 5px #0000001f
+    &.show .urm_card_head_icon
+      transform: rotate(180deg)
+    &_head
+      padding: 22px 24px
+      cursor: pointer
+      display: flex
+      justify-content: space-between
+      align-items: center
+      &_icon
+        transition: transform .3s
+    &_body
+      padding: 16px 24px 24px
+  &_cargo_item_title
+    font-weight: 600
+  &_truck
+    margin-top: 1rem
+    &_title
+      border-bottom: 1px #2b2d42 solid
+      margin-bottom: 5px
+    &_wrapper
+      overflow: auto
+      position: relative
+      padding: 150px 50px 50px
+      background: #f6f8fa
+      border-radius: 24px
+      .urm_input
+        background-color: #efefef
+        width: 65px
+        padding: 5px 8px
+    &_axle
+      &_item
+        position: absolute
+        top: 67px
+        z-index: 2
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        text-align: center
+        &:nth-child(1)
+          left: 117px
+        &:nth-child(2)
+          left: 357px
+        &:nth-child(3)
+          left: 442px
+        &:nth-child(4)
+          left: 800px
+        &:nth-child(5)
+          left: 885px
+        &:nth-child(6)
+          left: 970px
+      &_load
+        display: flex
+        justify-content: center
+        align-items: center
+        margin-bottom: 1rem
+      &_line
+        height: 270px
+        width: 0
+        margin: auto
+        border-left: 2px dashed $red
+      &_circle
+        width: 17px
+        height: 17px
+        margin: auto
+        background-color: $red
+        border: 4px solid #fff
+        border-radius: 50%
+        box-shadow: 0 0 5px 5px rgba($red, .1)
+        position: relative
+        &::before,
+        &::after
+          content: ''
+          width: 5px
+          height: 5px
+          border: 9px solid transparent
+          border-top: 13px solid $red
+          position: absolute
+          top: -18px
+          left: -4px
+        &::after
+          top: -31px
+    &_length
+      &_item
+        display: flex
+        justify-content: center
+        align-items: center
+        position: absolute
+        top: 490px
+        z-index: 2
+        &:nth-child(1)
+          left: 70px
+        &:nth-child(2)
+          left: 240px
+        &:nth-child(3)
+          left: 405px
+        &:nth-child(3)
+          left: 405px
+        &:nth-child(4)
+          left: 850px
+        &:nth-child(5)
+          left: 940px
+        &:nth-child(6)
+          left: 1030px
+        &:nth-child(7)
+          top: 540px
+          left: 630px
+        &:nth-child(8)
+          top: 660px
+          left: 550px
+        // truck back
+        &:nth-child(9)
+          top: 307px
+          left: 1530px
+        &:nth-child(10)
+          top: 660px
+          left: 1350px
+    &_cargo
+      &_text
+        color: $blue
+        font-weight: 600
+      &_side
+        width: 670px
+        height: 200px
+        position: absolute
+        top: 159px
+        left: 390px
+        border: 2px solid $blue2
+        background-color: rgba(233, 239, 243, .7)
+        border-radius: 10px
+        display: flex
+        align-items: center
+        justify-content: center
+        &_size_bottom
+          position: absolute
+          top: calc(100% + 240px)
+          left: 0
+          right: 0
+          text-align: center
+          padding: 3px
+          color: #7e7e7e
+        &_size_right
+          position: absolute
+          top: 230px
+          right: -160px
+          text-align: center
+          padding: 3px
+          color: #7e7e7e
+      &_back
+        width: 170px
+        height: 200px
+        position: absolute
+        top: 159px
+        left: 1295px
+        border: 2px solid $blue2
+        background-color: rgba(233, 239, 243, .7)
+        border-radius: 10px
+        display: flex
+        align-items: center
+        justify-content: center
+        &_size_left
+          position: absolute
+          top: 100px
+          left: -40px
+          color: #7e7e7e
+        &_size_bottom
+          position: absolute
+          top: 435px
+          left: 70px
+          color: #7e7e7e
+  &_map
+    width: 100%
+    height: 400px
+  &_up_btn
+    position: fixed
+    top: 50%
+    left: 10px
+    display: none
+    width: 40px
+    height: 40px
+    background-color: #a3adc4
+    border: none
+    outline: none
+    border-radius: 50%
+    color: #fff
+    transform: rotate(180deg)
+    transition: transform .3s
+    &.down
+      transform: rotate(0deg)
+
+
+
+
